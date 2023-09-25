@@ -18,7 +18,7 @@ var TEACH_PreferenceTask = {
       borderMS:500, // timing of the border around the chosen option - shown on its own (before the feedback appears)
       transitionMS: 200, // timing of the white screen inbetween trials
 
-      schedule: _.schedule_all_range([0,1,2,3,4,5,6,7,"P"])
+      schedule: schedule_all_range([0,1,2,3,4,5,6,7,"P"])
     },
     trackers: {
       trial: 0, // number of trials
