@@ -180,12 +180,12 @@ function recordResponse() {
 
   // Outcome calculation for Hernan's task
   if (Math.random() < track.symbolA.prob) {
-    let out_A = track.symbolA.reward; }else{
-    let out_A = track.symbolA.loss; }
+    track.out_A = track.symbolA.reward; }else{
+      track.out_A = track.symbolA.loss; }
     
     if (Math.random() < track.symbolB.prob) {
-      let out_B = track.symbolB.reward; }else{
-      let out_B = track.symbolB.loss; }
+      track.out_B = track.symbolB.reward; }else{
+        track.out_B = track.symbolB.loss; }
   
 
 
@@ -209,15 +209,15 @@ function recordResponse() {
       rewardChosen: chRespKey == track.iside[0] ? track.symbolA.reward : track.symbolB.reward,
       lossChosen: chRespKey == track.iside[0] ? track.symbolA.loss : track.symbolB.loss,
       randomChosen:99,
-      outcomeChosen:chRespKey == track.iside[0] ?  out_A : out_B ,
+      outcomeChosen:chRespKey == track.iside[0] ?  track.out_A : track.out_B ,
       symbolUnchosen:chRespKey == track.iside[1] ? track.symbolA.imageID : track.symbolB.imageID,
       symbolUnchosenID:chRespKey == track.iside[1] ? track.symbolA.id : track.symbolB.id,
       probUnchosen: chRespKey == track.iside[1] ? track.symbolA.prob : track.symbolB.prob,
       rewardUnchosen:chRespKey == track.iside[1] ? track.symbolA.reward : track.symbolB.reward,
       lossUnchosen:chRespKey == track.iside[1] ? track.symbolA.loss : track.symbolB.loss,
       randomUnchosen:99,
-      outcomeUnchosen:chRespKey == track.iside[1] ? out_A : out_B,
-      totalReward:track.tRew+(chRespKey == track.iside[0] ? out_A : out_B),
+      outcomeUnchosen:chRespKey == track.iside[1] ? track.out_A : track.out_B,
+      totalReward:track.tRew+(chRespKey == track.iside[0] ? track.out_A : track.out_B),
       choiceType:track.symbolA.id < track.symbolB.id ? track.symbolA.id+'.'+track.symbolB.id : track.symbolB.id+'.'+track.symbolA.id,
       feedbackType:ts.schedule[track.block].fdb
   })
