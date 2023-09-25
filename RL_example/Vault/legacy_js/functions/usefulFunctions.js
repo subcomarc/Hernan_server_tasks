@@ -11,32 +11,6 @@ function addCanvas(target,id,width,height,classInfo) {
   $(target).append(resp);
 }
 
-function drawStim(symbol,optionId) {
-  let canvas = document.getElementById(optionId)
-  let Ax =  canvas.getContext("2d")
-  Ax.drawImage(symbol.image,0,0)
-  Ax.lineWidth = "1";
-  Ax.strokeStyle = "black";
-  Ax.strokeRect(0, 0, canvas.width, canvas.height);
-}
-
-function drawEmpty(optionId) {
-  let canvas = document.getElementById(optionId)
-  let Ax =  canvas.getContext("2d")
-  Ax.clearRect(0, 0, canvas.width, canvas.height);
-  Ax.strokeStyle = "black";
-}
-
-function highlightOption(optionId) {
-let canvas = document.getElementById(optionId)
-let Ax =  canvas.getContext("2d")
-// Ax.lineWidth = "5";
-Ax.lineWidth = canvas.width*0.05;
-Ax.strokeStyle = "black";
-Ax.strokeRect(0, 0, canvas.width, canvas.height);
-}
-
-
 
 // ALL COMBINATION Schedule
 function schedule_all(nSymbols,fdb){
@@ -47,16 +21,6 @@ function schedule_all(nSymbols,fdb){
   }}
   return k
 }
-
-function schedule_all_range(arr_symID,fdb){
-  let k = [];
-  for (let i = 0; i < arr_symID.length-1; i++) {
-    for (let j = i+1; j < arr_symID.length; j++) {
-      k.push({pair:[arr_symID[i],arr_symID[j]],fdb:fdb})
-  }}
-  return k
-}
-
 
 
 // ARAYS - USEFUL FUNCTIONS
@@ -126,5 +90,4 @@ function drop_handler(ev) {
  ev.target.appendChild(document.getElementById(data));
 }
 
-export {shuffle, getLastValue,findCor,disableF5,points2pounds,dragstart_handler,dragover_handler,drop_handler,schedule_all,recursiveSearch,schedule_all_range,
-  addCanvas,drawStim,drawEmpty,highlightOption}
+export {shuffle, getLastValue,findCor,disableF5,points2pounds,dragstart_handler,dragover_handler,drop_handler,addCanvas,schedule_all,recursiveSearch}

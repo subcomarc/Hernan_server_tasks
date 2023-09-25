@@ -3,7 +3,7 @@ import {points2pounds} from "../functions/usefulFunctions.js";
 
 function end(exp){
 
-let rew = exp.totalReward
+let rew = 65+exp.totalReward
 let time = Date.now()-exp.startTime;
 
   // SET UP NEEDED DIVS

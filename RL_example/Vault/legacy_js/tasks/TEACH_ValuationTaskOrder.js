@@ -1,11 +1,11 @@
-import {symbols} from "./ToE_LoadSymbols.js";
+import {symbols} from "./TEACH_LoadSymbols.js";
 import {expOrder} from "../order.js";
 import {addCanvas,getLastValue,schedule_all,recursiveSearch} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
-import {exp} from "../ToE_ExpSetting.js"
+import {exp} from "../TEACH_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
 
-var ToE_ValuationTaskOrder = {
+var TEACH_ValuationTaskOrder = {
   trialState: 0, // starting point for the task
   taskSettings:{
     taskName: 'ValuationsOrder',
@@ -55,14 +55,14 @@ var ToE_ValuationTaskOrder = {
       }
   };
 
-export {ToE_ValuationTaskOrder}
+export {TEACH_ValuationTaskOrder}
 
 
 // Set up shortcuts & helpers
-var ts = ToE_ValuationTaskOrder.taskSettings;
-var rs = ToE_ValuationTaskOrder.results;
-var track = ToE_ValuationTaskOrder.trackers;
-var state = ToE_ValuationTaskOrder.trialState;
+var ts = TEACH_ValuationTaskOrder.taskSettings;
+var rs = TEACH_ValuationTaskOrder.results;
+var track = TEACH_ValuationTaskOrder.trackers;
+var state = TEACH_ValuationTaskOrder.trialState;
 
 // Actions to be repeated each trial
 function trialStateMachine(){
@@ -120,7 +120,7 @@ function  showStimuli(){
 
     $('#Bottom').html(buttonBack+buttonNext);
 
-    document.getElementById("bRestart").onclick = function(){ToE_ValuationTaskOrder.init()};
+    document.getElementById("bRestart").onclick = function(){TEACH_ValuationTaskOrder.init()};
     document.getElementById("bSubmit").onclick = function(){
         let nCount = new Array
         for (let i = 0; i <= symbols.nStim-1; i++){

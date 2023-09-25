@@ -1,11 +1,11 @@
-import {symbols} from "./ToE_LoadSymbols.js";
+import {symbols} from "./TEACH_LoadSymbols.js";
 import {expOrder} from "../order.js";
 import {addCanvas,getLastValue,schedule_all,recursiveSearch} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
-import {exp} from "../ToE_ExpSetting.js"
+import {exp} from "../TEACH_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
 
-var ToE_VSliderDouble = {
+var TEACH_VSliderDouble = {
   trialState: 0, // starting point for the task
   taskSettings:{
     taskName: 'ValuationsUnited',
@@ -73,14 +73,14 @@ var ToE_VSliderDouble = {
       }
   };
 
-export {ToE_VSliderDouble}
+export {TEACH_VSliderDouble}
 
 
 // Set up shortcuts & helpers
-var ts = ToE_VSliderDouble.taskSettings;
-var rs = ToE_VSliderDouble.results;
-var track = ToE_VSliderDouble.trackers;
-var state = ToE_VSliderDouble.trialState;
+var ts = TEACH_VSliderDouble.taskSettings;
+var rs = TEACH_VSliderDouble.results;
+var track = TEACH_VSliderDouble.trackers;
+var state = TEACH_VSliderDouble.trialState;
 
 // Actions to be repeated each trial
 function trialStateMachine(){

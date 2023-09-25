@@ -1,13 +1,20 @@
 import {expOrder} from "../order.js";
+import {exp} from "../ToE_ExpSetting.js"
 
 
 
 function getID(exp) {
   // Define main containers needed
     let c_Stage =  "<div class = 'row justify-content-center mt-4' id = 'Stage'> </div>";
-    let c_Buttons =  "<div class = 'row justify-content-center' id = 'GameButton'> </div>";
 
-  $('#ContBox').html(c_Stage+c_Buttons);
+    $('#ContBox').html(c_Stage);
+
+    // Show buttons
+    var buttonBack = '<input align="center" type="button"  class="btn btn-default rounded invisible mt-2 mb-2 myBtn" id="bBack" value="Back">';
+    var buttonNext = '<input align="center" type="button"  class="btn btn-default rounded visible mt-2 mb-2 myBtn" id="bNext" value="Next">';
+    $('#Bottom').html(buttonBack + buttonNext);
+
+
 
      	let Prompt =  '<form >'+
                  '<div class="form-group">'+
@@ -17,20 +24,32 @@ function getID(exp) {
                  '</div>'+
                  '<form>';
 
-       	let Buttons = '<div align="col m-5"><input align="left" type="button"  class="btn btn-default rounded myBtn" id="bStart" value="Next" ></div>';
+       	       $('#Stage').html(Prompt);
 
-       $('#Stage').html(Prompt);
-       $('#GameButton').html(Buttons);
 
 	let params = new URLSearchParams(location.search);
 	exp.PID = params.get('PROLIFIC_PID');
 
-       $('#bStart').click(function() {
+// test function -> progress on ENTER
+  document.getElementById('formPartID').addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("bNext").click();
+  }
+});
+
+// ON CLICK CHECK THAT THE ENTRY WAS VALID:
+
+       $('#bNext').click(function() {
 
          if(document.getElementById('formPartID').value.length===24){
             exp.ID = document.getElementById('formPartID').value;
 
                      $('#ContBox').empty();
+                     exp.expTask++
                      expOrder();
                    }
           else{formPartID.classList.add('is-invalid');}
@@ -40,3 +59,12 @@ function getID(exp) {
 
 
 export {getID}
+
+
+
+let c_Buttons =  "<div class = 'row justify-content-between mt-2' id = 'respButtons'> </div>";
+
+// Show buttons
+var buttonBack = '<input align="center" type="button"  class="btn btn-default invisible rounded m-2 myBtn" id="bBack" value="Back">';
+var buttonNext = '<input align="center" type="button"  class="btn btn-default rounded visible m-2 myBtn" id="bNext" value="Next">';
+$('#respButtons').html(buttonBack + buttonNext);

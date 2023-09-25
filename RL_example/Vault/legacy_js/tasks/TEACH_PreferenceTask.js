@@ -1,11 +1,11 @@
-import {symbols} from "./ToE_LoadSymbols.js";
+import {symbols} from "./TEACH_LoadSymbols.js";
 import {expOrder} from "../order.js";
 import {addCanvas,getLastValue,schedule_all} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
-import {exp} from "../ToE_ExpSetting.js"
+import {exp} from "../TEACH_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
 
-var ToE_PreferenceTask = {
+var TEACH_PreferenceTask = {
     trialState: 0, // starting point for the task
     taskSettings:{
       taskName: 'PreferenceTask',
@@ -70,13 +70,13 @@ var ToE_PreferenceTask = {
 
   }
 };
-export{ToE_PreferenceTask}
+export{TEACH_PreferenceTask}
 
 // Set up shortcuts & helpers
-var ts = ToE_PreferenceTask.taskSettings;
-var rs = ToE_PreferenceTask.results;
-var track = ToE_PreferenceTask.trackers;
-var state = ToE_PreferenceTask.trialState;
+var ts = TEACH_PreferenceTask.taskSettings;
+var rs = TEACH_PreferenceTask.results;
+var track = TEACH_PreferenceTask.trackers;
+var state = TEACH_PreferenceTask.trialState;
 var iside = _.shuffle([0,1])
 
 

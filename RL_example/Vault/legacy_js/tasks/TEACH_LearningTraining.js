@@ -1,24 +1,24 @@
-import {symbols,fSymbols} from "./ToE_LoadSymbols.js";
+import {tSymbols} from "./TEACH_LoadSymbols.js";
 import {expOrder} from "../order.js";
 import {addCanvas,getLastValue,recursiveSearch} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
-import {exp} from "../ToE_ExpSetting.js"
+import {exp} from "../TEACH_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
 
-
-var ToE_FamiliarShape = {
+var TEACH_LearningTraining = {
     trialState: 0, // starting point for the task
     taskSettings:{
-      taskName: 'Familiar',
+      taskName: 'LearningTraining',
 
-      maxTrials: 16,//112, // maximum trials in a task
+      maxTrials: 8,//112, // maximum trials in a task
       maxBlockTrials: 1, // maximum trials in a block, if blockTrials == 1 -> no blocks
 
-      fdbMS:2000, // time in ms the feedback will be displayed
-      borderMS:1000, // timing of the border around the chosen option - shown on its own (before the feedback appears)
+      fdbMS:1000, // time in ms the feedback will be displayed
+      borderMS:500, // timing of the border around the chosen option - shown on its own (before the feedback appears)
       transitionMS: 200, // timing of the white screen inbetween trials
 
-      schedule: _.shuffle([...Array(symbols.nStim).keys()])
+      schedule: _.shuffle([{pair:[0,1],fdb:"F"},
+                           {pair:[2,3],fdb:"F"}])
     },
     trackers: {
       trial: 0, // number of trials
@@ -28,14 +28,19 @@ var ToE_FamiliarShape = {
       tRew: 0, // total reward
     },
     results: {
-      sym_cor: [], // chosen symbol
-      symID_cor: [], // symbol ID -  the same prob/points for all part, and the same pic for each participant
-      p_cor: [],  // probability
-      r_cor: [], // reward of the chosen option if lottery wins
-      l_cor: [], // loss of the chosen option - if loses
+      sym_ch: [], // chosen symbol
+      symID_ch: [], // symbol ID -  the same prob/points for all part, and the same pic for each participant
+      p_ch: [],  // probability
+      r_ch: [], // reward of the chosen option if lottery wins
+      l_ch: [], // loss of the chosen option - if loses
+      out_ch: [], // outcome of the chosen option
 
-      sym_f: [],// which symbol was presented as option B
-      resp_cor: [],
+      sym_un: [],// which symbol was presented as option B
+      symID_un: [],
+      p_un: [],  // probability
+      r_un: [],  // reward of option B - if wins
+      l_un: [], // reward of the option B - if loses
+      out_un: [],
 
       respKey: [], // which response matrix was chosen (0-1)
       respKeyID: [], // ID of the pressed item - also includes buttons, and other clickable objects
@@ -55,8 +60,8 @@ var ToE_FamiliarShape = {
       $('#ContBox').html(c_Stage+c_Vals+c_Buttons+c_FinalButton);
 
       // Add stimuli pictures to the set up
-      let sWidth= symbols.S1.imageBW.width
-      let sHeight= symbols.S1.imageBW.height
+      let sWidth= tSymbols.S1.image.width
+      let sHeight= tSymbols.S1.image.height
       for (let resp = 0; resp <= 1; resp++){
         addCanvas('#Stage',"myResp"+resp,sWidth,sHeight,"border rounded")
       }
@@ -67,13 +72,13 @@ var ToE_FamiliarShape = {
 
   }
 };
-export{ToE_FamiliarShape}
+export{TEACH_LearningTraining}
 
 // Set up shortcuts & helpers
-var ts = ToE_FamiliarShape.taskSettings;
-var rs = ToE_FamiliarShape.results;
-var track = ToE_FamiliarShape.trackers;
-var state = ToE_FamiliarShape.trialState;
+var ts = TEACH_LearningTraining.taskSettings;
+var rs = TEACH_LearningTraining.results;
+var track = TEACH_LearningTraining.trackers;
+var state = TEACH_LearningTraining.trialState;
 var iside = _.shuffle([0,1])
 
 // Actions to be repeated each trial
@@ -95,9 +100,12 @@ function trialStateMachine(){
       highlightResponse()
       break;
     case 5:
-      transitionScreen()
+      showFeedback_FullorPart()
       break;
     case 6:
+      transitionScreen()
+      break;
+    case 7:
       trialCounter()
       break;
   }
@@ -124,6 +132,9 @@ trialStateMachine()
 function showStimuli(){
   document.getElementById("ContBox").className = "col-12 mt-3 visible" ;
 
+  //shortcut for the viewed pair
+  var pair = ts.schedule[track.block].pair
+
   // record time stimuli were shown
   track.rt_point.push(Date.now())
 
@@ -132,8 +143,8 @@ function showStimuli(){
 
 
   // Show new stimuli
-  drawStim(symbols,ts.schedule[track.block],iside[0]);
-  drawStim(fSymbols,ts.schedule[track.block],iside[1]);
+  drawStim(pair[0],iside[0]);
+  drawStim(pair[1],iside[1]);
 
   state++;
   trialStateMachine()}
@@ -160,9 +171,9 @@ function partChoicePicture(){
 
 //Record Response
 function recordResponse() {
-    let pair = ts.schedule[track.block]
-    let symbolA = symbols['S'+pair]
-    let symbolB = fSymbols['S'+pair]
+    let pair = ts.schedule[track.block].pair
+    let symbolA = tSymbols['S'+pair[0]]
+    let symbolB = tSymbols['S'+pair[1]]
 
  // Record RT
     rs.rt.push(Date.now()-track.rt_point[track.rt_point.length-1]);
@@ -175,36 +186,60 @@ function recordResponse() {
 
   // Record positioning
   // If the A option was chosen (the same response button as position of option A)
-    rs.sym_cor.push(symbolA.imageID);
-    rs.symID_cor.push(symbolA.id);
-    rs.p_cor.push(symbolA.prob);
-    rs.r_cor.push(symbolA.reward);
-    rs.l_cor.push(symbolA.loss);
+    rs.sym_ch.push((chRespKey == iside[0] ? symbolA.imageID : symbolB.imageID));
+    rs.symID_ch.push((chRespKey == iside[0] ? symbolA.id : symbolB.id));
+    rs.p_ch.push((chRespKey == iside[0] ? symbolA.prob : symbolB.prob));
+    rs.r_ch.push((chRespKey == iside[0] ? symbolA.reward : symbolB.reward));
+    rs.l_ch.push((chRespKey == iside[0] ? symbolA.loss : symbolB.loss));
 
-    rs.sym_f.push(symbolB.imageID);
-    rs.resp_cor.push(chRespKey == iside[0] ? 1 : 0)
-    rs.tRew = rs.tRew + 90*getLastValue(rs.resp_cor)    // record reward so far
+    rs.sym_un.push((chRespKey == iside[1] ? symbolA.imageID : symbolB.imageID));
+    rs.symID_un.push((chRespKey == iside[1] ? symbolA.id : symbolB.id));
+    rs.p_un.push((chRespKey == iside[1] ? symbolA.prob : symbolB.prob));
+    rs.r_un.push((chRespKey == iside[1] ? symbolA.reward : symbolB.reward));
+    rs.l_un.push((chRespKey == iside[1] ? symbolA.loss : symbolB.loss));
 
+  // Test for the probability condition, if true add R-value of the chosen option, if not add l-value
+    let ran_ch = Math.random()
+    rs.out_ch.push(ran_ch > getLastValue(rs.p_ch) ? getLastValue(rs.l_ch) : getLastValue(rs.r_ch))
+    rs.tRew = rs.tRew + getLastValue(rs.out_ch)    // record reward so far
+
+    let ran_un = Math.random() //math.randomInt(1, 100)
+    rs.out_un.push(ran_un > getLastValue(rs.p_un) ? getLastValue(rs.l_un) : getLastValue(rs.r_un))
 
   // SendtoDB(track.trial)
     sendToDB(0,
-    {  partID: exp.ID,
+    { partID: exp.ID,
       expID: exp.expID,
       tsName: ts.taskName,
       trial: track.trial,
+      stim: track.blockTrial,
+      block: track.block,
+      tsFeedbackTime:ts.fdbMS,
       tsBorderTime: ts.borderMS,
       tsTransitionMS: ts.transitionMS,
+      ssPairs: Array.isArray(ts.pairs) == true ? "fixed" : "all",
       reactionTime: getLastValue(rs.rt),
       respKey: getLastValue(rs.respKey),
-      symbol: getLastValue(rs.sym_cor),
-      symbolID:getLastValue(rs.symID_cor),
-      symbolProb: getLastValue(  rs.p_cor),
-      symbolReward:getLastValue(rs.r_cor),
-      DecoyImage:getLastValue(rs.sym_f),
-      respCor:getLastValue(rs.resp_cor),
+      respKeyID: getLastValue(rs.respKeyID),
+      symbolChosen: getLastValue(rs.sym_ch),
+      symbolChosenID:getLastValue(rs.symID_ch),
+      probChosen: getLastValue(rs.p_ch),
+      rewardChosen:getLastValue(rs.r_ch),
+      lossChosen:getLastValue(rs.l_ch),
+      randomChosen:ran_ch,
+      outcomeChosen:getLastValue(rs.out_ch),
+      symbolUnchosen:getLastValue(rs.sym_un),
+      symbolUnchosenID:getLastValue(rs.symID_un),
+      probUnchosen: getLastValue(rs.p_un),
+      rewardUnchosen:getLastValue(rs.r_un),
+      lossUnchosen:getLastValue(rs.l_un),
+      randomUnchosen:ran_un,
+      outcomeUnchosen:getLastValue(rs.out_un),
       totalReward:rs.tRew,
+      choiceType:symbolA.id < symbolB.id ? symbolA.id+'.'+symbolB.id : symbolB.id+'.'+symbolA.id,
+      feedbackType:ts.schedule[track.block].fdb
     },
-    'php/InsertDB_FamShape.php'
+    'php/InsertDB_Training.php'
 );
 state++;
 trialStateMachine()
@@ -252,15 +287,14 @@ function trialCounter(){
   trialStateMachine()
   }
 
-
-  function drawStim(obj,id,isd) {
-    let canvas = document.getElementById("myResp"+isd)
-    let Ax =  canvas.getContext("2d")
-    Ax.drawImage(obj['S'+id].imageBW,0,0)
-    Ax.lineWidth = "10";
-    Ax.strokeStyle = "black";
-    Ax.strokeRect(0, 0, canvas.width, canvas.height);
-  }
+function drawStim(id,isd) {
+  let canvas = document.getElementById("myResp"+isd)
+  let Ax =  canvas.getContext("2d")
+  Ax.drawImage(tSymbols['S'+id].image,0,0)
+  Ax.lineWidth = "5";
+  Ax.strokeStyle = "black";
+  Ax.strokeRect(0, 0, canvas.width, canvas.height);
+}
 
 
 function highlightOption(optionId) {

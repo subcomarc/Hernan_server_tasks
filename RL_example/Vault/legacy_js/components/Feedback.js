@@ -1,6 +1,5 @@
 import {expOrder} from "../order.js";
 import {sendToDB} from "../functions/sendToDB.js";
-import {exp} from "../ToE_ExpSetting.js"
 
 function getFeedback(exp){
   let c_Stage =  "<div class = 'row justify-content-center' id = 'Stage'> </div>";
@@ -34,7 +33,6 @@ $('#bSubmit').click(function(){
           	expID: exp.expID,
           	feedback: exp.feedback},
         'php/InsertDB_Feedback.php')
-  exp.expTask++;
   expOrder();
 })
 }

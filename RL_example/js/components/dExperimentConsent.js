@@ -1,39 +1,27 @@
 import {expOrder} from "../order.js";
+import {exp} from "../ToE_ExpSetting.js"
 
 var consentForm =  {
-  study: "The domain-general role of reinforcement learning-based training in cognition across short and long time-spans",
-  researcher: "Pr. Stefano PALMINTERI",
-  intro: "You are being invited to take part in a research study. Before you decide to participate, it is "+
-         "important that you understand why the research is being conducted and what it will involve. "+
-         "Please take time to read the following information carefully.",
+  intro: "You are about to participate in a study titled 'Learning and Decision-Making,' led by Professor Stefano PALMINTERI. "+
+         "The primary goal of this research is to understand learning processes involved in decision-making, " +
+         "focusing on the role of reinforcement learning in short-term and long-term cognition."+
+         "We want to emphasize that this study has no immediate application or clinical value, but it will contribute to deepening of our understanding of brain. ",
 
-  aim: "This study aims to understand the learning processes in decision-making, in particular the "+
-          "cognitive mechanisms of these learning and decision-making processes. "+
-          "<br><br>The following experiment has no immediate application or clinical value. "+
-          "However, it will allow us to improve our understanding of the functioning brain.",
+ procedure: "You will be asked to complete three cognitive tasks, "+
+            "none of which requires any particular skill or knowledge. " +
+            "The estimated duration to complete the study is approximately 20 minutes. " +
+            "Depending oby you performance, you might earn between £2.5 - £5. ",
 
-  procedure: "You will be asked to complete 2 cognitive tasks, "+
-            "neither or which requires any particular skill or knowledge. " +
-            "The study will likely take you 25-30 min. " +
-            "If you complete it, you will receive between 3€ - 6€ depending on your choices during the tasks. ",
+  participation: "Your participation in this research study is voluntary and you may stop and withdraw at any time. "+
+                 "In addition to your responses in the study, we will also collect " +
+                 "<a href='https://researcher-help.prolific.co/hc/en-gb/articles/360009391633-Exporting-Prolific-Demographic-Data' target='_blank'>"+
+                 "these demographic data</a> if you provided them to Prolific."+
+                 "The collected data will only be used for research purposes and any shared or published dataset will not contain your Prolific ID.",
 
-  participation: "Your participation in this research study is voluntary " +
-                "and you may stop and withdraw at any time without prejudice or justification. ",
-
-confidentiality: "In addition to your responses, we will also collect " +
-                "<a href='https://researcher-help.prolific.co/hc/en-gb/articles/360009391633-Exporting-Prolific-Demographic-Data' target='_blank'>"+
-                "these demographic data</a> if you provided them to Prolific. "+
-                "In order to preserve your identity and the confidentiality, the identification of "+
-                "each file will be coded, thus preserving the anonymity of your answers."+
-                "<br><br> The collected data will be accessible to the researcher in charge and his staff "+
-                "and will be only used for research purposes in order to answer the scientific objectives of the project. "+
-                "The data may be published in scientific journals and shared within the scientific community, "+
-                "in which case no publication or scientific communication will contain any identifying information. ",
-
-  publication: "You will be able to check the publications resulting from this study on the following "+
+ publication: "You will be able to check the publications resulting from this study on the following "+
                 "<a href='https://sites.google.com/site/stefanopalminteri/publications' target='_blank'>"+
                 "website.</a> ",
-  contact: "humanreinforcementlearning@gmail.com",
+  contact: "For any questions or additional information, you can contact the research team via email at the following address: humanreinforcementlearning@gmail.com",
   ethics: "This research has received a favorable opinion from the Inserm Ethical Review Committee / IRB00003888 on November 13th, 2018",
   consentForm: "Your participation in this research confirms that you have read this information and wish to participate in the research study. "+
                 "Please check all boxes to continue:",
@@ -47,9 +35,10 @@ confidentiality: "In addition to your responses, we will also collect " +
    let c_Buttons =  "<div class = 'row justify-content-between' id = 'respButtons'> </div>";
 
    $('#ContBox').html(c_Stage+c_Warning+c_Buttons);
+   $('#Bottom').html(c_Buttons)
 
    //Add hidden warning message (in case options are not checked)
-   let WarnText ='<div class="col"><p align = "center" class="text-warning">You must check all boxes to continue!<p></div>' ;
+   let WarnText ='<div class="col"><p align = "center" class="text-danger">You must check all boxes to continue!<p></div>' ;
    $('#Warning').html(WarnText)
 
    // Add headings and show the text
@@ -61,19 +50,17 @@ confidentiality: "In addition to your responses, we will also collect " +
              '<label class="form-check-label" for='+"check"+i+'>' +this.consentCheck[i]+'</label>'+
              '</div>'}
 
-   $('#Top').html("<h4  style='color:#FFFFFF'>Consent</h4>")
    $('#Stage').html('<div class="col" >'+
-                    "<h5>Title of the Study: </h5>"+"<p><b>"+this.study+"</b></p>"+
-                    "<h5>Researcher in Charge: </h5>"+"<p><b>"+this.researcher+"</b></p>"+
-                    "<p>"+this.intro+"</p>"+
-                    "<h5>What is the aim of this study?</h5>"+ "<p>"+this.aim+"</p>"+
-                    "<h5>What will happen if I take part?</h5>"+ "<p>"+this.procedure+"</p>"+
-                    "<h5>Can I withdraw from the study?</h5>"+ "<p>"+this.participation+"</p>"+
-                    "<h5>Confidentiality - Who will access the data?</h5>"+ "<p>"+this.confidentiality+"</p>"+
-                    "<h5>Research Results And Publication</h5>"+ "<p>"+this.publication+"</p>"+
-                    "<h5>Contact And Additional Information</h5>"+"<p class='ow'><b>Email: </b>"+this.contact+"</p>"+
+                    "<h2>Consent Form</h2>"+
+                    "<br>"+
+                    "<h4>Aim of the Study</h4>"+"<p>"+this.intro+"</p>"+
+                    "<h4>Procedure</h4>"+ "<p>"+this.procedure+"</p>"+
+                    "<h4>Participation and Confidentiality</h4>"+ "<p>"+this.participation+"</p>"+
+                    "<h4>Research Results And Publication</h4>"+ "<p>"+this.publication+"</p>"+
+                    "<h4>Contact And Additional Information</h4>"+"<p class='ow'>"+this.contact+"</p>"+
                     "<p>"+this.ethics+"</p>"+
-                    "<h5>Consent</h5>"+ "<p>"+this.consentForm+"</p>"+
+                    "<hr>"+
+                    "<h4>Consent</h4>"+ "<p>"+this.consentForm+"</p>"+
                      consentCheck[0]+consentCheck[1]+consentCheck[2]+
                      '</div>')
    // Show buttons
@@ -85,6 +72,8 @@ confidentiality: "In addition to your responses, we will also collect " +
    if ($("input:checkbox:not(:checked)").length == 0) {
                $('#Top').html("<p></p>");
                $('#ContBox').empty();
+               $('#Bottom').empty();
+               exp.expTask++
                expOrder();
              }
     else{document.getElementById("Warning").className = "mt-2 row justify-content-center visible" ;}

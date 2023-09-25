@@ -6,10 +6,13 @@ if(exp.testMode=="YES"){
    $('#SkipF').html(skipButton)
    document.getElementById("bSkip").onclick = function(){
 
-           $('#ContBox').empty();
+           $('#Top').empty();
+           $('#Stage').empty();
+           $('#Slider').empty();
+           $('#Vals').empty();
+           $('#FinalButton').empty();
            $('#Bottom').empty();
-           exp.expTask++
-           expOrder();
+           expOrder(exp);
          };
 }
 
