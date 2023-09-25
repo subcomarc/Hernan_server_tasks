@@ -6,7 +6,7 @@ import {exp} from "../TEACH_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
 
 
-var TEACH_LearningTask = {
+var TEACH_LearningTraining = {
     trialState: 0, // starting point for the task
     taskSettings:{
       taskName: 'TrainingTask',
@@ -61,13 +61,13 @@ var TEACH_LearningTask = {
 
   }
 };
-export{TEACH_LearningTask}
+export{TEACH_LearningTraining}
 
 // Set up shortcuts & helpers
-var ts = TEACH_LearningTask.taskSettings;
-var rs = TEACH_LearningTask.results;
-var track = TEACH_LearningTask.trackers;
-var state = TEACH_LearningTask.trialState;
+var ts = TEACH_LearningTraining.taskSettings;
+var rs = TEACH_LearningTraining.results;
+var track = TEACH_LearningTraining.trackers;
+var state = TEACH_LearningTraining.trialState;
 
 
 // Actions to be repeated each trial

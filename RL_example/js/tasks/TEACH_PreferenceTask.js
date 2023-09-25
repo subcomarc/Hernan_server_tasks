@@ -6,7 +6,7 @@ import {exp} from "../TEACH_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
 
 
-var TEACH_LearningTask = {
+var TEACH_PreferenceTask = {
     trialState: 0, // starting point for the task
     taskSettings:{
       taskName: 'PrefenceTask',
@@ -59,13 +59,13 @@ var TEACH_LearningTask = {
 
   }
 };
-export{TEACH_LearningTask}
+export{TEACH_PreferenceTask}
 
 // Set up shortcuts & helpers
-var ts = TEACH_LearningTask.taskSettings;
-var rs = TEACH_LearningTask.results;
-var track = TEACH_LearningTask.trackers;
-var state = TEACH_LearningTask.trialState;
+var ts = TEACH_PreferenceTask.taskSettings;
+var rs = TEACH_PreferenceTask.results;
+var track = TEACH_PreferenceTask.trackers;
+var state = TEACH_PreferenceTask.trialState;
 
 
 // Actions to be repeated each trial
