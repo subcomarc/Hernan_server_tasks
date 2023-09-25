@@ -1,5 +1,5 @@
 import {expOrder} from "../order.js";
-import {exp} from "../ToE_ExpSetting.js"
+import {exp} from "../TEACH_ExpSetting.js"
 
 var Quiz =  {
   Title: "Please answer the following questions",

@@ -1,6 +1,6 @@
 import {expOrder} from "../order.js";
 import {sendToDB} from "../functions/sendToDB.js";
-import {exp} from "../ToE_ExpSetting.js"
+import {exp} from "../TEACH_ExpSetting.js"
 
 function getFeedback(exp){
   let c_Stage =  "<div class = 'row justify-content-center' id = 'Stage'> </div>";
@@ -12,7 +12,7 @@ function getFeedback(exp){
 
 let Prompt = '<form><div class="form-group">'+
               '<label for="freeText">'+
-                    'We are still developing this task and we would be very grateful for your feedback. ' +
+                    'REMEMBER TO WRITE THE INSTRUCTIONS BITCH PLEASE!! ' +
       	            'Was there anything you liked/disliked about the task? Anything you found difficult or confusing? '+
       	            'Please, let us know!' +
               '</label>'+

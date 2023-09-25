@@ -1,5 +1,5 @@
 import {expOrder} from "../order.js";
-import {exp} from "../ToE_ExpSetting.js"
+import {exp} from "../TEACH_ExpSetting.js"
 
 var consentForm =  {
   intro: "You are about to participate in a study titled 'Learning and Decision-Making,' led by Professor Stefano PALMINTERI. "+
