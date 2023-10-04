@@ -39,7 +39,7 @@ var InstructionsLT = new Instructions(
                       "Here is a slowed-down example of the kind of decisions you'll have to make: ",
                       //'<img src="images/instructions/LT_BR3.gif" style="padding: 1rem; text-align: center" class = "img-fluid">'],
                       '<img src="images/instructions/example_RL_2.gif" style="padding: 1rem; text-align: center" class = "img-fluid">',
-                      "This is someone choosing the option on the left, and not winning any points. If this person had chosen the option to the right it would have won 1 point."],
+                      "This is someone choosing the option on the left, and not winning any points. If this person had chosen the option to the right they would have won 1 point."],
                     
                     ]
   })
