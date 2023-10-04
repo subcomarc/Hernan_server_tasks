@@ -17,6 +17,8 @@ var InstructionsLT = new Instructions(
                       "This study consists of two point-and-click games, in which you will have to choose one out of two symbols displayed on screen. <br></br>",
                       "Here, this is an example of what the symbols can look like:<br>", 
                       '<img src="images/stim2/17.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"><br><br>',
+                      '<img src="images/stim2/18.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"><br><br>',
+                      '<img src="images/stim2/19.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"><br><br>',
                       "<b>Every symbol has a probability of giving you a reward, you want to accumulate as many points as you can!</b>",
                     ],
 
