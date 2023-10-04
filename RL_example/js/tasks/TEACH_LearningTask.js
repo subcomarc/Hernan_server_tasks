@@ -25,7 +25,7 @@ var TEACH_LearningTask = {
     },
     trackers: {
       trial: 0, // number of trials
-      block: 0,  // between 0 - max unique stimuli combinations shown in the trial
+      block: 0,  // between 0 - max unique stimuli combinations 67shown in the trial
       blockTrial: 0, //  between 0 - max trials in a block
       rt_point: 0,  // timepoint of the last click
       tRew: 0, // total reward
