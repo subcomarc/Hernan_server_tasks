@@ -32,9 +32,11 @@ var InstructionsLT = new Instructions(
 
                       //page 5
                       ["<h2>Instructions</h2>",
-                      "Here is an animated example of the first game: ",
+                      "Here is a slow-motion example of the kind of decisions you'll have to make: ",
                       //'<img src="images/instructions/LT_BR3.gif" style="padding: 1rem; text-align: center" class = "img-fluid">'],
-                      '<img src="images/instructions/example_RL.gif" style="padding: 1rem; text-align: center" class = "img-fluid">'],
+                      '<img src="images/instructions/example_RL.gif" style="padding: 1rem; text-align: center" class = "img-fluid">',
+                      "This is someone choosing the option on the left, and winning 10 points."],
+                    
                     ]
   })
 
