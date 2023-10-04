@@ -14,7 +14,11 @@ var InstructionsLT = new Instructions(
     {nextText: "Start",
     textInstructions:[//page 0
                       ["<h2>Instructions</h2>",
-                      "This study consists of two point-and-click games, in which you have to choose one out of two symbols on screen. Your goal is always the same: to win as many points as possible by the end of the study."],
+                      "This study consists of two point-and-click games, in which you will have to choose one out of two symbols displayed on screen. <br></br>",
+                      "Here, this is an example of what the symbols can look like:<br>", 
+                      '<img src="images/stim2/17.png" style="padding: 1rem; text-align: center" class = "img-fluid"><br><br>',
+                      "<b>Every symbol has a probability of giving you a reward, you want to accumulate as many points as you can!</b>",
+                    ],
 
                       //page 2
                       ["<h2>Instructions</h2>",
@@ -27,14 +31,14 @@ var InstructionsLT = new Instructions(
                       "<b>Here's the catch!!! READ CAREFULLY </b>",
                       "Once you are done playing these games, we will ask you to <b>write down a set of instructions for the next player</b>. ",
                       "You should try to transmit to them any strategy you may have devised while you were doing the task. Your goal is to teach them how to gain as many points as possible. ",
-                      "Keep in mind that the games they'll play will be exactly like yours, <b>but while the values will stay the same the symbols may change.</b>",
+                      "Keep in mind that the games they'll play will be exactly like yours, with the same choices, probabilities and rewards <b>but they will be represented by different symbols, so conveying the right strategy rather than talking about one symbol in particular here is key.</b>",
                       "Try to help your future student as much as you can! <b>You'll be earning a bonus equivalent to 10% of the winnings of your future pupil!</b> "],
 
                       //page 5
                       ["<h2>Instructions</h2>",
-                      "Here is a slow-motion example of the kind of decisions you'll have to make: ",
+                      "Here is a slowed-down example of the kind of decisions you'll have to make: ",
                       //'<img src="images/instructions/LT_BR3.gif" style="padding: 1rem; text-align: center" class = "img-fluid">'],
-                      '<img src="images/instructions/example_RL.gif" style="padding: 1rem; text-align: center" class = "img-fluid">',
+                      '<img src="images/instructions/example_RL_2.gif" style="padding: 1rem; text-align: center" class = "img-fluid">',
                       "This is someone choosing the option on the left, and winning 10 points."],
                     
                     ]
