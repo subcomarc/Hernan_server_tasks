@@ -14,12 +14,7 @@ var InstructionsLT = new Instructions(
     {nextText: "Start",
     textInstructions:[//page 0
                       ["<h2>Instructions</h2>",
-                      "The study consists of three games. You will see the same eight lottery tickets in each game.",
-                      "In the first game, you will be presented with two lottery tickets each trial and you will have to select one of them. "+
-                      "After each choice, you will see the outcome of both the chosen lottery ticket (highligted) and the unchosen one. ",
-                      "There are only two possible outcomes: you can either win 1 point or get nothing (0 points). ",
-                      "As you will find out throughout the study, some of the lottery tickets win more often than others. "+
-                      "Your goal is to collect as many points as possible. "],
+                      "This study consists of two point-and-click games, in which you have to choose one out of two symbols on screen. Your goal is always the same: to win as many points as possible by the end of the study."],
 
                       //page 2
                       ["<h2>Instructions</h2>",
@@ -29,18 +24,16 @@ var InstructionsLT = new Instructions(
 
                       //page 3
                       ["<h2>Instructions</h2>",
-                      "<b>Here are some key points to remember:</b>",
-                      "You will see the same eight lottery tickets in all three games. ",
-                      "Some lottery tickets are more likely to win than the others. ",
-                      "The winning probability does not change across games. Lottery tickets that won frequently in one game will win with the same frequency also in the other games. ",
-                      "Only the outcomes of the chosen option will count towards your final payoff. ",
-                      "The position of the lottery tickets on the screen (left/right) has no impact on their outcome. "],
+                      "<b>Here's the catch!!! READ CAREFULLY </b>",
+                      "Once you are done playing these games, we will ask you to <b>write down a set of instructions for the next player</b>. ",
+                      "You should try to transmit to them any strategy you may have devised while you were doing the task. Your goal is to teach them how to gain as many points as possible. ",
+                      "Keep in mind that the games they'll play will be exactly like yours, <b>but while the values will stay the same the symbols may change.</b>",
+                      "Try to help your future student as much as you can! <b>You'll be earning a bonus equivalent to 10% of the winnings of your future pupil!</b> "],
 
                       //page 5
                       ["<h2>Instructions</h2>",
                       "Here is an animated example of the first game: ",
-                      '<img src="images/instructions/LT_BR3.gif" style="padding: 1rem; text-align: center" class = "img-fluid">',
-                      "As you can see, in this case, lottery C wins (gets 1p) more frequently than D and therefore it is the better option. "],
+                      '<img src="images/instructions/LT_BR3.gif" style="padding: 1rem; text-align: center" class = "img-fluid">'],
 
                     ]
   })

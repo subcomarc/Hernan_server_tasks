@@ -2,32 +2,32 @@ import {expOrder} from "../order.js";
 import {exp} from "../TEACH_ExpSetting.js"
 
 var consentForm =  {
-  intro: "You are about to participate in a study titled 'Learning and Decision-Making,' led by Professor Stefano PALMINTERI. "+
-         "The primary goal of this research is to understand learning processes involved in decision-making, " +
-         "focusing on the role of reinforcement learning in short-term and long-term cognition."+
-         "We want to emphasize that this study has no immediate application or clinical value, but it will contribute to deepening of our understanding of brain. ",
+  intro: "This is a study titled 'Learning and Decision-Making,' led by Professor Stefano PALMINTERI. "+
+         "The primary goal of this research is to understand the learning processes involved in decision-making, " +
+         "focusing on the role of reinforcement learning in short-term and long-term cognition in groups of individuals."+
+         "We want to emphasize that this study has no immediate application or clinical value, but it will contribute to deepen our understanding of human behavior.",
 
- procedure: "You will be asked to complete three cognitive tasks, "+
-            "none of which requires any particular skill or knowledge. " +
+ procedure: "You will be asked to complete two cognitive tasks, "+
+            "that do not require any particular skill or knowledge. " +
             "The estimated duration to complete the study is approximately 20 minutes. " +
             "Depending oby you performance, you might earn between £2.5 - £5. ",
 
-  participation: "Your participation in this research study is voluntary and you may stop and withdraw at any time. "+
+  participation: "Your participation in this research study is voluntary. You may stop and withdraw your participation at any time. "+
                  "In addition to your responses in the study, we will also collect " +
                  "<a href='https://researcher-help.prolific.co/hc/en-gb/articles/360009391633-Exporting-Prolific-Demographic-Data' target='_blank'>"+
-                 "these demographic data</a> if you provided them to Prolific."+
-                 "The collected data will only be used for research purposes and any shared or published dataset will not contain your Prolific ID.",
+                 "these demographic data</a> that you provided to Prolific when you signed up."+
+                 "The collected data will only be used for research purposes. Any shared or published dataset will not contain your name or Prolific ID.",
 
  publication: "You will be able to check the publications resulting from this study on the following "+
                 "<a href='https://sites.google.com/site/stefanopalminteri/publications' target='_blank'>"+
                 "website.</a> ",
-  contact: "For any questions or additional information, you can contact the research team via email at the following address: humanreinforcementlearning@gmail.com",
-  ethics: "This research has received a favorable opinion from the Inserm Ethical Review Committee / IRB00003888 on November 13th, 2018",
-  consentForm: "Your participation in this research confirms that you have read this information and wish to participate in the research study. "+
+  contact: "For any questions or additional information, you can contact our research team via email at the following address: humanreinforcementlearning@gmail.com",
+  ethics: "This research has been approved by the Inserm Ethical Review Committee / IRB00003888 on November 13th, 2018",
+  consentForm: "Your participation in this study confirms that you have read this information, and wish to take part on it freely. "+
                 "Please check all boxes to continue:",
   consentCheck: ["I am 18 years old or more",
                 "My participation in this experiment is voluntary",
-                "I understand that my data will be kept confidential and I can stop at any time without justification"],
+                "I understand that my collected data will remain confidential and I can stop at any time without justification"],
  init: function(){
    // Define main containers needed
    let c_Stage =  "<div class = 'row justify-content-left' id = 'Stage'> </div>";
