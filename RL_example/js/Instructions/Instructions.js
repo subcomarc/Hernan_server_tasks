@@ -3,8 +3,8 @@ import {Instructions} from "./dInstructions.js";
 var Welcome = new Instructions(
     {nextText: "Next",
     textInstructions:[//page 0
-                      ["<h1> Welcome to our little task! </h1> <br>",
-                      "<h3> Thank you for choosing to take part in this study. We're happy to have you! </h3> <br><br>",
+                      ["<h1> Welcome to our little task! </h1> <h2><br><br></h2>",
+                      "<h3> Thank you for choosing to take part in this study. We're happy to have you! </h3> <br>",
                       "<h3> With your help, we will try to understand a bit better how people learn new things and make decisions.</h3>"],
 
                       ]  })
