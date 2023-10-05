@@ -243,17 +243,17 @@ function highlightResponse(){
 
 function showFeedback_FullorPart(){
 // quick handle for outcome of the chosen and unchosen options
-  let fdb_ch = '<div class="col"><H4 align = "center">'+rs[track.trial].outcomeChosen+'p</H4></div>';
-  let fdb_un = '<div class="col"><H4 align = "center">'+99+'p</H4></div>';
+  fdb_ch = '<div class="col"><H4 align = "center">'+rs[track.trial].outcomeChosen+'p</H4></div>';
+  fdb_un = '<div class="col"><H4 align = "center">'+99+'p</H4></div>';
 
 // check if the feedback will be partial or not:
   	if(ts.schedule[track.block].fdb == "F"){
-      let fdb_un = '<div class="col"><H4 align = "center">'+rs[track.trial].outcomeUnchosen+'p</H4></div>';
+      fdb_un = '<div class="col"><H4 align = "center">'+rs[track.trial].outcomeUnchosen+'p</H4></div>';
 	}else if(ts.schedule[track.block].fdb == "P"){// for partial feedback exchange the feedback value for an empty text
-		let fdb_un = '<div class="col"><H4 align = "center">'+'   '+'</H4></div>';
+		fdb_un = '<div class="col"><H4 align = "center">'+'   '+'</H4></div>';
 	}else if(ts.schedule[track.block].fdb == "N"){
-    let fdb_ch = '<div class="col"><H4 align = "center" >'+'  ?  '+'</H4></div>';
-    let fdb_un = '<div class="col"><H4 align = "center" >'+'  ?  '+'</H4></div>';
+    fdb_ch = '<div class="col"><H4 align = "center" >'+'  ?  '+'</H4></div>';
+    fdb_un = '<div class="col"><H4 align = "center" >'+'  ?  '+'</H4></div>';
   }
 
 // Check if the left option was chosen, and if so show the chosen outcome on the left, otherwise show it on the right
