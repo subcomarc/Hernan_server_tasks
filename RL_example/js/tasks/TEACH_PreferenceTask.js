@@ -248,12 +248,12 @@ function showFeedback_FullorPart(){
 
 // check if the feedback will be partial or not:
   	if(ts.schedule[track.block].fdb == "F"){
-		fdb_un = '<div class="col"><H4 align = "center">'+rs[track.trial].outcomeUnchosen+'p</H4></div>';
+      let fdb_un = '<div class="col"><H4 align = "center">'+rs[track.trial].outcomeUnchosen+'p</H4></div>';
 	}else if(ts.schedule[track.block].fdb == "P"){// for partial feedback exchange the feedback value for an empty text
-		fdb_un = '<div class="col"><H4 align = "center">'+'   '+'</H4></div>';
+		let fdb_un = '<div class="col"><H4 align = "center">'+'   '+'</H4></div>';
 	}else if(ts.schedule[track.block].fdb == "N"){
-    fdb_ch = '<div class="col"><H4 align = "center" >'+'  ?  '+'</H4></div>';
-    fdb_un = '<div class="col"><H4 align = "center" >'+'  ?  '+'</H4></div>';
+    let fdb_ch = '<div class="col"><H4 align = "center" >'+'  ?  '+'</H4></div>';
+    let fdb_un = '<div class="col"><H4 align = "center" >'+'  ?  '+'</H4></div>';
   }
 
 // Check if the left option was chosen, and if so show the chosen outcome on the left, otherwise show it on the right
