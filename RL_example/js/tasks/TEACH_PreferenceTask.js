@@ -1,6 +1,6 @@
 import {symbols} from "./TEACH_LoadSymbols.js";
 import {expOrder} from "../order.js";
-import {addCanvas,schedule_all_range,drawStim,highlightOption} from "../functions/usefulFunctions.js";
+import {addCanvas,schedule_all,drawStim,highlightOption} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
 import {exp} from "../TEACH_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
