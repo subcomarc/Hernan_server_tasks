@@ -18,7 +18,7 @@ var TEACH_PreferenceTask = {
       borderMS:500, // timing of the border around the chosen option - shown on its own (before the feedback appears)
       transitionMS: 200, // timing of the white screen inbetween trials
 
-    schedule: schedule_all_range([0,1,2,3,4,5,6,7],fdb:"N")
+    schedule: schedule_all(8,"N")
     //  schedule: _.shuffle([{pair:[0,1],fdb:"N"},
     //      {pair:[2,3],fdb:"N"}, //F us full feedback, P is partial feedback, N is no feedback
     //      {pair:[4,5],fdb:"N"},
