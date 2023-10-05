@@ -11,14 +11,19 @@ var TEACH_PreferenceTask = {
     taskSettings:{
       taskName: 'PrefenceTask',
 
-      maxTrials: 28,//112, // maximum trials in a task
-      maxBlockTrials: 1, // maximum trials in a block, if blockTrials == 1 -> no blocks
+      maxTrials: 128,//112, // maximum trials in a task
+      maxBlockTrials: 8, // maximum trials in a block, if blockTrials == 1 -> no blocks
 
       fdbMS:1500, // time in ms the feedback will be displayed
       borderMS:500, // timing of the border around the chosen option - shown on its own (before the feedback appears)
       transitionMS: 200, // timing of the white screen inbetween trials
 
-      schedule: schedule_all_range([0,1,2,3,4,5,6,7,"P"])
+      // schedule: schedule_all_range([0,1,2,3,4,5,6,7,"P"])
+      // schedule: _.shuffle([{pair:[0,1],fdb:"P"},
+      //     {pair:[2,3],fdb:"P"}, //F us full feedback, P is partial feedback
+      //     {pair:[4,5],fdb:"P"},
+      //     {pair:[6,7],fdb:"P"}])
+      schedule: _.shuffle(schedule_all(8,"N"))
     },
     trackers: {
       trial: 0, // number of trials
@@ -246,7 +251,10 @@ function showFeedback_FullorPart(){
 		fdb_un = '<div class="col"><H4 align = "center">'+rs[track.trial].outcomeUnchosen+'p</H4></div>';
 	}else if(ts.schedule[track.block].fdb == "P"){// for partial feedback exchange the feedback value for an empty text
 		fdb_un = '<div class="col"><H4 align = "center">'+'   '+'</H4></div>';
-	}
+	}else if(ts.schedule[track.block].fdb == "N"){
+    fdb_ch = '<div class="col"><H4 align = "center" >'+'  ?  '+'</H4></div>';
+    fdb_un = '<div class="col"><H4 align = "center" >'+'  ?  '+'</H4></div>';
+  }
 
 // Check if the left option was chosen, and if so show the chosen outcome on the left, otherwise show it on the right
  	if (rs[track.trial].respKey == 0){ $('#Vals').html(fdb_ch+fdb_un); }

@@ -10,7 +10,7 @@ import {TEACH_PreferenceTask} from "./tasks/TEACH_PreferenceTask.js";
 
 // InstructionsLT
 // import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider,Welcome} from "./Instructions/Instructions.js"
-import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference,Welcome} from "./Instructions/Instructions.js"
+import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson,Welcome} from "./Instructions/Instructions.js"
 
 // other components
 import {getID} from "./components/getID.js";
@@ -69,19 +69,19 @@ function expOrder (){
       TEACH_PreferenceTask.init() ;
       exp.startTimePref = Date.now();
       break;
-    // case 11:
-    //   InstructionsProbSlider.init();
-    //   exp.startTimeInsPref = Date.now();
-    //   break;
+    case 10:
+      InstructionsWriteLesson.init();
+       exp.startTimeInsPref = Date.now();
+       break;
     // case 12:
     //   BR_VSlider.init() ;
     //   exp.startTimePref = Date.now();
     //   break;
-    case 10:
+    case 11:
       getWrittenLesson(exp)
       exp.startTimeWrittenLesson = Date.now();
       break;
-   case 11:
+   case 12:
       end(exp);
       exp.startTimeFinal = Date.now();
       break;

@@ -249,7 +249,11 @@ function showFeedback_FullorPart(){
 		fdb_un = '<div class="col"><H4 align = "center">'+rs[track.trial].outcomeUnchosen+'p</H4></div>';
 	}else if(ts.schedule[track.block].fdb == "P"){// for partial feedback exchange the feedback value for an empty text
 		fdb_un = '<div class="col"><H4 align = "center">'+'   '+'</H4></div>';
-	}
+	}else if(ts.schedule[track.block].fdb == "N"){
+    fdb_ch = '<div class="col"><H4 align = "center" >'+'  ?  '+'</H4></div>';
+    fdb_un = '<div class="col"><H4 align = "center" >'+'  ?  '+'</H4></div>';
+  }
+
 
 // Check if the left option was chosen, and if so show the chosen outcome on the left, otherwise show it on the right
  	if (rs[track.trial].respKey == 0){ $('#Vals').html(fdb_ch+fdb_un); }
