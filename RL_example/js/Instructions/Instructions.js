@@ -73,26 +73,37 @@ var InstructionsPreference = new Instructions(
     {nextText: "Start",
     textInstructions:[//page 1
                     ["<h2>Second Game</h2>",
-                    "In the second game, you will see the same lottery tickets again. ",
+                    "In the second game, you will see the same symbols again. ",
                     "However, this time they will be presented in different combinations and you will only be able to see the outcome of your chosen option. ",
-                    "Feel free to select whichever lottery you think is more likely to win. ",
+                    "Please select whichever option you think is more likely to win. ",
                     "<br><br> Click the button below to start. "]
 
                   ]
 
   })
 
-  var InstructionsProbSlider = new Instructions(
+  // var InstructionsProbSlider = new Instructions(
+    var InstructionsWriteLesson = new Instructions(
       {nextText: "Start",
+      // textInstructions:[//page 1
+      //                   ["<h2>Third Game</h2>",
+      //                   "In the third game, you will see one of the lottery tickets and a slider each round. "+
+      //                   "Your goal is to estimate how frequently each ticket won. " ,
+      //                   "For example, if you think a particular lottery ticket won (got 1p) in 3 out of 4 trials, you should set the slider to 75%. ",
+      //                   "If you do not remember the exact number, give your best guess. "+
+      //                   "You will get 1 point for each correct response. ",
+      //                   "<br><br> Click the button below to start."]]
       textInstructions:[//page 1
-                        ["<h2>Third Game</h2>",
-                        "In the third game, you will see one of the lottery tickets and a slider each round. "+
-                        "Your goal is to estimate how frequently each ticket won. " ,
-                        "For example, if you think a particular lottery ticket won (got 1p) in 3 out of 4 trials, you should set the slider to 75%. ",
-                        "If you do not remember the exact number, give your best guess. "+
-                        "You will get 1 point for each correct response. ",
-                        "<br><br> Click the button below to start."]]
+      ["<h2>Teaching task</h2>",
+      "Thank you for going over the two point-and-click tasks. "+
+      "Now, the time has come for you to transmit your strategies to a future player whe shall consider your pupil. " ,
+      "Remember, the options they will have to choose from will have the same value, but they will be represented by different symbols, so focus on the concepts and strategies rather than one concrete symbol's shape or color, since they wont be the same anyways. ",
+      "You really want your pupil to succeed! After all, remember you'll be making 10% of their earnings as an extra bonus."+
+      "It may be better to keep your written lesson brief and to the point, but no strict limit for the text is enforced.",
+      "<br><br> Click the button below to start."]]
     })
 
 
-export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider, Welcome }
+// export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider, Welcome }
+export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson, Welcome }
+

@@ -2,7 +2,7 @@ import {expOrder} from "../order.js";
 import {sendToDB} from "../functions/sendToDB.js";
 import {exp} from "../TEACH_ExpSetting.js"
 
-function getFeedback(exp){
+function getWrittenLesson(exp){
   let c_Stage =  "<div class = 'row justify-content-center' id = 'Stage'> </div>";
   let c_FinalButton =  "<div class = 'row justify-content-center' id = 'FinalButton'> </div>";
 
@@ -13,8 +13,6 @@ function getFeedback(exp){
 let Prompt = '<form><div class="form-group">'+
               '<label for="freeText">'+
                     'Please write your lesson in the box below.' +
-      	            'Was there anything you liked/disliked about the task? Anything you found difficult or confusing? '+
-      	            'Please, let us know!' +
               '</label>'+
               '<textarea class="form-control" id="freeText" rows="15"></textarea>'+
               '</div>'+
@@ -27,16 +25,16 @@ $('#FinalButton').html(Buttons);
 
 
 $('#bSubmit').click(function(){
-  exp.feedback = document.getElementById('freeText').value;
+  exp.WrittenLesson = document.getElementById('freeText').value;
   sendToDB(0,
         	{ partID: exp.ID,
             prolificID: exp.PID,
           	expID: exp.expID,
-          	feedback: exp.feedback},
-        'php/InsertDB_Feedback.php')
+          	WrittenLesson: exp.WrittenLesson},
+        'php/InsertDB_WrittenLesson.php')
   exp.expTask++;
   expOrder();
 })
 }
 
-export {getFeedback}
+export {getWrittenLesson}

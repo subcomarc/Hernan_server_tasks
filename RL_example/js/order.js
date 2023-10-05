@@ -16,7 +16,8 @@ import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPrefere
 import {getID} from "./components/getID.js";
 import {end} from "./components/FinalScreen.js";
 import {consentForm} from "./components/dExperimentConsent.js";
-import {getFeedback} from "./components/Feedback.js";
+// import {getFeedback} from "./components/Feedback.js";
+import {getWrittenLesson} from "./components/WrittenLesson.js";
 // import {Quiz} from "./components/Quiz.js";
 
 // other functions
@@ -77,8 +78,8 @@ function expOrder (){
     //   exp.startTimePref = Date.now();
     //   break;
     case 10:
-      getFeedback(exp)
-      exp.startTimeFeedback = Date.now();
+      getWrittenLesson(exp)
+      exp.startTimeWrittenLesson = Date.now();
       break;
    case 11:
       end(exp);
