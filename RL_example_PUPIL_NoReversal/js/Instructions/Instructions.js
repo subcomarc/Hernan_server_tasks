@@ -100,8 +100,8 @@ var InstructionsPreference = new Instructions(
       textInstructions:[//page 1
       ["<h2>Teaching task</h2>",
       "Thank you for going over the two point-and-click tasks. "+
-      "You just had the opportunity to do experience the task after studying some strategies coming from a previous user" ,
-      "You think you can do better? <b>Go ahead and write your own strategic lesson for the next participant!</b>. ",
+      "You just had the opportunity to experience the task after studying some strategies coming from a previous user" ,
+      "You think you can do better? <b>Go ahead and write your own strategic lesson for the next participant!</b> ",
       "<b>Focus on the concepts and strategies</b> rather than one concrete symbol's shape or color, since future participants will go over the same choices, but represented by different symbols.",
       "You really want your pupil to succeed! After all, remember <b>you'll be making 10% of their earnings as an extra bonus.</b>"+
       "It may be better to keep your written lesson brief and to the point, but no strict limit for the text is enforced.",
