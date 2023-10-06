@@ -28,19 +28,21 @@ var InstructionsLT = new Instructions(
 
                       //page 3
                       ["<h2>Instructions</h2>",
-                      "<b>Here's the catch!!! READ CAREFULLY </b>",
-                      "Once you are done playing these games, we will ask you to <b>write down a set of instructions for the next player</b>. ",
-                      "You should try to transmit to them any strategy you may have devised while you were doing the task. Your goal is to teach them how to gain as many points as possible. ",
-                      "Keep in mind that the games they'll play will be exactly like yours, with the same choices, probabilities and rewards <b>but they will be represented by different symbols, so conveying the right strategy rather than talking about one symbol in particular here is key.</b>",
-                      "Try to help your future student as much as you can! <b>You'll be earning a bonus equivalent to 10% of the winnings of your future pupil!</b> "],
-
-                      //page 5
-                      ["<h2>Instructions</h2>",
                       "Here is a slowed-down example of the kind of decisions you'll have to make: ",
                       //'<img src="images/instructions/LT_BR3.gif" style="padding: 1rem; text-align: center" class = "img-fluid">'],
                       '<img src="images/instructions/example_RL_2.gif" style="padding: 1rem; text-align: center" class = "img-fluid">',
                       "This is someone choosing the option on the left, and not winning any points. If this person had chosen the option to the right they would have won 1 point."],
-                    
+
+                      //page 5
+                      ["<h2>Instructions</h2>",
+                      "<b>But wait!!! THERE'S MORE </b>",
+                      "Before starting these games <b>you will have to go over a lesson teaching you some strategies to win as many points as possible</b>. ",
+                      "Keep in mind that this lesson comes from a teacher <b>who has already done this task, so they are teaching from experience</b>"],
+
+                      //page 6
+                      ["<h2>Instructions</h2>",
+                      "<b>Here are the instructions from your teacher, take a moment to study them in detail! </b>",
+                       "<Lesson>THE LESSON GOES HERE IN ITS OWN SIZE AND FONT TO BE EASILY DISTINGUISHABLE</Lesson>. "],
                     ]
   })
 
@@ -96,8 +98,9 @@ var InstructionsPreference = new Instructions(
       textInstructions:[//page 1
       ["<h2>Teaching task</h2>",
       "Thank you for going over the two point-and-click tasks. "+
-      "<b>Now, the time has come for you to transmit your strategies to a future player whe shall consider your pupil.</b> " ,
-      "Remember, the options they will have to choose from will have the same value, but they will be represented by different symbols, so <b>focus on the concepts and strategies rather than one concrete symbol's shape or color</b>, since they wont be the same anyways. ",
+      "You just had the opportunity to do experience the task after studying some strategies coming from a previous user" ,
+      "You think you can do better? <b>Go ahead and write your own strategic lesson for the next participant!</b>. ",
+      "<b>Focus on the concepts and strategies</b> rather than one concrete symbol's shape or color, since future participants will go over the same choices, but represented by different symbols.",
       "You really want your pupil to succeed! After all, remember <b>you'll be making 10% of their earnings as an extra bonus.</b>"+
       "It may be better to keep your written lesson brief and to the point, but no strict limit for the text is enforced.",
       "<br><br> Click the button below to start."]]
