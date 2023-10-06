@@ -3,7 +3,11 @@
 /*DESIGN FOR THE MAIN CONTAINTER  576px;*/
 body {
   background-color: #f1f1f1;
+  background-image: url("/HERNAN/Hernan_server_tasks/RL_example_ICM_Reversal/images/logo-icm-en.png");
+  background-position: top center;
+  background-repeat: no-repeat;
 	/* other candidates:#FBFBFF #DDE2E3, #ebebec  #F4EDED*/
+
 }
 
 ul {
@@ -126,7 +130,7 @@ a.myBtn:hover{
   max-width: 100px;
 }
 
-
+/* 
 .ICM-image {
   background-image: url("/HERNAN/Hernan_server_tasks/RL_example_ICM_Reversal/images/logo-icm-en.png");
   background-color: #f1f1f1;
@@ -138,4 +142,4 @@ a.myBtn:hover{
   background-repeat: no-repeat;
   /*background-size: cover;*/
   position: relative;
-}
+} */
