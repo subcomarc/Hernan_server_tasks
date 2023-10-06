@@ -1,13 +1,4 @@
-/*DESIGN FOR INSTITUTIONAL LOGOS*/
-.ICM-image {
-  background-image: url("/images/logo-icm-en.png");
-  background-color: #cccccc;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+
 
 /*DESIGN FOR THE MAIN CONTAINTER  576px;*/
 body {
@@ -133,4 +124,15 @@ a.myBtn:hover{
   min-height: 100px;
   min-width: 100px;
   max-width: 100px;
+}
+
+/*DESIGN FOR INSTITUTIONAL LOGOS*/
+.ICM-image {
+  background-image: url("/images/logo-icm-en.png");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
