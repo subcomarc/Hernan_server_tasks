@@ -7,7 +7,7 @@ $PROLIFICID 		= stripslashes(htmlspecialchars($_POST['prolificID']));
 $EXPID 		= stripslashes(htmlspecialchars($_POST['expID']));
 $FEEDBACK 		= stripslashes(htmlspecialchars($_POST['feedback']));
 
-$stmt = $db->prepare("INSERT INTO TEACH_Feedback VALUE(?,?,?,?, NOW())");
+$stmt = $db->prepare("INSERT INTO BREATH_RL_Feedback VALUE(?,?,?,?, NOW())");
 $stmt->bind_param("ssss",
     $PARTID,$PROLIFICID,$EXPID,$FEEDBACK
     );

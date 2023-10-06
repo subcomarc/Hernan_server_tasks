@@ -10,7 +10,7 @@ $REWPOUNDS 		= stripslashes(htmlspecialchars($_POST['rewardPounds']));
 $TOTALTIME		= stripslashes(htmlspecialchars($_POST['totalTime']));
 
 
-$stmt = $db->prepare("INSERT INTO TEACH_General VALUE(?,?,?,?,?,?, NOW())");
+$stmt = $db->prepare("INSERT INTO BREATH_RL_General VALUE(?,?,?,?,?,?, NOW())");
 $stmt->bind_param("sssidd",
     $PARTID,$PROLIFICID ,$EXPID,$REWPOINT,$REWPOUNDS ,$TOTALTIME
     );
