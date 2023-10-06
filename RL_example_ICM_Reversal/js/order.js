@@ -1,11 +1,11 @@
 // exp - shared data
-import {exp} from "./TEACH_ExpSetting.js"
+import {exp} from "./BREATH_RL_ExpSetting.js"
 
 
 // tasks
-import {TEACH_LearningTask} from "./tasks/TEACH_LearningTask.js";
-import {TEACH_LearningTraining} from "./tasks/TEACH_LearningTraining.js";
-import {TEACH_PreferenceTask} from "./tasks/TEACH_PreferenceTask.js";
+import {BREATH_RL_LearningTask} from "./tasks/BREATH_RL_LearningTask.js";
+import {BREATH_RL_LearningTraining} from "./tasks/BREATH_RL_LearningTraining.js";
+import {BREATH_RL_PreferenceTask} from "./tasks/BREATH_RL_PreferenceTask.js";
 // import {BR_VSlider} from "./tasks/BR_VSlider.js";
 
 // InstructionsLT
@@ -50,7 +50,7 @@ function expOrder (){
       InstructionsLT_Train.init();
       break;
     case 5:
-      TEACH_LearningTraining.init() ;
+      BREATH_RL_LearningTraining.init() ;
       exp.startTimeLTTrain = Date.now();
       break;
     case 6:
@@ -58,7 +58,7 @@ function expOrder (){
       InstructionsLT2.init();
       break;
     case 7:
-      TEACH_LearningTask.init() ;
+      BREATH_RL_LearningTask.init() ;
       exp.startTimeLT = Date.now();
       break;
     case 8:
@@ -66,7 +66,7 @@ function expOrder (){
       exp.startTimeInsPref = Date.now();
       break;
     case 9:
-      TEACH_PreferenceTask.init() ;
+      BREATH_RL_PreferenceTask.init() ;
       exp.startTimePref = Date.now();
       break;
     case 10:
