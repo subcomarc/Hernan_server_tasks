@@ -128,9 +128,9 @@ a.myBtn:hover{
 
 /*DESIGN FOR INSTITUTIONAL LOGOS*/
 .ICM-image {
-  background-image: url("/images/logo-icm-en.png");
+  background-image: url("/HERNAN/Hernan_server_tasks/RL_example_ICM_Reversal/images/logo-icm-en.png");
   background-color: #cccccc;
-  height: 500px;
+  height: 50px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
