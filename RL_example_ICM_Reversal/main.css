@@ -130,7 +130,8 @@ a.myBtn:hover{
 .ICM-image {
   background-image: url("/HERNAN/Hernan_server_tasks/RL_example_ICM_Reversal/images/logo-icm-en.png");
   background-color: #cccccc;
-  height: 5px;
+  height: 50px;
+  width: 100px;
   background-position: center;
   background-repeat: no-repeat;
   /*background-size: cover;*/
