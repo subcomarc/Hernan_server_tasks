@@ -50,7 +50,9 @@ var InstructionsLT = new Instructions(
     {nextText: "Start",
     textInstructions:[//page 1
                      ["<h2>Training</h2>",
-                     "Let's start with a few practice trials! ",
+                     "Now that you've read the lesson, let's go over a few practice trials before starting with the actual task! ",
+                     "Don't pay too much attention to points or anything else at this point, this is just so that you get a feeling for the point-and-clicking. ",
+                     "This is why we wont even use our actual symbols for this practice, but rather some random letters",
                      "<br><h4>Note:</h2>"+
                      "Points collected during the practice won't be added to your total payoff. " +
                      "However, you will see your score at the end of the training. ",
