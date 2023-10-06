@@ -6,7 +6,7 @@ var Welcome = new Instructions(
                       ["<center><p><h1> Welcome to our project! </h1> <br><br><br>",
                       "<h3> Thank you for choosing to take part in this study. We're happy to have you!",
                       "With your help, we will try to understand a bit better how people learn new things and make decisions.</h3><br>",
-                      "<h2>Let's jump right into it !</h2><p><center>"],
+                      "<h2>Let's jump right into it !</h2></p><center>"],
 
                       ]  })
 
