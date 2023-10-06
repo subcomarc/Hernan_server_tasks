@@ -6,7 +6,7 @@ import {exp} from "../BREATH_RL_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
 
 
-var TEACH_LearningTask = {
+var BREATH_RL_LearningTask = {
     trialState: 0, // starting point for the task
     taskSettings:{
       taskName: 'LearningTask',
@@ -62,13 +62,13 @@ var TEACH_LearningTask = {
 
   }
 };
-export{TEACH_LearningTask}
+export{BREATH_RL_LearningTask}
 
 // Set up shortcuts & helpers
-var ts = TEACH_LearningTask.taskSettings;
-var rs = TEACH_LearningTask.results;
-var track = TEACH_LearningTask.trackers;
-var state = TEACH_LearningTask.trialState;
+var ts = BREATH_RL_LearningTask.taskSettings;
+var rs = BREATH_RL_LearningTask.results;
+var track = BREATH_RL_LearningTask.trackers;
+var state = BREATH_RL_LearningTask.trialState;
 
 
 // Actions to be repeated each trial
