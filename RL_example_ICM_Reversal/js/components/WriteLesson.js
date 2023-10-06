@@ -1,6 +1,6 @@
 import {expOrder} from "../order.js";
 import {sendToDB} from "../functions/sendToDB.js";
-import {exp} from "../TEACH_ExpSetting.js"
+import {exp} from "../BREATH_RL_ExpSetting.js"
 
 function getWrittenLesson(exp){
   let c_Stage =  "<div class = 'row justify-content-center' id = 'Stage'> </div>";

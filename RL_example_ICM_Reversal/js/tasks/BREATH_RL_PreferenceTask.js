@@ -1,12 +1,12 @@
-import {symbols} from "./TEACH_LoadSymbols.js";
+import {symbols} from "./BREATH_RL_LoadSymbols.js";
 import {expOrder} from "../order.js";
 import {addCanvas,schedule_all,drawStim,highlightOption} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
-import {exp} from "../TEACH_ExpSetting.js"
+import {exp} from "../BREATH_RL_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
 
 
-var TEACH_PreferenceTask = {
+var BREATH_RL_PreferenceTask = {
     trialState: 0, // starting point for the task
     taskSettings:{
       taskName: 'PrefenceTask',
@@ -64,13 +64,13 @@ var TEACH_PreferenceTask = {
 
   }
 };
-export{TEACH_PreferenceTask}
+export{BREATH_RL_PreferenceTask}
 
 // Set up shortcuts & helpers
-var ts = TEACH_PreferenceTask.taskSettings;
-var rs = TEACH_PreferenceTask.results;
-var track = TEACH_PreferenceTask.trackers;
-var state = TEACH_PreferenceTask.trialState;
+var ts = BREATH_RL_PreferenceTask.taskSettings;
+var rs = BREATH_RL_PreferenceTask.results;
+var track = BREATH_RL_PreferenceTask.trackers;
+var state = BREATH_RL_PreferenceTask.trialState;
 
 
 // Actions to be repeated each trial

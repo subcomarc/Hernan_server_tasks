@@ -1,8 +1,8 @@
-import {symbols} from "./TEACH_LoadSymbols.js";
+import {symbols} from "./BREATH_RL_LoadSymbols.js";
 import {expOrder} from "../order.js";
 import {addCanvas,schedule_all_range,drawStim,highlightOption} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
-import {exp} from "../TEACH_ExpSetting.js"
+import {exp} from "../BREATH_RL_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
 
 

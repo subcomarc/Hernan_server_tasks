@@ -1,5 +1,5 @@
 import {expOrder} from "../order.js";
-import {exp} from "../TEACH_ExpSetting.js"
+import {exp} from "../BREATH_RL_ExpSetting.js"
 
 export class Instructions {
 

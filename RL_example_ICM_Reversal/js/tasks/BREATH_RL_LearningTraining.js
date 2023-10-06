@@ -1,12 +1,12 @@
-import {tSymbols as symbols} from "./TEACH_LoadSymbols.js";
+import {tSymbols as symbols} from "./BREATH_RL_LoadSymbols.js";
 import {expOrder} from "../order.js";
 import {addCanvas,schedule_all_range,drawStim,highlightOption} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
-import {exp} from "../TEACH_ExpSetting.js"
+import {exp} from "../BREATH_RL_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
 
 
-var TEACH_LearningTraining = {
+var BREATH_RL_LearningTraining = {
     trialState: 0, // starting point for the task
     taskSettings:{
       taskName: 'TrainingTask',
@@ -61,13 +61,13 @@ var TEACH_LearningTraining = {
 
   }
 };
-export{TEACH_LearningTraining}
+export{BREATH_RL_LearningTraining}
 
 // Set up shortcuts & helpers
-var ts = TEACH_LearningTraining.taskSettings;
-var rs = TEACH_LearningTraining.results;
-var track = TEACH_LearningTraining.trackers;
-var state = TEACH_LearningTraining.trialState;
+var ts = BREATH_RL_LearningTraining.taskSettings;
+var rs = BREATH_RL_LearningTraining.results;
+var track = BREATH_RL__LearningTraining.trackers;
+var state = BREATH_RL__LearningTraining.trialState;
 
 
 // Actions to be repeated each trial
