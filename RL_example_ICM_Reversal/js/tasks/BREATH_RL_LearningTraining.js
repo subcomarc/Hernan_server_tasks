@@ -66,8 +66,8 @@ export{BREATH_RL_LearningTraining}
 // Set up shortcuts & helpers
 var ts = BREATH_RL_LearningTraining.taskSettings;
 var rs = BREATH_RL_LearningTraining.results;
-var track = BREATH_RL__LearningTraining.trackers;
-var state = BREATH_RL__LearningTraining.trialState;
+var track = BREATH_RL_LearningTraining.trackers;
+var state = BREATH_RL_LearningTraining.trialState;
 
 
 // Actions to be repeated each trial
