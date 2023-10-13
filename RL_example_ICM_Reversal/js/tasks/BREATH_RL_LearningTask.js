@@ -12,7 +12,8 @@ var BREATH_RL_LearningTask = {
       taskName: 'LearningTask',
 
       maxTrials: 128,//112, // maximum trials in a task
-      maxBlockTrials: 8, // maximum trials in a block, if blockTrials == 1 -> no blocks
+      // maxBlockTrials: 8, // maximum trials in a block, if blockTrials == 1 -> no blocks
+      maxBlockTrials: 1, // maximum trials in a block, if blockTrials == 1 -> no blocks
 
       fdbMS:1500, // time in ms the feedback will be displayed
       borderMS:500, // timing of the border around the chosen option - shown on its own (before the feedback appears)
