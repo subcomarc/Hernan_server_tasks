@@ -6,6 +6,7 @@ body {
   background-image: url("/HERNAN/Hernan_server_tasks/RL_example_ICM_Reversal/images/logo-icm-en.png");
   background-position: top center;
   background-repeat: no-repeat;
+  padding-top: 20px;
 	/* other candidates:#FBFBFF #DDE2E3, #ebebec  #F4EDED*/
 
 }
