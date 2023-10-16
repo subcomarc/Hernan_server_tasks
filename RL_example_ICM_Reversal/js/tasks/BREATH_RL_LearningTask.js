@@ -11,9 +11,10 @@ var BREATH_RL_LearningTask = {
     taskSettings:{
       taskName: 'LearningTask',
 
-      maxTrials: 128,//112, // maximum trials in a task
+      maxTrials: 128,//112, // maximum trials in a task (keep it a multiple of 8 if you have 8 options i.e. 4 pairs of options)
       // maxBlockTrials: 8, // maximum trials in a block, if blockTrials == 1 -> no blocks
       maxBlockTrials: 1, // maximum trials in a block, if blockTrials == 1 -> no blocks
+      reversal: maxTrials / 2, // number of trials after which the reward probabilities will be reversed
 
       fdbMS:1500, // time in ms the feedback will be displayed
       borderMS:500, // timing of the border around the chosen option - shown on its own (before the feedback appears)
@@ -119,6 +120,10 @@ if(track.block > ts.schedule.length-1){ts.schedule= _.shuffle(ts.schedule); trac
 track.pair = ts.schedule[track.block].pair;
 track.symbolA = symbols[track.pair[0]];
 track.symbolB = symbols[track.pair[1]];
+
+// impose reversal of response probabilities
+
+if(track.trial>(reversal)){track.symbolA.prob == symbols[track.pair[1]].prob; track.symbolB.prob == symbols[track.pair[0]].prob}
 
 // //update tracking of SYMBOLS
 // if(symbols[track.pair[0]].track>=symbols[track.pair[0]].outSchedule.length){

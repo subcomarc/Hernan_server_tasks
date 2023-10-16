@@ -12,7 +12,7 @@ function getFeedback(exp){
 
 let Prompt = '<form><div class="form-group">'+
               '<label for="freeText">'+
-                    'Please write your lesson in the box below.' +
+                    'XXXXXXXXXX.' +
       	            'Was there anything you liked/disliked about the task? Anything you found difficult or confusing? '+
       	            'Please, let us know!' +
               '</label>'+
