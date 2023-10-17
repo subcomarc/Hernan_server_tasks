@@ -38,11 +38,12 @@ $OUT_U 		= stripslashes(htmlspecialchars($_POST['outcomeUnchosen']));
 
 $TOTALREW 		= stripslashes(htmlspecialchars($_POST['totalReward']));
 $CHOICE_TYPE		= stripslashes(htmlspecialchars($_POST['choiceType']));
-$FDB_TYPE		= stripslashes(htmlspecialchars($_POST['feedbackType']));
+$FDB_TYPE		= stripslashes(htmlspecialchars($_POST['feedbackType'])); 
+$CONTEXT_TYPE		= stripslashes(htmlspecialchars($_POST['ContextType']));
 
-
-$stmt = $db->prepare("INSERT INTO BREATH_RL_Learning VALUE(?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?,  NOW())");
-$stmt->bind_param("sssiiiiiisdisiidiidiiidiidiids",
+// $stmt = $db->prepare("INSERT INTO BREATH_RL_Learning VALUE(?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?,  NOW())");
+$stmt = $db->prepare("INSERT INTO BREATH_RL_Learning VALUE(?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?,?  NOW())");
+$stmt->bind_param("sssiiiiiisdisiidiidiiidiidiidss",
 $PARTID,$EXPID,$TNAME,
 $TRIAL,$STIM,$BLOCK,
 $TFDBT,$TBORDERT, $TFIX,
@@ -50,7 +51,7 @@ $TPAIRS ,
 $RTS,$RESP,$RESPKEY,
 $SYM_CH,$SYMID_CH, $PROB_CH, $REW_CH,$LOSS_CH,$RAND_CH,$OUT_CH,
 $SYM_U,$SYMID_U, $PROB_U,$REW_U, $LOSS_U, $RAND_U, $OUT_U,
-$TOTALREW,$CHOICE_TYPE,$FDB_TYPE
+$TOTALREW,$CHOICE_TYPE,$FDB_TYPE,$CONTEXT_TYPE
 );
 $stmt->execute();
 $err = $stmt->errno ;

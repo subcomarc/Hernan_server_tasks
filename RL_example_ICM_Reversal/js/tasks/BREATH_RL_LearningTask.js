@@ -227,7 +227,8 @@ function recordResponse() {
       outcomeUnchosen:chRespKey == track.iside[1] ? track.out_A : track.out_B,
       totalReward:track.tRew+(chRespKey == track.iside[0] ? track.out_A : track.out_B),
       choiceType:track.symbolA.id < track.symbolB.id ? track.symbolA.id+'.'+track.symbolB.id : track.symbolB.id+'.'+track.symbolA.id,
-      feedbackType:ts.schedule[track.block].fdb
+      feedbackType:ts.schedule[track.block].fdb,
+      ContextType:track.symbolA.prob+'prob'+track.symbolA.reward+'rew'+'_vs_'+track.symbolB.prob+'prob'+track.symbolB.reward+'rew'
   })
 
   track.tRew = rs[track.trial].totalReward;
