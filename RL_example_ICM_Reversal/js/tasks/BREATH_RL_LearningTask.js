@@ -123,7 +123,7 @@ track.symbolB = symbols[track.pair[1]];
 
 // impose reversal of response probabilities
 
-if(track.trial>(reversal)){track.symbolA.prob == symbols[track.pair[1]].prob; track.symbolB.prob == symbols[track.pair[0]].prob}
+if(track.trial>(ts.reversal)){track.symbolA.prob == symbols[track.pair[1]].prob; track.symbolB.prob == symbols[track.pair[0]].prob}
 
 // //update tracking of SYMBOLS
 // if(symbols[track.pair[0]].track>=symbols[track.pair[0]].outSchedule.length){
