@@ -122,10 +122,20 @@ if(track.block > ts.schedule.length-1){ts.schedule= _.shuffle(ts.schedule); trac
 track.pair = ts.schedule[track.block].pair;
 track.symbolA = symbols[track.pair[0]];
 track.symbolB = symbols[track.pair[1]];
+track.symbolA.RevProb = symbols[track.pair[1]].prob;
+track.symbolB.RevProb = symbols[track.pair[0]].prob;
 
 // impose reversal of response probabilities
 
-if(track.trial>(ts.reversal)){track.symbolA.prob = symbols[track.pair[1]].prob; track.symbolB.prob = symbols[track.pair[0]].prob}
+// if(track.trial>(ts.reversal)){
+//   if(track.symbolA.prob==0.75){track.symbolA.prob=0.25; track.symbolB.prob=0.75}else{
+//     track.symbolA.prob=0.75; track.symbolB.prob=0.25
+//   }; 
+
+
+if(track.trial>(ts.reversal)){
+  track.symbolA.prob=track.symbolA.RevProb; track.symbolB.prob=track.symbolB.RevProb
+  }; 
 
 // //update tracking of SYMBOLS
 // if(symbols[track.pair[0]].track>=symbols[track.pair[0]].outSchedule.length){
