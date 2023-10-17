@@ -133,7 +133,7 @@ track.symbolB.RevProb = symbols[track.pair[0]].prob;
 //   }; 
 
 
-if(track.trial>(ts.reversal)){
+if(track.trial==(ts.reversal)){
   track.symbolA.prob=track.symbolA.RevProb; track.symbolB.prob=track.symbolB.RevProb
   }; 
 
