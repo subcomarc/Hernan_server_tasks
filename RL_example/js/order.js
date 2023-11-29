@@ -10,7 +10,7 @@ import {TEACH_PreferenceTask} from "./tasks/TEACH_PreferenceTask.js";
 
 // InstructionsLT
 // import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider,Welcome} from "./Instructions/Instructions.js"
-import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson,Welcome} from "./Instructions/Instructions.js"
+import {InstructionsLT, InstructionsLT2, InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson, Welcome} from "./Instructions/Instructions.js"
 
 // other components
 import {getID} from "./components/getID.js";
