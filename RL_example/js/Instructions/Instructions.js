@@ -105,7 +105,22 @@ var InstructionsPreference = new Instructions(
       "<br><br> Click the button below to start."]]
     })
 
+    var InstructionsProbSlider = new Instructions(
+    
+        {nextText: "Start",
+        textInstructions:[//page 1
+                           ["<h2>Third Game</h2>",
+                           "In the third game, you will see one of the symbol and a slider each round. "+
+                           "Your goal is to estimate how frequently each ticket won. " ,
+                           "For example, if you think a particular lottery ticket won (got 1p) in 3 out of 4 trials, you should set the slider to 75%. ",
+                           "If you do not remember the exact number, give your best guess. "+
+                           "You will get 1 point for each correct response. ",
+                           "<br><br> Click the button below to start."]]
+    
+      })
+  
 
 // export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider, Welcome }
-export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson, Welcome }
+export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson, 
+  InstructionsProbSlider, Welcome }
 

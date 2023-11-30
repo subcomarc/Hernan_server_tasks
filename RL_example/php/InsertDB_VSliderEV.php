@@ -25,7 +25,7 @@ $TRIALREW 		= stripslashes(htmlspecialchars($_POST['trialReward']));
 
 
 
-$stmt = $db->prepare("INSERT INTO BR_E3_VSliderEV VALUE(?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?, NOW())");
+$stmt = $db->prepare("INSERT INTO TEACH_E3_VSliderEV VALUE(?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?, NOW())");
 $stmt->bind_param("sssidiididdddidd",
 
     $PARTID,$EXPID,$TNAME,$TRIAL,

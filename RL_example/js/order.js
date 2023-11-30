@@ -69,18 +69,22 @@ function expOrder (){
     //   exp.startTimePref = Date.now();
     //   break;
     case 7:
-      InstructionsWriteLesson.init();
+      InstructionsProbSlider.init();
        exp.startTimeInsPref = Date.now();
        break;
-    // case 12:
-    //   BR_VSlider.init() ;
-    //   exp.startTimePref = Date.now();
-    //   break;
     case 8:
+       TEACH_VSlider.init() ;
+       exp.startTimePref = Date.now();
+       break;
+    case 9:
+        InstructionsWriteLesson.init();
+         exp.startTimeInsPref = Date.now();
+         break;
+    case 10:
       getWrittenLesson(exp)
       exp.startTimeWrittenLesson = Date.now();
       break;
-   case 9:
+   case 11:
       end(exp);
       exp.startTimeFinal = Date.now();
       break;
