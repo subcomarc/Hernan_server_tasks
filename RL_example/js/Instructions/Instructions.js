@@ -106,7 +106,6 @@ var InstructionsPreference = new Instructions(
     })
 
     var InstructionsProbSlider = new Instructions(
-    
         {nextText: "Start",
         textInstructions:[//page 1
                            ["<h2>Third Game</h2>",
@@ -121,5 +120,5 @@ var InstructionsPreference = new Instructions(
   
 
 // export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider, Welcome }
-export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson, InstructionsProbSlider, Welcome }
+export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson, InstructionsProbSlider, Welcome}
 
