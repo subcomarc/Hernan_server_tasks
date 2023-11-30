@@ -6,12 +6,12 @@ import {exp} from "./TEACH_ExpSetting.js"
 import {TEACH_LearningTask} from "./tasks/TEACH_LearningTask.js";
 import {TEACH_LearningTraining} from "./tasks/TEACH_LearningTraining.js";
 import {TEACH_PreferenceTask} from "./tasks/TEACH_PreferenceTask.js";
-// import {BR_VSlider} from "./tasks/BR_VSlider.js";
+import {TEACH_VSlider} from "./tasks/TEACH_VSlider.js";
 
 // InstructionsLT
 // import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider,Welcome} from "./Instructions/Instructions.js"
 // import {InstructionsLT, InstructionsLT2, InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson, Welcome} from "./Instructions/Instructions.js"
-import {InstructionsLT, InstructionsLT2, InstructionsWriteLesson, Welcome} from "./Instructions/Instructions.js"
+import {InstructionsLT, InstructionsLT2, InstructionsWriteLesson, InstructionsProbSlider, Welcome} from "./Instructions/Instructions.js"
 
 
 // other components
