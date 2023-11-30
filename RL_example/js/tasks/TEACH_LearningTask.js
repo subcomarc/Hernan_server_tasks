@@ -19,7 +19,7 @@ var TEACH_LearningTask = {
       transitionMS: 200, // timing of the white screen inbetween trials
 
       schedule: _.shuffle([{pair:[0,1],fdb:"F"},
-                           {pair:[2,3],fdb:"F"}, //F us full feedback, P is partial feedback
+                           {pair:[2,3],fdb:"F"}, //F is full feedback, P is partial feedback
                            {pair:[4,5],fdb:"F"},
                            {pair:[6,7],fdb:"F"}])
     },
