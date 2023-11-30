@@ -11,7 +11,8 @@ var Welcome = new Instructions(
                       ]  })
 
 var InstructionsLT = new Instructions(
-    {nextText: "Start",
+    // {nextText: "Start",
+    {nextText: "Next",
     textInstructions:[//page 0
                       ["<h2>Instructions</h2>",
                       "This study consists of two point-and-click games, in which you will have to choose one out of two symbols displayed on screen. <br></br>",
