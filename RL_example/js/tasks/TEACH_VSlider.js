@@ -45,7 +45,7 @@ var TEACH_VSlider = {
   }
   };
 
-export {BR_VSlider}
+export {TEACH_VSlider}
 
 
 // Set up shortcuts & helpers
