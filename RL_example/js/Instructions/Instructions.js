@@ -121,6 +121,5 @@ var InstructionsPreference = new Instructions(
   
 
 // export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider, Welcome }
-export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson, 
-  InstructionsProbSlider, Welcome }
+export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson, InstructionsProbSlider, Welcome }
 
