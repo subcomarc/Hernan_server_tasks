@@ -84,17 +84,8 @@ var InstructionsPreference = new Instructions(
 
   })
 
-  // var InstructionsProbSlider = new Instructions(
     var InstructionsWriteLesson = new Instructions(
       {nextText: "Start",
-      // textInstructions:[//page 1
-      //                   ["<h2>Third Game</h2>",
-      //                   "In the third game, you will see one of the lottery tickets and a slider each round. "+
-      //                   "Your goal is to estimate how frequently each ticket won. " ,
-      //                   "For example, if you think a particular lottery ticket won (got 1p) in 3 out of 4 trials, you should set the slider to 75%. ",
-      //                   "If you do not remember the exact number, give your best guess. "+
-      //                   "You will get 1 point for each correct response. ",
-      //                   "<br><br> Click the button below to start."]]
       textInstructions:[//page 1
       ["<h2>Teaching task</h2>",
       "Thank you for going over the two point-and-click tasks. "+
