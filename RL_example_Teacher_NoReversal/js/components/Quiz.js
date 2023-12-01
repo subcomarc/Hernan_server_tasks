@@ -6,9 +6,9 @@ var Quiz =  {
   Intro: "(If you do not answer all questions correctly, you will be redirected back to the instructions.)",
   Questions: [
     {id:"Q0",Text:"The final payoff depends on the choices during the experiment:", Responses:["True","False"], Correct:0},
-    {id:"Q1",Text:"Some of the lottery tickets win more frequently than others:", Responses:["True","False"], Correct:0},
-    {id:"Q2",Text:"Their probability to win does not change throughout the experiment:", Responses:["True","False"], Correct:0},
-    {id:"Q3",Text:"The position of the lottery ticket on the screen is important:", Responses:["True","False"], Correct:1},
+    {id:"Q1",Text:"Some of the symbols are better than others:", Responses:["True","False"], Correct:0},
+    {id:"Q2",Text:"You will have to write down a set of strategies to help your future pupil:", Responses:["True","False"], Correct:0},
+    {id:"Q3",Text:"Your future pupil will see the same symbols as you, with the same values:", Responses:["True","False"], Correct:1},
   ],
 
  init: function(){

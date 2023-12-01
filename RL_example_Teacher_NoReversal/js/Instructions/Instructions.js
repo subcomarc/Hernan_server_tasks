@@ -29,19 +29,21 @@ var InstructionsLT = new Instructions(
 
                       //page 3
                       ["<h2>Instructions</h2>",
-                      "<b>Here's the catch!!! READ CAREFULLY </b>",
-                      "Once you are done playing these games, we will ask you to <b>write down a set of instructions for the next player</b>. ",
-                      "You should try to transmit to them any strategy you may have devised while you were doing the task. Your goal is to teach them how to gain as many points as possible. ",
-                      "Keep in mind that the games they'll play will be exactly like yours, with the same choices, probabilities and rewards <b>but they will be represented by different symbols, so conveying the right strategy rather than talking about one symbol in particular here is key.</b>",
-                      "Try to help your future student as much as you can! <b>You'll be earning a bonus equivalent to 10% of the winnings of your future pupil!</b> "],
-
-                      //page 5
-                      ["<h2>Instructions</h2>",
                       "Here is a slowed-down example of the kind of decisions you'll have to make: ",
                       //'<img src="images/instructions/LT_BR3.gif" style="padding: 1rem; text-align: center" class = "img-fluid">'],
                       '<img src="images/instructions/example_RL_2.gif" style="padding: 1rem; text-align: center" class = "img-fluid">',
                       "This is someone choosing the option on the left, and not winning any points. If this person had chosen the option to the right they would have won 1 point."],
-                    
+
+
+                      //page 5
+
+                      ["<h2>Instructions</h2>",
+                      "<b>Here's the catch!!! READ CAREFULLY </b>",
+                      "Once you are done playing thd game, we will ask you to <b>write down a set of instructions for the next player</b>. ",
+                      "<b>Unlike you, they wont have access to any instructions from us. ALL INSTRUCTIONS WILL COME FROM YOU.</b>",
+                      "You should try to transmit to them any strategy you may have devised while you were doing the task. Your goal is to teach them how to gain as many points as possible. ",
+                      "Keep in mind that the games they'll play will be exactly like yours, with the same choices, probabilities and rewards <b>but they will be represented by different symbols, so conveying the right strategy rather than talking about one symbol in particular here is key.</b>",
+                      "Think of yourself as the teacher! Try to help your future student as much as you can! <b>If your future pupil gets more points than you, your bonus will be equal to theirs instead!</b> "],
                     ]
   })
 
@@ -62,13 +64,9 @@ var InstructionsLT = new Instructions(
   var InstructionsLT2 = new Instructions(
       {nextText: "Start",
       textInstructions:[//page 1
-                        ["<h2>First Game</h2>",
-                        "You are about to start the point-and-click game. ",
-                         "<br><h4>Note:</h2>",
-                         "From now on, any points you earn will be added to your final payoff. ",
-                         "There will be a lot more trials than in the training. ",
-                         "The lottery tickets will differ from those used during training. However, the logic will remain the same. ",
-                       "<br><br> Click the button below to start. "]
+                        ["<h2>The point-and-click game is about to start</h2>",
+                        "Give it your best! ",
+                         "<br><br><br><h4>Press start whenever you are ready</h2>"]
                       ]
     })
 
@@ -100,11 +98,11 @@ var InstructionsPreference = new Instructions(
     var InstructionsProbSlider = new Instructions(
         {nextText: "Start",
         textInstructions:[//page 1
-                           ["<h2>Third Game</h2>",
-                           "In the third game, you will see one of the symbol and a slider each round. "+
-                           "Your goal is to estimate how frequently each ticket won. " ,
-                           "For example, if you think a particular lottery ticket won (got 1p) in 3 out of 4 trials, you should set the slider to 75%. ",
-                           "If you do not remember the exact number, give your best guess. "+
+                           ["<h2>Good job! You finished the game! Now, before we move on...</h2>",
+                           "You will see the symbols you just played with one more time, on top of a slider you can operate with your mouse. "+
+                           "Your goal is to use this slider to indicate how often you feel like each symbol gave you a rewarding outcome." ,
+                           "For example, if you think a particular symbol rewarded you (got 1p) in 3 out of 4 trials, you should set the slider to 75%. ",
+                           "If you do not remember the exact number, give it your best guess! "+
                            "You will get 1 point for each correct response. ",
                            "<br><br> Click the button below to start."]]
     
