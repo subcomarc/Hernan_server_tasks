@@ -15,10 +15,10 @@ var InstructionsLT = new Instructions(
     {nextText: "Next",
     textInstructions:[//page 0
                       ["<h2>Instructions</h2>",
-                      "This study consists of two point-and-click games, in which you will have to choose one out of two symbols displayed on screen. <br></br>",
-                      "Here, this is an example of what the symbols can look like:<br>", 
+                      "This study consists of a point-and-click game, in which you will have to choose one out of two symbols displayed on screen. <br></br>",
+                      "Here, this is an example of what these symbols can look like:<br>", 
                       '<img src="images/stim2/17.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/18.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/19.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid">', 
-                      "<b>Every symbol has a probability of giving you a reward, you want to accumulate as many points as you can!</b>",
+                      "<center><b>Every symbol has a probability of giving you a reward, you want to accumulate as many points as you can!</b><center>",
                     ],
 
                       //page 2
@@ -63,7 +63,7 @@ var InstructionsLT = new Instructions(
       {nextText: "Start",
       textInstructions:[//page 1
                         ["<h2>First Game</h2>",
-                        "You are about to start the first game. ",
+                        "You are about to start the point-and-click game. ",
                          "<br><h4>Note:</h2>",
                          "From now on, any points you earn will be added to your final payoff. ",
                          "There will be a lot more trials than in the training. ",

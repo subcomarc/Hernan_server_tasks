@@ -10,12 +10,12 @@ var consentForm =  {
  procedure: "You will be asked to complete two cognitive tasks, "+
             "that do not require any particular skill or knowledge. " +
             "The estimated duration to complete the study is approximately 20 minutes. " +
-            "Depending oby you performance, you might earn between £2.5 - £5. ",
+            "Depending on your performance, you might earn between £2.5 - £5. ",
 
   participation: "Your participation in this research study is voluntary. You may stop and withdraw your participation at any time. "+
                  "In addition to your responses in the study, we will also collect " +
                  "<a href='https://researcher-help.prolific.co/hc/en-gb/articles/360009391633-Exporting-Prolific-Demographic-Data' target='_blank'>"+
-                 "these demographic data</a> that you provided to Prolific when you signed up."+
+                 "these demographic data</a> that you provided to Prolific when you signed up. "+
                  "The collected data will only be used for research purposes. Any shared or published dataset will not contain your name or Prolific ID.",
 
  publication: "You will be able to check the publications resulting from this study on the following "+
