@@ -91,7 +91,7 @@ var InstructionsPreference = new Instructions(
       "Thank you for going over the two point-and-click tasks. "+
       "<b>Now, the time has come for you to transmit your strategies to a future player whe shall consider your pupil.</b> " ,
       "Remember, the options they will have to choose from will have the same value a yours, but they will be represented by different symbols, so <b>focus on the concepts and strategies rather than one concrete symbol's shape or color</b>, since they wont be the same anyways. ",
-      "You really want your pupil to succeed! After all, remember <b>you could be getting their extra bonus.</b>"+
+      "You really want your pupil to succeed! After all, remember <b>you could be getting their extra bonus. </b>"+
       "It may be better to keep your written lesson brief and to the point, but no strict limit for the text is enforced.",
       "<br><br> Click the button below to start."]]
     })
@@ -101,8 +101,10 @@ var InstructionsPreference = new Instructions(
         textInstructions:[//page 1
                            ["<h2>Good job! You finished the game! Now, before we move on...</h2>",
                            "You will see the symbols you just played with one more time, on top of a slider you can operate with your mouse. "+
-                           "Your goal is to use this slider to indicate how often you feel like each symbol gave you a rewarding outcome." ,
+                           '<img src="images/instructions/slider.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
+                           "Your goal is to use this slider to indicate how often you feel like each symbol gave you a rewarding outcome (or at least did not harm you)." ,
                            "For example, if you think a particular symbol rewarded you (got 1p) in 3 out of 4 trials, you should set the slider to 75%. ",
+                           "Or, if a symbol would normally take points away from you, but in 1 out of 4 trials it spared you (e.g. got 0p penalty instead of -1p), you should set the slider to 25%. ",
                            "If you do not remember the exact number, give it your best guess! "+
                            "You will get 1 point for each correct response. ",
                            "<br><br> Click the button below to start."]]

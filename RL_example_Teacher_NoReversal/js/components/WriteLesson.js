@@ -14,7 +14,7 @@ let Prompt = '<form><div class="form-group">'+
               '<label for="freeText">'+
                     'Please write your lesson for your future pupil in the box below.' +
               '</label>'+
-              '<textarea class="form-control" id="freeText" rows="15" minlength="150" placeholder="At least 150 characters..."></textarea>'+
+              '<textarea class="form-control" id="freeText" rows="15" minlength="250" placeholder="At least 250 characters..."></textarea>'+
               '</div>'+
               '<form>';
 
@@ -32,7 +32,7 @@ $('#Stage').html(Prompt);
 $('#FinalButton').html(Buttons);
 
 $('#freeText').on('input', function() {
-  if($(this).val().length >= 150) {
+  if($(this).val().length >= 250) {
     $('#bSubmit').prop('disabled', false);
   } else {
     $('#bSubmit').prop('disabled', true);
