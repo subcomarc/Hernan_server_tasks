@@ -1,13 +1,12 @@
 import {expOrder} from "../order.js";
 import {exp} from "../TEACH_ExpSetting.js"
 
-var Quiz =  {
+var Quiz_RL =  {
   Title: "Please answer the following questions",
   Intro: "(If you do not answer all questions correctly, you will be redirected back to the instructions.)",
   Questions: [
-    {id:"Q0",Text:"The final bonus payoff depends on your and your pupil's choices combined:", Responses:["True","False"], Correct:1},
-    {id:"Q1",Text:"You will have to write down a set of instructions and strategies to help your future pupil. A good lesson is at least a minimum of 250 characters:", Responses:["True","False"], Correct:0},
-    {id:"Q2",Text:"Your future pupil will see the same symbols as you, with the same values:", Responses:["True","False"], Correct:1},
+    {id:"Q0",Text:"Some symbols are better (will give you better rewards) than others", Responses:["True","False"], Correct:0},
+    {id:"Q1",Text:"You will see the outcome of the symbol you clicked on, but NOT of the symbol you did not click on:", Responses:["True","False"], Correct:1},
   ],
 
  init: function(){
@@ -47,7 +46,7 @@ var Quiz =  {
 }
 }
 
-export {Quiz}
+export {Quiz_RL}
 
 function AddResponses(question) {
   var formQ = document.createElement('div')

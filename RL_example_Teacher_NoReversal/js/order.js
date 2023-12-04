@@ -11,7 +11,7 @@ import {TEACH_VSlider} from "./tasks/TEACH_VSlider.js";
 // InstructionsLT
 // import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider,Welcome} from "./Instructions/Instructions.js"
 // import {InstructionsLT, InstructionsLT2, InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson, Welcome} from "./Instructions/Instructions.js"
-import {InstructionsLT, InstructionsLT2, InstructionsWriteLesson, InstructionsProbSlider, Welcome} from "./Instructions/Instructions.js"
+import {InstructionsLTp1, InstructionsLTp2, InstructionsLT2, InstructionsWriteLesson, InstructionsProbSlider, Welcome} from "./Instructions/Instructions.js"
 
 
 // other components
@@ -21,6 +21,7 @@ import {consentForm} from "./components/dExperimentConsent.js";
 // import {getFeedback} from "./components/Feedback.js";
 import {getWrittenLesson} from "./components/WriteLesson.js";
 import {Quiz} from "./components/Quiz.js";
+import {Quiz_RL} from "./components/Quiz_RL.js";
 
 // other functions
 import {disableF5} from "./functions/usefulFunctions.js";
@@ -40,10 +41,10 @@ function expOrder (){
       consentForm.init();
       break;
     case 3:
-      InstructionsLT.init();
+      InstructionsLTp1.init();
       break;
     case 4:
-       Quiz.init();;
+       Quiz_RL.init();;
        break;
     // case 4:
     //   InstructionsLT_Train.init();
@@ -53,10 +54,16 @@ function expOrder (){
     //   exp.startTimeLTTrain = Date.now();
     //   break;
     case 5:
+      InstructionsLTp2.init();
+      break;
+    case 6:
+       Quiz.init();;
+       break;
+    case 7:
       exp.startTimeInsLT = Date.now();
       InstructionsLT2.init();
       break;
-    case 6:
+    case 8:
       TEACH_LearningTask.init() ;
       exp.startTimeLT = Date.now();
       break;
@@ -68,23 +75,23 @@ function expOrder (){
     //   TEACH_PreferenceTask.init() ;
     //   exp.startTimePref = Date.now();
     //   break;
-    case 7:
+    case 9:
       InstructionsProbSlider.init();
        exp.startTimeInsPref = Date.now();
        break;
-    case 8:
+    case 10:
        TEACH_VSlider.init() ;
        exp.startTimePref = Date.now();
        break;
-    case 9:
+    case 11:
         InstructionsWriteLesson.init();
          exp.startTimeInsPref = Date.now();
          break;
-    case 10:
+    case 12:
       getWrittenLesson(exp)
       exp.startTimeWrittenLesson = Date.now();
       break;
-   case 11:
+   case 13:
       end(exp);
       exp.startTimeFinal = Date.now();
       break;
