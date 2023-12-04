@@ -109,7 +109,7 @@ var InstructionsPreference = new Instructions(
     })
 
     var InstructionsProbSlider = new Instructions(
-        {nextText: "Start",º
+        {nextText: "Start",
         textInstructions:[//page 1
                            ["<h2>Good job! You finished the game and the teaching task! Now, before we end the experiment...</h2>",
                            "You will see the symbols you just played with one more time, on top of a slider you can operate with your mouse. "+
