@@ -90,6 +90,7 @@ var InstructionsPreference = new Instructions(
       ["<h2>Teaching task</h2>",
       "Thank you for going over the two point-and-click tasks. "+
       "<b>Now, the time has come for you to transmit your strategies to a future player whe shall consider your pupil.</b> " ,
+      '<img src="images/instructions/Teacher_ready.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
       "Remember, the options they will have to choose from will have the same value a yours, but they will be represented by different symbols, so <b>focus on the concepts and strategies rather than one concrete symbol's shape or color</b>, since they wont be the same anyways. ",
       "You really want your pupil to succeed! After all, remember <b>you could be getting their extra bonus. </b>"+
       "It may be better to keep your written lesson brief and to the point, but no strict limit for the text is enforced.",
