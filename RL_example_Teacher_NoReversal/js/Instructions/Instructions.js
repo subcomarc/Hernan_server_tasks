@@ -101,7 +101,7 @@ var InstructionsPreference = new Instructions(
         textInstructions:[//page 1
                            ["<h2>Good job! You finished the game! Now, before we move on...</h2>",
                            "You will see the symbols you just played with one more time, on top of a slider you can operate with your mouse. "+
-                           '<img src="images/instructions/slider.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
+                           '<img src="images/instructions/Slider.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
                            "Your goal is to use this slider to indicate how often you feel like each symbol gave you a rewarding outcome (or at least did not harm you)." ,
                            "For example, if you think a particular symbol rewarded you (got 1p) in 3 out of 4 trials, you should set the slider to 75%. ",
                            "Or, if a symbol would normally take points away from you, but in 1 out of 4 trials it spared you (e.g. got 0p penalty instead of -1p), you should set the slider to 25%. ",
