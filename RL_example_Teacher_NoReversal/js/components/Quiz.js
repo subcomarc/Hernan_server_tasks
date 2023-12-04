@@ -5,9 +5,9 @@ var Quiz =  {
   Title: "Please answer the following questions",
   Intro: "(If you do not answer all questions correctly, you will be redirected back to the instructions.)",
   Questions: [
-    {id:"Q0",Text:"The final payoff depends on the choices during the experiment:", Responses:["True","False"], Correct:0},
+    {id:"Q0",Text:"The final payoff depends on your (and your pupil's) choices during the experiment:", Responses:["True","False"], Correct:0},
     {id:"Q1",Text:"Some of the symbols are better than others:", Responses:["True","False"], Correct:0},
-    {id:"Q2",Text:"You will have to write down a set of strategies to help your future pupil:", Responses:["True","False"], Correct:0},
+    {id:"Q2",Text:"You will have to write down a set of instructions and strategies to help your future pupil:", Responses:["True","False"], Correct:0},
     {id:"Q3",Text:"Your future pupil will see the same symbols as you, with the same values:", Responses:["True","False"], Correct:1},
   ],
 
