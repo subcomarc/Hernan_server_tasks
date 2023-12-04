@@ -52,8 +52,8 @@ var InstructionsLTp1 = new Instructions(
                      ["<h2>Instructions</h2>",
                      "At the end of the study, we will convert all collected points into pounds and add them to the fixed bonus provided by Prolific. ",
                      "The conversion rate is 1 point = 1.2 pence. ",
-                     "<b>But since you will be a teacher, your bonus earnings will not depend on the points you earn, but rather the points your pupil earns </b>",
-                     "It is therefore in your best interest that you explain the task in the best possible way. If your pupil is good, it could up to double your earnings! "],
+                     "<b>But since you will be a teacher, your bonus earnings will not depend on the points you earn, but rather on the points your pupil earns </b>",
+                     "It is therefore in your best interest that you explain the task in the best possible way. If your pupil is good, it could double your earnings! "],
 
                     ]
   })
@@ -98,7 +98,7 @@ var InstructionsPreference = new Instructions(
       {nextText: "Start",
       textInstructions:[//page 1
       ["<h2>Teaching task</h2>",
-      "Thank you for going over the two point-and-click tasks. "+
+      "Thank you for going over the point-and-click tasks. "+
       "<b>Now, the time has come for you to transmit your strategies to yout future pupil.</b> " ,
       '<img src="images/instructions/Teacher_ready.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
       "Remember, they wont have access to any instructions from us. <b>ALL INSTRUCTIONS WILL COME FROM YOU.</b> ",
