@@ -33,7 +33,7 @@ $REW_POINTS 		= stripslashes(htmlspecialchars($_POST['rewPoints']));
 
 
 $stmt = $db->prepare("INSERT INTO TEACH_V2Buttons VALUE(?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?,?,?,?, ?,?, NOW())");
-$stmt->bind_param("sssidiiiidiiiiddiidddd",
+$stmt->bind_param("sssidiididiiiiddiidddd",
     $PARTID,$EXPID,$TNAME,$TRIAL,
     $RTS,
     $SYMBOL,$SYMBOLID,$SYM_PROB,$SYM_REW,$SYM_EV,
