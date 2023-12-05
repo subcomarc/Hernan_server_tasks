@@ -1,6 +1,6 @@
 import {symbols} from "./TEACH_LoadSymbols.js";
 import {expOrder} from "../order.js";
-import {addCanvas,getLastValue,schedule_all,recursiveSearch} from "../functions/usefulFunctions.js";
+import {addCanvas,getLastValue,drawStim,schedule_all,recursiveSearch} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
 import {exp} from "../TEACH_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
@@ -314,11 +314,11 @@ function  selectProb(sButton) {
   }
 }
 
-function drawStim(id) {
-  let canvas = document.getElementById("IMG")
-  let Ax =  canvas.getContext("2d")
-  Ax.drawImage(symbols['S'+id].image,0,0)
-  Ax.lineWidth = "5";
-  Ax.strokeStyle = "black";
-  Ax.strokeRect(0, 0, canvas.width, canvas.height);
-}
+// function drawStim(id) {
+//   let canvas = document.getElementById("IMG")
+//   let Ax =  canvas.getContext("2d")
+//   Ax.drawImage(symbols['S'+id].image,0,0)
+//   Ax.lineWidth = "5";
+//   Ax.strokeStyle = "black";
+//   Ax.strokeRect(0, 0, canvas.width, canvas.height);
+// }
