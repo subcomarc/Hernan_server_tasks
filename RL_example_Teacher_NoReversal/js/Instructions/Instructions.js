@@ -19,7 +19,7 @@ var InstructionsLTp1 = new Instructions(
                       "Here, this is an example of what these symbols can look like:<br>", 
                       '<img src="images/stim2/17.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/18.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/19.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid">', 
                       "<center><b>Each symbol has a probability of producing an outcome when clicked. Outcomes can be positive (winning points) or negative (losing points).</b><center>",
-                      "<center><b>Not all symbols are alike! Some symbols will be better than others at winning you points.</b><center>",
+                      "<center><b>Not all symbols are alike! Some symbols will be overall better than others at winning you points. Likewise, some symbols might cause greater losses than others.</b><center>",
                     ],
 
  
@@ -108,21 +108,35 @@ var InstructionsPreference = new Instructions(
       "<br><br> Click the button below to start."]]
     })
 
-    var InstructionsProbSlider = new Instructions(
-        {nextText: "Start",
-        textInstructions:[//page 1
-                           ["<h2>Good job! You finished the game and the teaching task! Now, before we end the experiment...</h2>",
-                           "You will see the symbols you just played with one more time, on top of a slider you can operate with your mouse. "+
-                           '<img src="images/instructions/Slider.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
-                           "Your goal is to use this slider to indicate how often you feel like each symbol gave you a rewarding outcome (or at least did not harm you)." ,
-                           "For example, if you think a particular symbol rewarded you (got 1p) in 3 out of 4 trials, you should set the slider to 75%. ",
-                           "Or, if a symbol would normally take points away from you, but in 1 out of 4 trials it spared you (e.g. got 0p penalty instead of -1p), you should set the slider to 25%. ",
-                           "If you do not remember the exact number, give it your best guess! "+
-                           "You will get 1 point for each correct response. ",
-                           "<br><br> Click the button below to start."]]
+    // var InstructionsProbSlider = new Instructions(
+    //     {nextText: "Start",
+    //     textInstructions:[//page 1
+    //                        ["<h2>Good job! You finished the game and the teaching task! Now, before we end the experiment...</h2>",
+    //                        "You will see the symbols you just played with one more time, on top of a slider you can operate with your mouse. "+
+    //                        '<img src="images/instructions/Slider.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
+    //                        "Your goal is to use this slider to indicate how often you feel like each symbol gave you a rewarding outcome (or at least did not harm you)." ,
+    //                        "For example, if you think a particular symbol rewarded you (got 1p) in 3 out of 4 trials, you should set the slider to 75%. ",
+    //                        "Or, if a symbol would normally take points away from you, but in 1 out of 4 trials it spared you (e.g. got 0p penalty instead of -1p), you should set the slider to 25%. ",
+    //                        "If you do not remember the exact number, give it your best guess! "+
+    //                        "You will get 1 point for each correct response. ",
+    //                        "<br><br> Click the button below to start."]]
     
-      })
+    //   })
   
+
+    var InstructionsProbSlider = new Instructions(
+      {nextText: "Start",
+      textInstructions:[//page 1
+                         ["<h2>Good job! You finished the game and the teaching task! Now, before we end the experiment...</h2>",
+                         "You will see the symbols you just played with one more time. Under each symbol you will see a set of buttons showing different rewards (above) and probabilities (below): "+
+                         '<img src="images/instructions/MC_choice.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
+                         "Your goal is to estimate as best you can what was each symbol's outcome during the experiment." ,
+                         "For example, if you think the symbol being shown rewarded you with 1 point, 3 out of 4 times you clicked on it, you should select the 1p and 75% buttons. ",
+                         "Or, if you estimate that symbol caused you to lose 10 points every time you chose it, you should select the -10p and 100% buttons. ",
+                         "Please remember to always indicate both point and probability outcome! "+
+                         "<br><br> Click the button below to start."]]
+  
+    })
 
 // export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider, Welcome }
 // export {InstructionsLT,InstructionsLT2,InstructionsLT_Train,InstructionsPreference,InstructionsWriteLesson,InstructionsProbSlider,Welcome}
