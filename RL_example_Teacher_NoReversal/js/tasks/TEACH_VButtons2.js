@@ -1,6 +1,6 @@
 import {symbols} from "./TEACH_LoadSymbols.js";
 import {expOrder} from "../order.js";
-import {addCanvas,getLastValue,schedule_all,recursiveSearch} from "../functions/usefulFunctions.js";
+import {addCanvas,drawStim,getLastValue,schedule_all,recursiveSearch} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
 import {exp} from "../TEACH_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
@@ -87,7 +87,8 @@ var TEACH_VButtons2 = {
       $("#ProbsGroup input").click(function() {$(this).addClass('active').siblings().removeClass('active');selectProb(this);});
 
       //Add Stimuli canvas
-      addCanvas('#Stage',"IMG",symbols.S1.image.width,symbols.S1.image.height,"border rounded");
+      // addCanvas('#Stage',"IMG",symbols.S1.image.width,symbols.S1.image.height,"border rounded");
+      addCanvas('#Stage',"IMG",symbols[0].image.width,symbols[0].image.height,"border rounded")
 
       //Add hidden warning message (in case outcome is not selected)
       let WarnText ='<div class="col"><p align = "center" class="text-w">You must select both an outcome and a probability to continue!</p></div>' ;
