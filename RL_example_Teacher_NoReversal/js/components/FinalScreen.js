@@ -26,10 +26,11 @@ let time = Date.now()-exp.startTime;
 
       // Write on the matrix end of the trial
       var Title = '<h3 align = "center" style="color: #3C455C;"> End </h3>'
-      var EndText ='<div class="col"><h3 align = "center"> <br> This is the end of the experiment!</h3>  ' +
-                  '<p align = "center" ><br> Thank you very much for taking part. <br></p>' +
-                  '<p align = "center" ><b> You won &pound ' + points2pounds(rew,exp.rate)  +' </b></p>' +
-                  '<p align = "center" > This will paid on top of the fixed compensation. </p><br><br>'
+      var EndText ='<div class="col"><h3 align = "center"> <br> You have made it to the end of the experiment!</h3>  ' +
+                  '<p align = "center" ><br> Congratulations!  <br></p>' +
+                   '<p align = "center" ><b> During the task, you won points equivalent to &pound ' + points2pounds(rew,exp.rate)  +' </b></p>' +
+                  // '<p align = "center" ><b> You won ' + rew +' points! </b></p>' +
+                  '<p align = "center" > However, remember that this is not your bonus, as you will be paid the bonus of your pupil instead. You will also receive the full designated fixed compensation advertised in the study. </p><br><br>'
 
         //$('#Top').html('<div class="row justify-content-center">'+Title+'</div>');
         $('#Stage').html('<div class="row justify-content-center">'+EndText+'</div>');
