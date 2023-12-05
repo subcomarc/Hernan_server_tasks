@@ -246,7 +246,7 @@ function  recordResponse(){
    { partID: exp.ID,
      expID: exp.expID,
      tsName: ts.taskName,
-     trial: rs.trial,
+     trial: ts.trial,
      reactionTime: getLastValue(rs.rt),
      symbol: getLastValue(rs.symbol),
      symbolID: getLastValue(rs.symbolID),
