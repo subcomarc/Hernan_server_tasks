@@ -139,6 +139,9 @@ if(track.blockTrial == ts.maxBlockTrials){track.block++;  track.blockTrial=0 ;}
 //if all blocks were shown, but the max trials were not reached, reshufle the block order and start again
 if(track.block > ts.schedule.length-1){ts.schedule= _.shuffle(ts.schedule); track.block =0 ;}
 
+// Set a symbol for the current block
+track.symbol =symbols[ts.schedule[track.block]];
+
 state++
 trialStateMachine()
 }
@@ -155,7 +158,8 @@ function  showStimuli(){
   track.rt_point.push(_.now());
 
   // show symbol
-  drawStim(ts.schedule[track.block]);
+  // drawStim(ts.schedule[track.block]);
+  drawStim(track.symbol,"IMG");
 
   // Submit Button
   let button_Sumbit = '<input align="center" type="button"  class="btn m-2 mt-4 myBtn" id="respButton" value="Submit" >'
@@ -184,7 +188,7 @@ function  recordResponse(){
       // Record RT
       rs.rt.push(_.now()-track.rt_point[track.rt_point.length-1]);
 
-      // presneted symbol - shortcut
+      // presented symbol - shortcut
         let symbol = symbols['S'+ts.schedule[track.block]]
     // Record response and send to DB
     //  rs.respKey.push(parseInt(event.target.id.charAt(6))); // which position was chosen
