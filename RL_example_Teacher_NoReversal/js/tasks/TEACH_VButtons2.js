@@ -1,6 +1,6 @@
 import {symbols} from "./TEACH_LoadSymbols.js";
 import {expOrder} from "../order.js";
-import {addCanvas,drawStim,getLastValue,schedule_all,recursiveSearch} from "../functions/usefulFunctions.js";
+import {addCanvas,getLastValue,schedule_all,recursiveSearch} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
 import {exp} from "../TEACH_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
