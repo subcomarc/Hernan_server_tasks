@@ -184,9 +184,10 @@ function  showStimuli(){
 
   // record responses
 function  recordResponse(){
-      // Prevent another button press
-      track.clickEnabled= false;
+      // Prevent another button press (reset)
+      track.clickEnabled = false;
       track.rewSelected = false;
+      track.probSelected = false;
 
       // Record RT
       rs.rt.push(_.now()-track.rt_point[track.rt_point.length-1]);
