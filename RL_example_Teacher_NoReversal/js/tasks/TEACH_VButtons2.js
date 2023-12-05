@@ -8,14 +8,15 @@ import {endTask} from "../components/TaskEndScreen.js";
 var TEACH_VButtons2 = {
   trialState: 0, // starting point for the task
   taskSettings:{
-    taskName: 'ValuationsUnited',
+    taskName: 'TEACH_VButtons2',
     maxTrials: 16,//3*16,
     maxBlockTrials: 1,
     borderMS:500,//10,
     transitionMS: 100,
     respsR: _.uniq(recursiveSearch(symbols,"reward")).sort(function(a,b){return a-b}),
     respsP: [0,25,50,75,100],
-    schedule: _.shuffle([...Array(symbols.nStim).keys()])
+    // schedule: _.shuffle([...Array(symbols.nStim).keys()])
+    schedule: _.shuffle([...Array(symbols.length).keys()])
   },
   trackers: {
     trial: 0, // number of trials
@@ -29,6 +30,7 @@ var TEACH_VButtons2 = {
 
 
   },
+
   results: {
     symbol: [],//  which symbol was presented
     symbolID: [],//  which symbol was presented
@@ -190,7 +192,8 @@ function  recordResponse(){
       rs.rt.push(_.now()-track.rt_point[track.rt_point.length-1]);
 
       // presented symbol - shortcut
-        let symbol = symbols['S'+ts.schedule[track.block]]
+        // let symbol = symbols['S'+ts.schedule[track.block]]
+        let symbol = ts.schedule[track.block]
     // Record response and send to DB
     //  rs.respKey.push(parseInt(event.target.id.charAt(6))); // which position was chosen
     //  rs.respKeyID.push(event.target.id); // exact id of the position
