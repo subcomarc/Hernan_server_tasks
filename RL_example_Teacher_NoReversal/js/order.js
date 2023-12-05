@@ -6,7 +6,7 @@ import {exp} from "./TEACH_ExpSetting.js"
 import {TEACH_LearningTask} from "./tasks/TEACH_LearningTask.js";
 import {TEACH_LearningTraining} from "./tasks/TEACH_LearningTraining.js";
 import {TEACH_PreferenceTask} from "./tasks/TEACH_PreferenceTask.js";
-import {TEACH_VSlider} from "./tasks/TEACH_VSlider.js";
+import {TEACH_VButtons2} from "./tasks/TEACH_VButtons2.js";
 
 // InstructionsLT
 // import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider,Welcome} from "./Instructions/Instructions.js"
@@ -88,7 +88,7 @@ function expOrder (){
          exp.startTimeInsPref = Date.now();
          break;
       case 12:
-         TEACH_VSlider.init() ;
+        TEACH_VButtons2.init() ;
          exp.startTimePref = Date.now();
          break;
    case 13:
