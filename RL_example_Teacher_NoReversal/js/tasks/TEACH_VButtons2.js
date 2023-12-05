@@ -169,7 +169,7 @@ function  showStimuli(){
   $('#FinalButton').html(button_Sumbit);
 
   document.getElementById("respButton").onclick = function(){
-    if (track.clickEnabled&track.probSelected&track.rewSelected){
+    if (track.clickEnabled & track.probSelected & track.rewSelected){
       // Prevent another button press
       track.clickEnabled= false;
       state++;
@@ -193,7 +193,8 @@ function  recordResponse(){
 
       // presented symbol - shortcut
         // let symbol = symbols['S'+ts.schedule[track.block]]
-        let symbol = ts.schedule[track.block]
+        // let symbol = ts.schedule[track.block]
+        let symbol = symbols[ts.schedule[track.block]]
     // Record response and send to DB
     //  rs.respKey.push(parseInt(event.target.id.charAt(6))); // which position was chosen
     //  rs.respKeyID.push(event.target.id); // exact id of the position
