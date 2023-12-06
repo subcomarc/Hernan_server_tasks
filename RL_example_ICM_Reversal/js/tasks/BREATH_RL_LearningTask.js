@@ -14,9 +14,9 @@ var BREATH_RL_LearningTask = {
       // maxTrials: 128,//112, // maximum trials in a task (keep it a multiple of 8 if you have 8 options i.e. 4 pairs of options)
       maxTrials: 16,//112, // for debugging
       // maxBlockTrials: 8, // maximum trials in a block, if blockTrials == 1 -> no blocks
-      maxBlockTrials: 1, // maximum trials in a block, if blockTrials == 1 -> no blocks
-      // reversal: 128 / 2, // number of trials after which the reward probabilities will be reversed
-      reversal: 16 / 2, // for debugging
+      maxBlockTrials: 2, // maximum trials in a block, if blockTrials == 1 -> no blocks
+      // reversal: 128 / 2, // number of trials per block after which the reward probabilities will be reversed
+      reversal: 2, // for debugging
 
       fdbMS:1500, // time in ms the feedback will be displayed
       borderMS:500, // timing of the border around the chosen option - shown on its own (before the feedback appears)
@@ -36,7 +36,8 @@ var BREATH_RL_LearningTask = {
       iside:  _.shuffle([0,1]), //side for displaying symbols
       symbolA: {}, //current symbol A (first in iside)
       symbolB: {}, //current symbol B (second in iside)
-      pair: {} // current symbol pairing
+      pair: {}, // current symbol pairing
+      isreversed: 0 // 0 - not reversed, 1 - reversed
 
     },
     results: [],
@@ -122,8 +123,8 @@ if(track.block > ts.schedule.length-1){ts.schedule= _.shuffle(ts.schedule); trac
 track.pair = ts.schedule[track.block].pair;
 track.symbolA = symbols[track.pair[0]];
 track.symbolB = symbols[track.pair[1]];
-track.symbolA.RevProb = symbols[track.pair[1]].prob;
-track.symbolB.RevProb = symbols[track.pair[0]].prob;
+// track.symbolA.RevProb = symbols[track.pair[1]].prob;
+// track.symbolB.RevProb = symbols[track.pair[0]].prob;
 
 // impose reversal of response probabilities
 
@@ -132,9 +133,16 @@ track.symbolB.RevProb = symbols[track.pair[0]].prob;
 //     track.symbolA.prob=0.75; track.symbolB.prob=0.25
 //   }; 
 
+if((ts.reversal % track.symbolA.counter)==0){   
+  track.isreversed=1}
 
-if(track.trial==(ts.reversal)){
-  track.symbolA.prob=track.symbolA.RevProb; track.symbolB.prob=track.symbolB.RevProb
+if(track.isreversed==0){ // <  
+  track.symbolA.prob=track.symbolA.probS; track.symbolB.prob=track.symbolB.probS
+  }else{
+  track.symbolA.prob=track.symbolA.probR; track.symbolB.prob=track.symbolB.probR;
+  if(track.symbolA.counter % ts.reversal == 0){
+    track.isreversed=0
+  }
   }; 
 
 // //update tracking of SYMBOLS
@@ -302,6 +310,8 @@ function trialCounter(){
 // Update trial, block and the reset
   track.trial ++
   track.blockTrial ++
+  track.symbolA.counter ++
+  track.symbolB.counter ++
 
   state=0;
   trialStateMachine()

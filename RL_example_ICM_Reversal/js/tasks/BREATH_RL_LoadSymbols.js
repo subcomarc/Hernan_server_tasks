@@ -13,15 +13,26 @@ var symbols = [
 // {id:7,reward:1,prob:0,loss:0, outSchedule: _.shuffle([0,0,0,0]),track:0}
 // ];
 
-{id:0,reward:1,prob:0.75,loss:0},
-{id:1,reward:1,prob:0.25,loss:0},
-{id:2,reward:-1,prob:0.75,loss:0},
-{id:3,reward:-1,prob:0.25,loss:0},
-{id:4,reward:10,prob:0.75,loss:0},
-{id:5,reward:10,prob:0.25,loss:0},
-{id:6,reward:-10,prob:0.75,loss:0},
-{id:7,reward:-10,prob:0.25,loss:0}
+// {id:0,reward:1,prob:0.75,loss:0},
+// {id:1,reward:1,prob:0.25,loss:0},
+// {id:2,reward:-1,prob:0.75,loss:0},
+// {id:3,reward:-1,prob:0.25,loss:0},
+// {id:4,reward:10,prob:0.75,loss:0},
+// {id:5,reward:10,prob:0.25,loss:0},
+// {id:6,reward:-10,prob:0.75,loss:0},
+// {id:7,reward:-10,prob:0.25,loss:0}
+// ];
+
+{id:0,reward:1, prob:-1, probS:0.75, probR:0.75,loss:0, counter:0},
+{id:1,reward:1,prob:-1,probS:0.25, probR:0.25,loss:0, counter:0},
+{id:2,reward:10,prob:-1,probS:0.75, probR:0.75,loss:0, counter:0},
+{id:3,reward:10,prob:-1,probS:0.25, probR:0.25,loss:0, counter:0},
+{id:4,reward:1,prob:-1,probS:0.75, probR:0.25,loss:0, counter:0},
+{id:5,reward:1,prob:-1,probS:0.25, probR:0.75,loss:0, counter:0},
+{id:6,reward:10,prob:-1,probS:0.75, probR:0.25,loss:0, counter:0},
+{id:7,reward:10,prob:-1,probS:0.25, probR:0.75,loss:0, counter:0}
 ];
+
 
 addSymImage(symbols,0,"images/stim/",'.gif')
 
