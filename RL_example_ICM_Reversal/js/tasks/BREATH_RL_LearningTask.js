@@ -126,22 +126,17 @@ track.symbolB = symbols[track.pair[1]];
 // track.symbolA.RevProb = symbols[track.pair[1]].prob;
 // track.symbolB.RevProb = symbols[track.pair[0]].prob;
 
-// impose reversal of response probabilities
+//SET REVERSAL OF PROBABILITIES
 
-// if(track.trial>(ts.reversal)){
-//   if(track.symbolA.prob==0.75){track.symbolA.prob=0.25; track.symbolB.prob=0.75}else{
-//     track.symbolA.prob=0.75; track.symbolB.prob=0.25
-//   }; 
 
-if((ts.reversal % track.symbolA.counter)==0){   
-  track.isreversed=1}
 
-if(track.isreversed==0){ // <  
-  track.symbolA.prob=track.symbolA.probS; track.symbolB.prob=track.symbolB.probS
+
+if(track.isreversed == 0){   
+  ts.reversal == track.symbolA.counter ? track.isreversed=1 : track.isreversed=0;
+  ts.reversal == track.symbolA.counter ? track.symbolA.counter=0 : track.symbolA.counter=track.symbolA.counter;
   }else{
-  track.symbolA.prob=track.symbolA.probR; track.symbolB.prob=track.symbolB.probR;
-  if(track.symbolA.counter % ts.reversal == 0){
-    track.isreversed=0
+  ts.reversal == track.symbolA.counter ? track.isreversed=0 : track.isreversed=1;
+  ts.reversal == track.symbolA.counter ? track.symbolA.counter=0 : track.symbolA.counter=track.symbolA.counter;
   }
   }; 
 
