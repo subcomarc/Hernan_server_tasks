@@ -125,13 +125,19 @@ track.symbolA = symbols[track.pair[0]];
 track.symbolB = symbols[track.pair[1]];
 // track.symbolA.RevProb = symbols[track.pair[1]].prob;
 // track.symbolB.RevProb = symbols[track.pair[0]].prob;
+track.symbolA.prob=track.symbolA.probS;
+track.symbolB.prob=track.symbolB.probS;
 
 //SET REVERSAL OF PROBABILITIES
 if(track.isreversed == 0){   
   ts.reversal == track.symbolA.counter ? track.isreversed=1 : track.isreversed=0;
+  ts.reversal == track.symbolA.counter ? track.symbolA.prob=track.symbolA.probR : track.symbolA.prob=track.symbolA.probS;
+  ts.reversal == track.symbolA.counter ? track.symbolB.prob=track.symbolB.probR : track.symbolB.prob=track.symbolB.probS;
   ts.reversal == track.symbolA.counter ? track.symbolA.counter=0 : track.symbolA.counter=track.symbolA.counter
   }else{
   ts.reversal == track.symbolA.counter ? track.isreversed=0 : track.isreversed=1;
+  ts.reversal == track.symbolA.counter ? track.symbolA.prob=track.symbolA.probS : track.symbolA.prob=track.symbolA.probR;
+  ts.reversal == track.symbolA.counter ? track.symbolB.prob=track.symbolB.probS : track.symbolB.prob=track.symbolB.probR;
   ts.reversal == track.symbolA.counter ? track.symbolA.counter=0 : track.symbolA.counter=track.symbolA.counter
   }
 // //update tracking of SYMBOLS
