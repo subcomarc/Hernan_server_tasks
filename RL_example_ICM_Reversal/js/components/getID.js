@@ -60,19 +60,18 @@ function getID(exp) {
                   exp.ID = document.getElementById('formPartID').value;
                      $('#ContBox').empty();
                      exp.expTask++
-                     expOrder();}else{
+                     expOrder();
+                     sendToDB(0,
+                      { partID: document.getElementById('formPartID').value,
+                        partSex: $("input:radio:checked").val(),
+                        expID: exp.expID},
+                    'php/InsertDB_IDstart.php'
+                    );
+                    }else{
                       formPartID.classList.add('is-invalid');
                     }
        }
       }) 
-
-      sendToDB(0,
-        { partID: document.getElementById('formPartID').value,
-          partSex: $("input:radio:checked").val(),
-          expID: exp.expID},
-      'php/InsertDB_IDstart.php'
-      );
-      
 
     }
 
