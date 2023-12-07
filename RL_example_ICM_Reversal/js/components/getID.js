@@ -68,7 +68,7 @@ function getID(exp) {
 
       sendToDB(0,
         { partID: document.getElementById('formPartID').value,
-          partSex: $("input:radio:checked").value,
+          partSex: $("input:radio:checked").val(),
           expID: exp.expID},
       'php/InsertDB_IDstart.php'
       );
