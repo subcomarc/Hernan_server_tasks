@@ -65,7 +65,11 @@ function getID(exp) {
                     }
        }
       }) 
-    
+          
+    }
+
+export {getID}
+
 // send participant data to the database
 sendToDB(0,
   { partID: exp.ID,
@@ -73,10 +77,7 @@ sendToDB(0,
     expID: exp.expID},
 'php/InsertDB_IDstart.php'
 );
-      
-    }
 
-export {getID}
 
 // SubGender = $("input:radio:checked").attr('value');
 
