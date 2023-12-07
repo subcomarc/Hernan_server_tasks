@@ -58,12 +58,13 @@ function getID(exp) {
 					  alert('S\'il vous plait cochez l\'une des cases.')}else{
                 if(document.getElementById('formPartID').value.length===10){;
                   exp.ID = document.getElementById('formPartID').value;
+                  exp.partSex = $("input:radio:checked").val();
                      $('#ContBox').empty();
                      exp.expTask++
                      expOrder();
                      sendToDB(0,
-                      { partID: document.getElementById('formPartID').value,
-                        partSex: $("input:radio:checked").val(),
+                      {partID: exp.ID,
+                        partSex: exp.partSex,
                         expID: exp.expID},
                     'php/InsertDB_IDstart.php'
                     );
