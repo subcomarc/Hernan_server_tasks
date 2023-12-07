@@ -12,19 +12,27 @@ function getID(exp) {
     // Show buttons
     var buttonBack = '<input align="center" type="button"  class="btn btn-default rounded invisible mt-2 mb-2 myBtn" id="bBack" value="Back">';
     var buttonNext = '<input align="center" type="button"  class="btn btn-default rounded visible mt-2 mb-2 myBtn" id="bNext" value="Next">';
+
     $('#Bottom').html(buttonBack + buttonNext);
 
 
 
      	let Prompt =  '<form >'+
                  '<div class="form-group">'+
-                 	'<label for="formPartID">Please enter your Prolific ID</label>'+
+                 	'<label for="formPartID">Renseignez votre numéro d\'identifiant anonyme (10 chiffres)"</label>'+
                 	'<input type="text" class="form-control" id="formPartID" placeholder="24-digit prolific ID" maxlength="24" style="width: 27ch;">'+
-                 	'<div class="invalid-feedback">You must enter your Prolific ID (24 digits)</div>'+
+                 	'<div class="invalid-feedback">Votre ID anonyme est composé de 10 chiffres</div>'+
                  '</div>'+
                  '<form>';
+      
+      let Info  = '<div class="row"><div class="col-xs-3 col-md-3"></div><div id = "Middle" class="col-xs-8 col-md-8"><H3>'+
+      'S\'il vous plait selectionnez votre sexe biologique :</h3>'+
+      '<div align="left"><input type= "radio" id="GenderFemale" name= "answer" value= "F"> <label for="GenderFemale"> Féminin </label><br>' +
+      '<div align="left"><input type= "radio" id="GenderMale" name= "answer" value= "M"> <label for="GenderMale"> Masculin </label>'+
+      '<br><br><br><br>' +
+      '<br><br></div><div class="col-xs-1 col-md-1"></div></div>';
 
-       	       $('#Stage').html(Prompt);
+       	       $('#Stage').html(Prompt + Info);
 
 
 	let params = new URLSearchParams(location.search);
@@ -45,7 +53,7 @@ function getID(exp) {
 
        $('#bNext').click(function() {
 
-         if(document.getElementById('formPartID').value.length===24){
+         if(document.getElementById('formPartID').value.length===10){
             exp.ID = document.getElementById('formPartID').value;
 
                      $('#ContBox').empty();
