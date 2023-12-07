@@ -56,7 +56,8 @@ function getID(exp) {
 
          if(document.getElementById('formPartID').value.length===10){
           if ($("input:radio:checked").length < 1) {
-					alert('S\'il vous plait cochez l\'une des cases.')};
+					alert('S\'il vous plait cochez l\'une des cases.')
+          formPartID.classList.add('is-invalid')};
           exp.ID = document.getElementById('formPartID').value;
                      $('#ContBox').empty();
                      exp.expTask++
