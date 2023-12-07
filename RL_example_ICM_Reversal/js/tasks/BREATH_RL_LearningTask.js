@@ -243,6 +243,8 @@ function recordResponse() {
       lossUnchosen:chRespKey == track.iside[1] ? track.symbolA.loss : track.symbolB.loss,
       randomUnchosen:99,
       outcomeUnchosen:chRespKey == track.iside[1] ? track.out_A : track.out_B,
+      reversal:track.symbolA.isreversed,
+      trial_per_reversal:track.symbolA.counter,
       totalReward:track.tRew+(chRespKey == track.iside[0] ? track.out_A : track.out_B),
       choiceType:track.symbolA.id < track.symbolB.id ? track.symbolA.id+'.'+track.symbolB.id : track.symbolB.id+'.'+track.symbolA.id,
       feedbackType:ts.schedule[track.block].fdb,
