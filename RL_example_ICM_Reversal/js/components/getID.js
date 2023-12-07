@@ -1,5 +1,6 @@
 import {expOrder} from "../order.js";
 import {exp} from "../BREATH_RL_ExpSetting.js"
+import {sendToDB} from "../functions/sendToDB.js";
 
 
 
@@ -64,11 +65,20 @@ function getID(exp) {
                     }
        }
       }) 
+    
+// send participant data to the database
+sendToDB(0,
+  { partID: exp.ID,
+    partSex: $("input:radio:checked").attr('value'),
+    expID: exp.expID},
+'php/InsertDB_IDstart.php'
+);
+      
     }
 
 export {getID}
 
-
+// SubGender = $("input:radio:checked").attr('value');
 
 let c_Buttons =  "<div class = 'row justify-content-between mt-2' id = 'respButtons'> </div>";
 

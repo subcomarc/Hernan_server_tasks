@@ -213,8 +213,6 @@ function recordResponse() {
       track.out_B = track.symbolB.reward; }else{
         track.out_B = track.symbolB.loss; }
   
-
-
   rs.push({
     partID: exp.ID,
       expID: exp.expID,
