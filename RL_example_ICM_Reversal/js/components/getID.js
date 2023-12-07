@@ -53,18 +53,17 @@ function getID(exp) {
 // ON CLICK CHECK THAT THE ENTRY WAS VALID:
 
        $('#bNext').click(function() {
-
-         if(document.getElementById('formPartID').value.length===10){
           if ($("input:radio:checked").length < 1) {
-					alert('S\'il vous plait cochez l\'une des cases.')
-          formPartID.classList.add('is-invalid')};
-          exp.ID = document.getElementById('formPartID').value;
+					  alert('S\'il vous plait cochez l\'une des cases.')}else{
+                if(document.getElementById('formPartID').value.length===10){;
+                  exp.ID = document.getElementById('formPartID').value;
                      $('#ContBox').empty();
                      exp.expTask++
-                     expOrder();
-                   }
-          else{formPartID.classList.add('is-invalid');}
-       })
+                     expOrder();}else{
+                      formPartID.classList.add('is-invalid');
+                    }
+       }
+      }) 
     }
 
 export {getID}
