@@ -8,7 +8,7 @@ $EXPID 		= stripslashes(htmlspecialchars($_POST['expID']));
 
 
 $stmt = $db->prepare("INSERT INTO BREATH_RL_IDstart VALUE(?,?,?, NOW())");
-$stmt->bind_param("its",
+$stmt->bind_param("iss",
     $PARTID,$PARTSEX,$EXPID
     );
 $stmt->execute();
