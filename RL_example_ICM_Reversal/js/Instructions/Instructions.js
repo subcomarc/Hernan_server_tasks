@@ -3,10 +3,10 @@ import {Instructions} from "./dInstructions.js";
 var Welcome = new Instructions(
     {nextText: "Next",
     textInstructions:[//page 0
-                      ["<center><p><h1> Welcome to our project! </h1> <br><br><br>",
-                      "<h3> Thank you for choosing to take part in this study. We're happy to have you!",
-                      "With your help, we will try to understand a bit better how people learn new things and make decisions.</h3><br>",
-                      "<h2>Let's jump right into it !</h2></p><center>"],
+                      ["<center><p><h1> Bienvenue dans notre projet ! </h1> <br><br><br>",
+                      "<h3> Merci d'avoir choisi de participer à cette étude. Nous sommes ravis de vous avoir parmi nous !",
+                      "Avec votre aide, nous tenterons de mieux comprendre comment les gens apprennent de nouvelles choses et prennent des décisions..</h3><br>",
+                      "<h2>Allons-y !</h2></p><center>"],
 
                       ]  })
 

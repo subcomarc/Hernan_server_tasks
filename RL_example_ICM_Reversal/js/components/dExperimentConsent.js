@@ -2,21 +2,19 @@ import {expOrder} from "../order.js";
 import {exp} from "../BREATH_RL_ExpSetting.js"
 
 var consentForm =  {
-  intro: "This is a study titled 'Learning and Decision-Making,' led by Professor XXXXXXXX. "+
-         "The primary goal of this research is to understand the learning processes involved in decision-making, " +
-         "focusing on the role of reinforcement learning in short-term and long-term cognition in groups of individuals."+
-         "We want to emphasize that this study has no immediate application or clinical value, but it will contribute to deepen our understanding of human behavior.",
+  intro: "Il s'agit d'une étude intitulée \"Apprentissage et prise de décision\", dirigée par le professeur XXXXXXXX.  "+
+         "L'objectif principal de cette recherche est de comprendre les processus d'apprentissage impliqués dans la prise de décision, " +
+         "en mettant l'accent sur le rôle de l'apprentissage par renforcement dans la cognition à court et à long terme au sein de groupes d'individus. "+
+         "Nous tenons à souligner que cette étude n'a aucune application immédiate ou valeur clinique, mais elle contribuera à approfondir notre compréhension du comportement humain.",
 
- procedure: "You will be asked to complete two cognitive tasks, "+
-            "that do not require any particular skill or knowledge. " +
-            "The estimated duration to complete the study is approximately 20 minutes. " +
-            "Depending oby you performance, you might earn between £2.5 - £5. ",
+ procedure: "Vous serez invité(e) à accomplir une tâche cognitives "+
+            "ne nécessitant aucune compétence particulière ni connaissance. " +
+            "La durée estimée pour mener à bien l'étude est d'environ 10 minutes. " +
+            "En fonction de votre performance, vous pourriez gagner entre £2.5 et £5. ",
 
-  participation: "Your participation in this research study is voluntary. You may stop and withdraw your participation at any time. "+
-                 "In addition to your responses in the study, we will also collect " +
-                 "<a href='https://researcher-help.prolific.co/hc/en-gb/articles/360009391633-Exporting-Prolific-Demographic-Data' target='_blank'>"+
-                 "these demographic data</a> that you provided to Prolific when you signed up."+
-                 "The collected data will only be used for research purposes. Any shared or published dataset will not contain your name or Prolific ID.",
+  participation: "Votre participation à cette recherche est volontaire. Vous pouvez arrêter et retirer votre participation à tout moment. "+
+                 "En plus de vos réponses à l'étude, nous collecterons également vos données démographiques essentiels (age et sexe) " +
+                 "Tout ensemble de données partagé ou publié ne contiendra pas votre nom ni votre identifiant.",
 
  publication: "You will be able to check the publications resulting from this study on the following "+
                 "<a href='https://sites.google.com/site/stefanopalminteri/publications' target='_blank'>"+
@@ -51,16 +49,16 @@ var consentForm =  {
              '</div>'}
 
    $('#Stage').html('<div class="col" >'+
-                    "<h2>Consent Form</h2>"+
+                    "<h2>Formulaire de consentement</h2>"+
                     "<br>"+
-                    "<h4>Aim of the Study</h4>"+"<p>"+this.intro+"</p>"+
-                    "<h4>Procedure</h4>"+ "<p>"+this.procedure+"</p>"+
-                    "<h4>Participation and Confidentiality</h4>"+ "<p>"+this.participation+"</p>"+
-                    "<h4>Research Results And Publication</h4>"+ "<p>"+this.publication+"</p>"+
-                    "<h4>Contact And Additional Information</h4>"+"<p class='ow'>"+this.contact+"</p>"+
+                    "<h4>Objectif de l'étude</h4>"+"<p>"+this.intro+"</p>"+
+                    "<h4>Procédure</h4>"+ "<p>"+this.procedure+"</p>"+
+                    "<h4>Participation et confidentialité</h4>"+ "<p>"+this.participation+"</p>"+
+                    "<h4>Résultats de la recherche et publication</h4>"+ "<p>"+this.publication+"</p>"+
+                    "<h4>Contact et informations supplémentaires</h4>"+"<p class='ow'>"+this.contact+"</p>"+
                     "<p>"+this.ethics+"</p>"+
                     "<hr>"+
-                    "<h4>Consent</h4>"+ "<p>"+this.consentForm+"</p>"+
+                    "<h4>Consentement</h4>"+ "<p>"+this.consentForm+"</p>"+
                      consentCheck[0]+consentCheck[1]+consentCheck[2]+
                      '</div>')
    // Show buttons

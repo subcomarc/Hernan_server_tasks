@@ -21,7 +21,7 @@ function getID(exp) {
      	let Prompt =  '<form >'+
                  '<div class="form-group">'+
                  	'<label for="formPartID">Renseignez votre numéro d\'identifiant anonyme</label>'+
-                	'<input type="text" class="form-control" id="formPartID" placeholder="10 chiffres max" maxlength="10" style="width: 27ch;">'+
+                	'<input type="text" class="form-control" id="formPartID" placeholder="10 chiffres max" maxlength="10" style="width: 10ch;">'+
                  	'<div class="invalid-feedback">Votre ID anonyme est composé de 10 chiffres</div>'+
                  '</div>'+
                  '<form>';
@@ -34,7 +34,15 @@ function getID(exp) {
       '<br><br><br><br>' +
       '<br><br></div><div class="col-xs-1 col-md-1"></div></div>';
 
-       	       $('#Stage').html(Prompt + Info);
+      let Age =  '<form >'+
+      '<div class="form-group">'+
+        '<label for="formPartAge">Renseignez votre numéro d\'identifiant anonyme</label>'+
+       '<input type="text" class="form-control" id="formPartAge" placeholder="00" maxlength="2" style="width: 2ch;">'+
+        '<div class="invalid-feedback">Votre age doit être renseigné en format numérique (2 chiffres)</div>'+
+      '</div>'+
+      '<form>';
+
+       	       $('#Stage').html(Prompt + Age + Info);
 
 
 	let params = new URLSearchParams(location.search);
@@ -56,15 +64,17 @@ function getID(exp) {
        $('#bNext').click(function() {
           if ($("input:radio:checked").length < 1) {
 					  alert('S\'il vous plait cochez l\'une des cases.')}else{
-                if(document.getElementById('formPartID').value.length===10){;
+                if(document.getElementById('formPartID').value.length===10 & document.getElementById('formPartAge').value.length===2){;
                   exp.ID = document.getElementById('formPartID').value;
                   exp.partSex = $("input:radio:checked").val();
+                  exp.age = document.getElementById('formPartAge').value;
                      $('#ContBox').empty();
                      exp.expTask++
                      expOrder();
                      sendToDB(0,
                       {partID: exp.ID,
                         partSex: exp.partSex,
+                        partAge: exp.age,
                         expID: exp.expID},
                     'php/InsertDB_IDstart.php'
                     );
