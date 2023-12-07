@@ -21,7 +21,7 @@ function getID(exp) {
      	let Prompt =  '<form >'+
                  '<div class="form-group">'+
                  	'<label for="formPartID">Renseignez votre numéro d\'identifiant anonyme</label>'+
-                	'<input type="text" class="form-control" id="formPartID" placeholder="10 chiffres max" maxlength="10" style="width: 10ch;">'+
+                	'<input type="text" class="form-control" id="formPartID" placeholder="10 chiffres max" maxlength="10" style="width: 20ch;">'+
                  	'<div class="invalid-feedback">Votre ID anonyme est composé de 10 chiffres</div>'+
                  '</div>'+
                  '<form>';
@@ -37,7 +37,7 @@ function getID(exp) {
       let Age =  '<form >'+
       '<div class="form-group">'+
         '<label for="formPartAge">Renseignez votre numéro d\'identifiant anonyme</label>'+
-       '<input type="text" class="form-control" id="formPartAge" placeholder="00" maxlength="2" style="width: 2ch;">'+
+       '<input type="text" class="form-control" id="formPartAge" placeholder="00" maxlength="2" style="width: 8ch;">'+
         '<div class="invalid-feedback">Votre age doit être renseigné en format numérique (2 chiffres)</div>'+
       '</div>'+
       '<form>';
