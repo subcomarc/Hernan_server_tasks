@@ -62,7 +62,7 @@ var InstructionsLT = new Instructions(
   var InstructionsLT2 = new Instructions(
       {nextText: "Commencer",
       textInstructions:[//page 1
-              ["<h2>Premier jeu</h2>",
+              ["<h2>Tâche point-and-click</h2>",
               "Vous êtes sur le point de commencer le vrai jeu. ",
               "<br><h4>Remarque :</h2>",
               "Dès maintenant, tous les points que vous gagnerez seront ajoutés à votre gain final. ",
