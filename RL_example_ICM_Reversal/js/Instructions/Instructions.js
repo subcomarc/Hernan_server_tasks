@@ -14,7 +14,7 @@ var InstructionsLT = new Instructions(
     {nextText: "Commencer",
     textInstructions:[//page 0
                      ["<h2>Instructions</h2>",
-                      "Cette étude se compose d\'un jeux du style \"point-and-click\", dans lesquels vous devrez choisir l'un des deux symboles affichés à l'écran. <br></br>",
+                      "Cette étude se compose d\'un jeux du style \"point-and-click\", dans lequel vous devrez choisir l'un des deux symboles affichés à l'écran. <br></br>",
                       "Voici un exemple d'à quoi les symboles peuvent ressembler :<br>", 
                       '<img src="images/stim2/17.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/18.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/19.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid">', 
                       "<b>IMPORTANT: Chaque symbole a une probabilité de vous donner une certaine récompense (ceci determine sa valeur). Retenez bien que, en moyenne, toujours l'un des symboles affichés sur l'écran vous donnera plus de points que l'autre. Le côté d'affichage (gauche/droite) n'a aucune importance.<br>",
@@ -22,8 +22,8 @@ var InstructionsLT = new Instructions(
 
                       //page 2
                       ["<h2>Instructions</h2>",
-                      "À la fin de l'étude, nous convertirons tous les points collectés en livres et les ajouterons au bonus fixe. ",
-                      "Le taux de conversion est de 1 point = 1,2 penny. ",
+                      "À la fin de l'étude, nous convertirons tous les points collectés en euros et les ajouterons au bonus fixe. ",
+                      "Le taux de conversion est de 1 point = 1,2 centîmes d'euros. ",
                       "Cela signifie que vous pouvez doubler vos gains si vous vous en sortez bien."],
 
                       // //page 3
