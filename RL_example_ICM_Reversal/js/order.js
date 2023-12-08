@@ -48,17 +48,17 @@ function expOrder (){
       InstructionsLT_Train.init();
       break;
     case 5:
-        InstructionsStartDyspnoea.init();
-         exp.startTimeInsPref = Date.now();
-         break;
-     case 6:
-        LaunchDyspnoea(exp)
-        exp.startTimeLaunchDyspnoea = Date.now();
-        break;
-    case 7:
       BREATH_RL_LearningTraining.init() ;
       exp.startTimeLTTrain = Date.now();
       break;
+    case 6:
+        InstructionsStartDyspnoea.init();
+         exp.startTimeInsPref = Date.now();
+         break;
+     case 7:
+        LaunchDyspnoea(exp)
+        exp.startTimeLaunchDyspnoea = Date.now();
+        break;
     case 8:
       exp.startTimeInsLT = Date.now();
       InstructionsLT2.init();

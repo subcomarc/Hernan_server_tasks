@@ -108,7 +108,7 @@ var InstructionsPreference = new Instructions(
       // "It may be better to keep your written lesson brief and to the point, but no strict limit for the text is enforced.",
       // "<br><br> Click the button below to start."]]
       textInstructions:[//page 1
-      ["<h2>Préparation pour la tâche de respiration</h2>",
+      ["<h2>Mais avant de commencer...</h2>",
       "L'expérimentateur va maintenant vous guider à travers une intervention respiratoire."+
       "<b>Suivez toutes les instructions attentivement. Soyez assuré(e), cette intervention est totalement inoffensive.</b> " ,
       "Si l'expérimentateur n'est pas dans la pièce, veuillez lui avertir que vous avez atteint cette étape et ils viendront vous voir promptement."+

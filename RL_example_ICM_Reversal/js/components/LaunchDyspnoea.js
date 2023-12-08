@@ -11,8 +11,9 @@ function LaunchDyspnoea(exp){
 
 
 let Dysp = '<form><div class="col">'+
-              '<H2>Procedure en cours. Cliquez sur la touche \'Suivant\' quand l\'experimentateur vous l\indiquera. Ceci va vous permettre de commencer le jeu point-and-click.</H2>'+
-              '<img src="images/instructions/clipLungs.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> ' +
+              '<H2>Procedure en cours. Cliquez sur la touche \'Suivant\' quand l\'experimentateur vous l\'indiquera.</H2>'+
+              '<img src="images/instructions/clipLungs.gif" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> ' +
+              '<H2>Ceci va vous permettre de commencer le jeu point-and-click.</H2>'+
               '</div><form>'
 
 let Buttons = '<div align="col m-5"><input align="left" type="button"  class="btn btn-default rounded myBtn" id="bSubmit" value="Suivant"></div>';
