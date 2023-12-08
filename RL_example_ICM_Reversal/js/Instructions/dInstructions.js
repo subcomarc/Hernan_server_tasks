@@ -17,8 +17,8 @@ export class Instructions {
       $('#ContBox').html(c_Stage);
 
       //Add buttons
-      var buttonNext = '<input align="center" type="button"  class="btn btn-default invisible myBtn" id="bNext" value="Next" >';
-      var buttonBack = '<input align="center" type="button"  class="btn btn-default invisible myBtn" id="bBack" value="Back" >';
+      var buttonNext = '<input align="center" type="button"  class="btn btn-default invisible myBtn" id="bNext" value="Retour" >';
+      var buttonBack = '<input align="center" type="button"  class="btn btn-default invisible myBtn" id="bBack" value="Suivant" >';
 
        $('#Bottom').html(buttonBack+buttonNext);
        let object = this;
@@ -42,14 +42,14 @@ function showInstructions(page,object){
 
         else if (page > 0){
             document.getElementById("bBack").onclick = function(){$('#Stage').empty();showInstructions(page-1,object)};
-            document.getElementById("bBack").value = "Back";
+            document.getElementById("bBack").value = "Retour";
             document.getElementById("bBack").className = "btn btn-default mt-2 mb-2 rounded  visible myBtn";
           }
 
       // When to display next button - only if there is a next page to go to
         if (page < object.textInstructions.length-1){
           document.getElementById("bNext").onclick = function(){$('#Stage').empty();showInstructions(page+1,object)};
-          document.getElementById("bNext").value = "Next";
+          document.getElementById("bNext").value = "Suivant";
           document.getElementById("bNext").className = "btn btn-default mt-2 mb-2 rounded  visible myBtn";
         }
 

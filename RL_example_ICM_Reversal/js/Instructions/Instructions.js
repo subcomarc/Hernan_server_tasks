@@ -14,11 +14,11 @@ var InstructionsLT = new Instructions(
     {nextText: "Commencer",
     textInstructions:[//page 0
                      ["<h2>Instructions</h2>",
-                      "Cette étude se compose d\'un jeux dU style \"point-and-click\", dans lesquels vous devrez choisir l'un des deux symboles affichés à l'écran. <br></br>",
-                      "Voici un exemple de ce à quoi les symboles peuvent ressembler :<br>", 
+                      "Cette étude se compose d\'un jeux du style \"point-and-click\", dans lesquels vous devrez choisir l'un des deux symboles affichés à l'écran. <br></br>",
+                      "Voici un exemple d'à quoi les symboles peuvent ressembler :<br>", 
                       '<img src="images/stim2/17.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/18.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/19.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid">', 
-                      "<b>IMPORTANT: Chaque symbole a une probabilité de vous donner une récompense (ceci determine sa valeur). Retenez bien que, en moyenne, toujours l'un des symboles affiches sur l'écran vous donnera plus de points que l'autre. Le côté d'affichage (gauche/droite) n'a aucune importance.<br>",
-                      "Vous pouvez maximiser vos gains en choisissant à chaque fois le symbole avec la plus grande valeur moyenne.<br><br></H3> Cherchez à accumuler autant de points que possible !</b>" ],
+                      "<b>IMPORTANT: Chaque symbole a une probabilité de vous donner une certaine récompense (ceci determine sa valeur). Retenez bien que, en moyenne, toujours l'un des symboles affichés sur l'écran vous donnera plus de points que l'autre. Le côté d'affichage (gauche/droite) n'a aucune importance.<br>",
+                      "Vous pouvez donc maximiser vos gains en choisissant à chaque fois le symbole avec la plus grande valeur en moyenne.<br><br></H3> Cherchez à accumuler autant de points que possible !</b>" ],
 
                       //page 2
                       ["<h2>Instructions</h2>",
@@ -67,7 +67,7 @@ var InstructionsLT = new Instructions(
               "<br><h4>Remarque :</h2>",
               "Dès maintenant, tous les points que vous gagnerez seront ajoutés à votre gain final. ",
               "Il y aura beaucoup plus d'essais que pendant l'entraînement. ",
-              "Les tickets de loterie différeront de ceux utilisés pendant l'entraînement. Cependant, la logique restera la même. ",
+              "Les symbols différeront de ceux utilisés pendant l'entraînement. Cependant, la logique restera la même. ",
               "<br><br> Cliquez sur le bouton ci-dessous pour commencer."]
      
                       ]
