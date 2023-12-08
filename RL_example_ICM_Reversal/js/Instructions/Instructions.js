@@ -48,10 +48,10 @@ var InstructionsLT = new Instructions(
     {nextText: "Commencer",
     textInstructions:[//page 1
              ["<h2>Entraînement</h2>",
-              "Commençons par quelques essais pratiques ! ",
+              "Commençons par un peu de pratique ! ",
               "Ne faites pas trop attention aux points ou à quoi que ce soit d'autre à ce stade, il s'agit simplement de vous familiariser avec le point-and-click. ",
               "C'est pourquoi nous n'utiliserons même pas nos symboles réels pour cette pratique, mais plutôt quelques lettres aléatoires",
-              "<br><h4>Remarque :</h2>"+
+              "<br><h4>Attention :</h2>"+
               "Les points collectés pendant la pratique ne seront pas ajoutés à votre gain total. " +
               "Cependant, vous verrez votre score à la fin de l'entraînement. ",
               "<br><br> Cliquez sur le bouton ci-dessous pour commencer."]

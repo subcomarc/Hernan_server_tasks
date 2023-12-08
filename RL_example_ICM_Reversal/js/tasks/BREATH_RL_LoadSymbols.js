@@ -46,8 +46,8 @@ addSymImage(symbols,0,"images/stim/",'.gif')
 // ];
 {id:0,reward:1,prob:0.25,loss:0},
 {id:1,reward:1,prob:0.75,loss:0},
-{id:2,reward:-1,prob:0.75,loss:0},
-{id:3,reward:-1,prob:0.25,loss:0}
+{id:2,reward:10,prob:0.75,loss:0},
+{id:3,reward:10,prob:0.25,loss:0}
 ];
  addSymImage(tSymbols,0,"images/stimTrain/",'.jpg')
 
