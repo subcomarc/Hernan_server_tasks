@@ -2,7 +2,7 @@ import {expOrder} from "../order.js";
 import {sendToDB} from "../functions/sendToDB.js";
 import {exp} from "../BREATH_RL_ExpSetting.js"
 
-function getWrittenLesson(exp){
+function LaunchDyspnoea(exp){
   let c_Stage =  "<div class = 'row justify-content-center' id = 'Stage'> </div>";
   let c_FinalButton =  "<div class = 'row justify-content-center' id = 'FinalButton'> </div>";
 
@@ -10,31 +10,21 @@ function getWrittenLesson(exp){
 
 
 
-let Prompt = '<form><div class="form-group">'+
-              '<label for="freeText">'+
-                    'Please write your lesson for your future pupil in the box below.' +
-              '</label>'+
-              '<textarea class="form-control" id="freeText" rows="15"></textarea>'+
-              '</div>'+
-              '<form>';
+let Dysp = '<form><div class="col">'+
+              '<H2>Procedure en cours. Cliquez sur la touche \'Suivant\' quand l\'experimentateur vous l\indiquera. </H2>'+
+              '<img src="images/instructions/clipLungs.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> ' +
+              '</div><form>'
 
-let Buttons = '<div align="col m-5"><input align="left" type="button"  class="btn btn-default rounded myBtn" id="bSubmit" value="Next"></div>';
+let Buttons = '<div align="col m-5"><input align="left" type="button"  class="btn btn-default rounded myBtn" id="bSubmit" value="Suivant"></div>';
 
-$('#Stage').html(Prompt);
+$('#Stage').html(Dysp);
 $('#FinalButton').html(Buttons);
 
 
 $('#bSubmit').click(function(){
-  exp.WrittenLesson = document.getElementById('freeText').value;
-  sendToDB(0,
-        	{ partID: exp.ID,
-            prolificID: exp.PID,
-          	expID: exp.expID,
-          	WrittenLesson: exp.WrittenLesson},
-        'php/InsertDB_WrittenLesson.php')
   exp.expTask++;
   expOrder();
 })
 }
 
-export {getWrittenLesson}
+export {LaunchDyspnoea}
