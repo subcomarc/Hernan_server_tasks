@@ -16,9 +16,9 @@ var InstructionsLT = new Instructions(
                      ["<h2>Instructions</h2>",
                       "Cette étude se compose d\'un jeux dU style \"point-and-click\", dans lesquels vous devrez choisir l'un des deux symboles affichés à l'écran. <br></br>",
                       "Voici un exemple de ce à quoi les symboles peuvent ressembler :<br>", 
-                      '<img src="images/stim2/19.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"><br>', 
-                      "<b>IMPORTANT: Chaque symbole a une probabilité de vous donner une récompense. Retenez bien que, en moyenne, chaque image vous donnera plus de points que l'autre. Le côté (gauche/droite) n'a aucune importance.<br>",
-                      "Vous pouvez maximiser vos gains en choisissant à chaque fois les images avec la plus grande valeur moyenne.<br><br></H3> Cherchez à accumuler autant de points que possible !</b>." ],
+                      '<img src="images/stim2/17.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/18.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/19.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid">', 
+                      "<b>IMPORTANT: Chaque symbole a une probabilité de vous donner une récompense (ceci determine sa valeur). Retenez bien que, en moyenne, toujours l'un des symboles affiches sur l'écran vous donnera plus de points que l'autre. Le côté d'affichage (gauche/droite) n'a aucune importance.<br>",
+                      "Vous pouvez maximiser vos gains en choisissant à chaque fois le symbole avec la plus grande valeur moyenne.<br><br></H3> Cherchez à accumuler autant de points que possible !</b>" ],
 
                       //page 2
                       ["<h2>Instructions</h2>",
