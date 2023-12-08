@@ -10,7 +10,7 @@ import {BREATH_RL_PreferenceTask} from "./tasks/BREATH_RL_PreferenceTask.js";
 
 // InstructionsLT
 // import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider,Welcome} from "./Instructions/Instructions.js"
-import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson,Welcome} from "./Instructions/Instructions.js"
+import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsStartDyspnoea,Welcome} from "./Instructions/Instructions.js"
 
 // other components
 import {getID} from "./components/getID.js";
@@ -70,7 +70,7 @@ function expOrder (){
       exp.startTimePref = Date.now();
       break;
     case 10:
-      InstructionsWriteLesson.init();
+      InstructionsStartDyspnoea.init();
        exp.startTimeInsPref = Date.now();
        break;
     // case 12:
