@@ -119,5 +119,6 @@ var InstructionsPreference = new Instructions(
 
 
 // export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider, Welcome }
-export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson,InstructionsStartDyspnoea, Welcome }
+// export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson, Welcome }
+export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsStartDyspnoea, Welcome }
 
