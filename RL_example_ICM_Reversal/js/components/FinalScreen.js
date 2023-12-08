@@ -26,15 +26,16 @@ let time = Date.now()-exp.startTime;
 
       // Write on the matrix end of the trial
       var Title = '<h3 align = "center" style="color: #3C455C;"> End </h3>'
-      var EndText ='<div class="col"><h3 align = "center"> <br> This is the end of the experiment!</h3>  ' +
-                  '<p align = "center" ><br> Thank you very much for taking part. <br></p>' +
-                  '<p align = "center" ><b> You won &pound ' + points2pounds(rew,exp.rate)  +' </b></p>' +
-                  '<p align = "center" > This will paid on top of the fixed compensation. </p><br><br>'
+      var EndText ='<div class="col"><h3 align="center"> <br> C\'est la fin de l\'expérience !</h3>  ' +
+      '<p align="center" ><br> Merci beaucoup d\'avoir participé. <br></p>' +
+      '<p align="center" ><b> Vous avez gagné &pound ' + points2pounds(rew, exp.rate) + ' </b></p>' +
+      '<p align="center" > Ceci sera ajouté à la compensation fixe. </p><br><br>'
+      
 
         //$('#Top').html('<div class="row justify-content-center">'+Title+'</div>');
         $('#Stage').html('<div class="row justify-content-center">'+EndText+'</div>');
 
-        let Buttons = '<div align="col m-5"><a href='+ exp.link +' class="btn btn-default myBtn">Return to Prolific</a></div>';
+        let Buttons = '<div align="col m-5"><a href='+ exp.link +' class="btn btn-default myBtn">Terminer</a></div>';
         $('#FinalButton').html(Buttons);
 
     }

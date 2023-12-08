@@ -1,7 +1,7 @@
 import {Instructions} from "./dInstructions.js";
 
 var Welcome = new Instructions(
-    {nextText: "Next",
+    {nextText: "Suivant",
     textInstructions:[//page 0
                       ["<center><p><h1> Bienvenue dans notre projet ! </h1> <br><br><br>",
                       "<h3> Merci d'avoir choisi de participer à cette étude. Nous sommes ravis de vous avoir parmi nous !",
@@ -11,74 +11,77 @@ var Welcome = new Instructions(
                       ]  })
 
 var InstructionsLT = new Instructions(
-    {nextText: "Start",
+    {nextText: "Commencer",
     textInstructions:[//page 0
-                      ["<h2>Instructions</h2>",
-                      "This study consists of two point-and-click games, in which you will have to choose one out of two symbols displayed on screen. <br></br>",
-                      "Here, this is an example of what the symbols can look like:<br>", 
+                     ["<h2>Instructions</h2>",
+                      "Cette étude se compose de deux jeux de point-and-click, dans lesquels vous devrez choisir l'un des deux symboles affichés à l'écran. <br></br>",
+                      "Voici un exemple de ce à quoi les symboles peuvent ressembler :<br>", 
                       '<img src="images/stim2/17.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/18.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/19.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid">', 
-                      "<b>Every symbol has a probability of giving you a reward, you want to accumulate as many points as you can!</b>",
-                    ],
+                      "<b>Chaque symbole a une probabilité de vous donner une récompense. Cherchez à accumuler autant de points que possible !</b>",
+   ],
 
                       //page 2
                       ["<h2>Instructions</h2>",
-                      "At the end of the study, we will convert all collected points into pounds and add them to the fixed bonus provided by Prolific. ",
-                      "The conversion rate is 1 point = 1.2 pence. ",
-                      "This means that you can double your earnings if you perform well. "],
+                      "À la fin de l'étude, nous convertirons tous les points collectés en livres et les ajouterons au bonus fixe fourni par Prolific. ",
+                      "Le taux de conversion est de 1 point = 1,2 penny. ",
+                      "Cela signifie que vous pouvez doubler vos gains si vous vous en sortez bien."],
 
-                      //page 3
-                      ["<h2>Instructions</h2>",
-                      "<b>Here's the catch!!! READ CAREFULLY </b>",
-                      "Once you are done playing these games, we will ask you to <b>write down a set of instructions for the next player</b>. ",
-                      "You should try to transmit to them any strategy you may have devised while you were doing the task. Your goal is to teach them how to gain as many points as possible. ",
-                      "Keep in mind that the games they'll play will be exactly like yours, with the same choices, probabilities and rewards <b>but they will be represented by different symbols, so conveying the right strategy rather than talking about one symbol in particular here is key.</b>",
-                      "Try to help your future student as much as you can! <b>You'll be earning a bonus equivalent to 10% of the winnings of your future pupil!</b> "],
+                      // //page 3
+                      // ["<h2>Instructions</h2>",
+                      // "<b>Voici le piège !!! LISEZ ATTENTIVEMENT </b>",
+                      // "Une fois que vous aurez terminé de jouer à ces jeux, nous vous demanderons de <b>noter une série d'instructions pour le prochain joueur</b>. ",
+                      // "Vous devriez essayer de leur transmettre toute stratégie que vous auriez élaborée pendant que vous réalisiez la tâche. Votre objectif est de leur apprendre comment gagner autant de points que possible. ",
+                      // "Gardez à l'esprit que les jeux auxquels ils joueront seront exactement comme les vôtres, avec les mêmes choix, probabilités et récompenses <b>mais ils seront représentés par des symboles différents, donc transmettre la bonne stratégie plutôt que parler d'un symbole en particulier est essentiel ici.</b>",
+                      // "Essayez d'aider votre futur étudiant autant que possible ! <b>Vous gagnerez un bonus équivalent à 10% des gains de votre futur élève !</b> "],
 
                       //page 5
                       ["<h2>Instructions</h2>",
-                      "Here is a slowed-down example of the kind of decisions you'll have to make: ",
+                      "Voici un exemple ralenti du type de décisions que vous devrez prendre : ",
                       //'<img src="images/instructions/LT_BR3.gif" style="padding: 1rem; text-align: center" class = "img-fluid">'],
                       '<img src="images/instructions/example_RL_2.gif" style="padding: 1rem; text-align: center" class = "img-fluid">',
-                      "This is someone choosing the option on the left, and not winning any points. If this person had chosen the option to the right they would have won 1 point."],
+                      "Il s'agit de quelqu'un choisissant l'option de gauche et ne gagnant aucun point. Si cette personne avait choisi l'option de droite, elle aurait gagné 1 point."],
                     
                     ]
   })
 
     var InstructionsLT_Train = new Instructions(
-    {nextText: "Start",
+    {nextText: "Commencer",
     textInstructions:[//page 1
-                     ["<h2>Training</h2>",
-                     "Let's start with a few practice trials! ",
-                     "Don't pay too much attention to points or anything else at this point, this is just so that you get a feeling for the point-and-clicking. ",
-                     "This is why we wont even use our actual symbols for this practice, but rather some random letters",
-                     "<br><h4>Note:</h2>"+
-                     "Points collected during the practice won't be added to your total payoff. " +
-                     "However, you will see your score at the end of the training. ",
-                     "<br><br> Click the button below to start. "]
+             ["<h2>Entraînement</h2>",
+              "Commençons par quelques essais pratiques ! ",
+              "Ne faites pas trop attention aux points ou à quoi que ce soit d'autre à ce stade, il s'agit simplement de vous familiariser avec le point-and-click. ",
+              "C'est pourquoi nous n'utiliserons même pas nos symboles réels pour cette pratique, mais plutôt quelques lettres aléatoires",
+              "<br><h4>Remarque :</h2>"+
+              "Les points collectés pendant la pratique ne seront pas ajoutés à votre gain total. " +
+              "Cependant, vous verrez votre score à la fin de l'entraînement. ",
+              "<br><br> Cliquez sur le bouton ci-dessous pour commencer."]
+   
                     ]
   })
 
   var InstructionsLT2 = new Instructions(
-      {nextText: "Start",
+      {nextText: "Commencer",
       textInstructions:[//page 1
-                        ["<h2>First Game</h2>",
-                        "You are about to start the first game. ",
-                         "<br><h4>Note:</h2>",
-                         "From now on, any points you earn will be added to your final payoff. ",
-                         "There will be a lot more trials than in the training. ",
-                         "The lottery tickets will differ from those used during training. However, the logic will remain the same. ",
-                       "<br><br> Click the button below to start. "]
+              ["<h2>Premier jeu</h2>",
+              "Vous êtes sur le point de commencer le vrai jeu. ",
+              "<br><h4>Remarque :</h2>",
+              "Dès maintenant, tous les points que vous gagnerez seront ajoutés à votre gain final. ",
+              "Il y aura beaucoup plus d'essais que pendant l'entraînement. ",
+              "Les tickets de loterie différeront de ceux utilisés pendant l'entraînement. Cependant, la logique restera la même. ",
+              "<br><br> Cliquez sur le bouton ci-dessous pour commencer."]
+     
                       ]
     })
 
 var InstructionsPreference = new Instructions(
-    {nextText: "Start",
+    {nextText: "Commencer",
     textInstructions:[//page 1
-                    ["<h2>Second Game</h2>",
-                    "In the second game, you will see the same symbols again. ",
-                    "However, this time they will be presented in different combinations and you will only be able to see the outcome of your chosen option. ",
-                    "Please select whichever option you think is more likely to win. ",
-                    "<br><br> Click the button below to start. "]
+              ["<h2>Deuxième jeu</h2>",
+              "Dans le deuxième jeu, vous verrez à nouveau les mêmes symboles. ",
+              "Cependant, cette fois-ci, ils seront présentés dans des combinaisons différentes et vous ne pourrez voir que le résultat de l'option que vous avez choisie. ",
+              "Veuillez sélectionner l'option que vous pensez être la plus susceptible de gagner. ",
+              "<br><br> Cliquez sur le bouton ci-dessous pour commencer."]
+   
 
                   ]
 

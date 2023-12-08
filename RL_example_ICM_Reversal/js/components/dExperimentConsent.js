@@ -16,16 +16,16 @@ var consentForm =  {
                  "En plus de vos réponses à l'étude, nous collecterons également vos données démographiques essentiels (age et sexe) " +
                  "Tout ensemble de données partagé ou publié ne contiendra pas votre nom ni votre identifiant.",
 
- publication: "You will be able to check the publications resulting from this study on the following "+
+ publication: "YVous pourrez vérifier les publications résultant de cette étude sur le "+
                 "<a href='https://sites.google.com/site/stefanopalminteri/publications' target='_blank'>"+
-                "website.</a> ",
-  contact: "For any questions or additional information, you can contact our research team via email at the following address: XXXXXXXXXX",
-  ethics: "This research has been approved by the Inserm Ethical Review Committee XXXXXXXXXXXXXXXX",
-  consentForm: "Your participation in this study confirms that you have read this information, and wish to take part on it freely. "+
-                "Please check all boxes to continue:",
-  consentCheck: ["I am 18 years old or more",
-                "My participation in this experiment is voluntary",
-                "I understand that my collected data will remain confidential and I can stop at any time without justification"],
+                "site web</a> suivant. ",
+  contact: "Pour toute question ou information supplémentaire, vous pouvez contacter notre équipe de recherche par e-mail à l'adresse suivante : XXXXXXXXXX.",
+  ethics: "Cette recherche a été approuvée par le Comité d'éthique de l'Inserm, numéro XXXXXXXXXXXXXXXX",
+  consentForm: "Votre participation à cette étude confirme que vous avez lu ces informations et que vous souhaitez y participer volontairement. "+
+                "Veuillez cocher toutes les cases pour continuer : ",
+  consentCheck: ["J'ai 18 ans ou plus.",
+                "Ma participation à cette expérience est volontaire.",
+                "Je comprends que mes données collectées resteront confidentielles et que je peux m\'arrêter à tout moment sans justification"],
  init: function(){
    // Define main containers needed
    let c_Stage =  "<div class = 'row justify-content-left' id = 'Stage'> </div>";
@@ -36,7 +36,7 @@ var consentForm =  {
    $('#Bottom').html(c_Buttons)
 
    //Add hidden warning message (in case options are not checked)
-   let WarnText ='<div class="col"><p align = "center" class="text-danger">You must check all boxes to continue!<p></div>' ;
+   let WarnText ='<div class="col"><p align = "center" class="text-danger">Vous devez cocher toutes les cases pour continuer !<p></div>' ;
    $('#Warning').html(WarnText)
 
    // Add headings and show the text
@@ -62,8 +62,8 @@ var consentForm =  {
                      consentCheck[0]+consentCheck[1]+consentCheck[2]+
                      '</div>')
    // Show buttons
-   var buttonBack = '<input align="center" type="button"  class="btn btn-default invisible rounded m-2 myBtn" id="bBack" value="Back">';
-   var buttonNext = '<input align="center" type="button"  class="btn btn-default rounded visible m-2 myBtn" id="bNext" value="Next">';
+   var buttonBack = '<input align="center" type="button"  class="btn btn-default invisible rounded m-2 myBtn" id="bBack" value="Suivant">';
+   var buttonNext = '<input align="center" type="button"  class="btn btn-default rounded visible m-2 myBtn" id="bNext" value="Retour">';
    $('#respButtons').html(buttonBack + buttonNext);
 
    $('#bNext').click(function() {
