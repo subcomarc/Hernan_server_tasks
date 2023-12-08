@@ -16,13 +16,13 @@ var InstructionsLT = new Instructions(
                      ["<h2>Instructions</h2>",
                       "Cette étude se compose d\'un jeux dU style \"point-and-click\", dans lesquels vous devrez choisir l'un des deux symboles affichés à l'écran. <br></br>",
                       "Voici un exemple de ce à quoi les symboles peuvent ressembler :<br>", 
-                      '<img src="images/stim2/17.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/18.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/19.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid">', 
-                      "<b>Chaque symbole a une probabilité de vous donner une récompense. Cherchez à accumuler autant de points que possible !</b>",
-   ],
+                      '<img src="images/stim2/19.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"><br>', 
+                      "<b>IMPORTANT: Chaque symbole a une probabilité de vous donner une récompense. Retenez bien que, en moyenne, chaque image vous donnera plus de points que l'autre. Le côté (gauche/droite) n'a aucune importance.<br>",
+                      "Vous pouvez maximiser vos gains en choisissant à chaque fois les images avec la plus grande valeur moyenne.<br><br></H3> Cherchez à accumuler autant de points que possible !</b>." ],
 
                       //page 2
                       ["<h2>Instructions</h2>",
-                      "À la fin de l'étude, nous convertirons tous les points collectés en livres et les ajouterons au bonus fixe fourni par Prolific. ",
+                      "À la fin de l'étude, nous convertirons tous les points collectés en livres et les ajouterons au bonus fixe. ",
                       "Le taux de conversion est de 1 point = 1,2 penny. ",
                       "Cela signifie que vous pouvez doubler vos gains si vous vous en sortez bien."],
 
@@ -88,8 +88,9 @@ var InstructionsPreference = new Instructions(
   })
 
   // var InstructionsProbSlider = new Instructions(
-    var InstructionsWriteLesson = new Instructions(
-      {nextText: "Start",
+    // var InstructionsWriteLesson = new Instructions(
+    var InstructionsStartDyspnoea = new Instructions(
+      {nextText: "Commencer",
       // textInstructions:[//page 1
       //                   ["<h2>Third Game</h2>",
       //                   "In the third game, you will see one of the lottery tickets and a slider each round. "+
@@ -98,6 +99,14 @@ var InstructionsPreference = new Instructions(
       //                   "If you do not remember the exact number, give your best guess. "+
       //                   "You will get 1 point for each correct response. ",
       //                   "<br><br> Click the button below to start."]]
+      // textInstructions:[//page 1
+      // ["<h2>Teaching task</h2>",
+      // "Thank you for going over the two point-and-click tasks. "+
+      // "<b>Now, the time has come for you to transmit your strategies to a future player whe shall consider your pupil.</b> " ,
+      // "Remember, the options they will have to choose from will have the same value, but they will be represented by different symbols, so <b>focus on the concepts and strategies rather than one concrete symbol's shape or color</b>, since they wont be the same anyways. ",
+      // "You really want your pupil to succeed! After all, remember <b>you'll be making 10% of their earnings as an extra bonus.</b>"+
+      // "It may be better to keep your written lesson brief and to the point, but no strict limit for the text is enforced.",
+      // "<br><br> Click the button below to start."]]
       textInstructions:[//page 1
       ["<h2>Teaching task</h2>",
       "Thank you for going over the two point-and-click tasks. "+
@@ -110,5 +119,5 @@ var InstructionsPreference = new Instructions(
 
 
 // export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider, Welcome }
-export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson, Welcome }
+export {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson,InstructionsStartDyspnoea, Welcome }
 
