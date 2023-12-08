@@ -17,7 +17,7 @@ import {getID} from "./components/getID.js";
 import {end} from "./components/FinalScreen.js";
 import {consentForm} from "./components/dExperimentConsent.js";
 // import {getFeedback} from "./components/Feedback.js";
- import {getWrittenLesson} from "./components/WriteLesson.js";
+ import {LaunchDyspnoea} from "./components/LaunchDyspnoea.js";
 // import {Quiz} from "./components/Quiz.js";
 
 // other functions
@@ -26,8 +26,6 @@ import {disableF5} from "./functions/usefulFunctions.js";
 function expOrder (){
   let check = exp.expTask;
   switch (check) {
-
-
 
     case 0:
       Welcome.init()
@@ -50,42 +48,34 @@ function expOrder (){
       InstructionsLT_Train.init();
       break;
     case 5:
+        InstructionsStartDyspnoea.init();
+         exp.startTimeInsPref = Date.now();
+         break;
+     case 6:
+        LaunchDyspnoea(exp)
+        exp.startTimeLaunchDyspnoea = Date.now();
+        break;
+    case 7:
       BREATH_RL_LearningTraining.init() ;
       exp.startTimeLTTrain = Date.now();
       break;
-    case 6:
+    case 8:
       exp.startTimeInsLT = Date.now();
       InstructionsLT2.init();
       break;
-    case 7:
+    case 9:
       BREATH_RL_LearningTask.init() ;
       exp.startTimeLT = Date.now();
       break;
-    case 8:
-      InstructionsPreference.init();
-      exp.startTimeInsPref = Date.now();
-      break;
-    case 9:
-      BREATH_RL_PreferenceTask.init() ;
-      exp.startTimePref = Date.now();
-      break;
-    case 10:
-      InstructionsStartDyspnoea.init();
-       exp.startTimeInsPref = Date.now();
-       break;
-    // case 12:
-    //   BR_VSlider.init() ;
+    // case 8:
+    //   InstructionsPreference.init();
+    //   exp.startTimeInsPref = Date.now();
+    //   break;
+    // case 9:
+    //   BREATH_RL_PreferenceTask.init() ;
     //   exp.startTimePref = Date.now();
     //   break;
-    // case 11:
-    //   getWrittenLesson(exp)
-    //   exp.startTimeWrittenLesson = Date.now();
-    //   break;
-    case 11:
-      LaunchDyspnoea(exp)
-      exp.startTimeLaunchDyspnoea = Date.now();
-      break;
-   case 12:
+   case 10:
       end(exp);
       exp.startTimeFinal = Date.now();
       break;
