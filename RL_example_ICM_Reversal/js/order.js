@@ -17,7 +17,7 @@ import {getID} from "./components/getID.js";
 import {end} from "./components/FinalScreen.js";
 import {consentForm} from "./components/dExperimentConsent.js";
 // import {getFeedback} from "./components/Feedback.js";
-import {getWrittenLesson} from "./components/WriteLesson.js";
+// import {getWrittenLesson} from "./components/WriteLesson.js";
 // import {Quiz} from "./components/Quiz.js";
 
 // other functions
