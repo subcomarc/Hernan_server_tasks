@@ -17,7 +17,7 @@ import {getID} from "./components/getID.js";
 import {end} from "./components/FinalScreen.js";
 import {consentForm} from "./components/dExperimentConsent.js";
 // import {getFeedback} from "./components/Feedback.js";
-// import {getWrittenLesson} from "./components/WriteLesson.js";
+ import {getWrittenLesson} from "./components/WriteLesson.js";
 // import {Quiz} from "./components/Quiz.js";
 
 // other functions
@@ -77,9 +77,13 @@ function expOrder (){
     //   BR_VSlider.init() ;
     //   exp.startTimePref = Date.now();
     //   break;
+    // case 11:
+    //   getWrittenLesson(exp)
+    //   exp.startTimeWrittenLesson = Date.now();
+    //   break;
     case 11:
-      getWrittenLesson(exp)
-      exp.startTimeWrittenLesson = Date.now();
+      LaunchDyspnoea(exp)
+      exp.startTimeLaunchDyspnoea = Date.now();
       break;
    case 12:
       end(exp);
