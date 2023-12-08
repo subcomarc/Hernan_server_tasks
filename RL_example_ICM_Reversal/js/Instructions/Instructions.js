@@ -14,7 +14,7 @@ var InstructionsLT = new Instructions(
     {nextText: "Commencer",
     textInstructions:[//page 0
                      ["<h2>Instructions</h2>",
-                      "Cette étude se compose de deux jeux de point-and-click, dans lesquels vous devrez choisir l'un des deux symboles affichés à l'écran. <br></br>",
+                      "Cette étude se compose d\'un jeux dU style \"point-and-click\", dans lesquels vous devrez choisir l'un des deux symboles affichés à l'écran. <br></br>",
                       "Voici un exemple de ce à quoi les symboles peuvent ressembler :<br>", 
                       '<img src="images/stim2/17.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/18.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/19.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid">', 
                       "<b>Chaque symbole a une probabilité de vous donner une récompense. Cherchez à accumuler autant de points que possible !</b>",
