@@ -5,7 +5,7 @@ var Welcome = new Instructions(
     textInstructions:[//page 0
                       ["<center><p><h1> Soyez le/la bienvenu(e) ! </h1> <br><br><br>",
                       "<h3> Merci d'avoir choisi de participer à cette étude. Nous sommes ravis de vous avoir parmi nous !",
-                      "Avec votre aide, nous tenterons de mieux comprendre comment les gens apprennent de nouvelles choses et prennent des décisions..</h3><br>",
+                      "Avec votre aide, nous tenterons de mieux comprendre comment les gens apprennent de nouvelles choses et prennent des décisions. </h3><br>",
                       "<h2>Allons-y !</h2></p><center>"],
 
                       ]  })
