@@ -1,6 +1,7 @@
 var exp = {
   expID: 'TEACH_RL_TEACHER_NoReversal',
-  testMode: 'YES',
+  // testMode: 'YES',
+  testMode: 'NO',
   link: "https://app.prolific.co/submissions/complete?cc=CCLR3AVT",
   order: 0,
   rate: 0.012,
