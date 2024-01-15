@@ -28,9 +28,12 @@ let time = Date.now()-exp.startTime;
       var Title = '<h3 align = "center" style="color: #3C455C;"> End </h3>'
       var EndText ='<div class="col"><h3 align = "center"> <br> You have made it to the end of the experiment!</h3>  ' +
                   '<p align = "center" ><br> Congratulations!  <br></p>' +
-                   '<p align = "center" ><b> During the task, you won points equivalent to &pound ' + points2pounds(rew,exp.rate)  +' </b></p>' +
+                  //  '<p align = "center" > During the task, you won points equivalent to &pound ' + points2pounds(rew,exp.rate)  +' </p>' +
+                  // // '<p align = "center" ><b> You won ' + rew +' points! </b></p>' +
+                  // '<p align = "center" > <b> However, remember that this is not your bonus, as you will be paid the bonus of your pupil instead. You will also receive the full designated fixed compensation advertised in the study. </b></p><br><br>'
+                  '<p align = "center" > You will receive the full designated fixed compensation rate of XXX pounds. During the task, you also won several points. <b> However, remember that this points won\'t count towards your bonus, since you will be paid the bonus of your pupil instead.  </b> </p>' +
                   // '<p align = "center" ><b> You won ' + rew +' points! </b></p>' +
-                  '<p align = "center" > However, remember that this is not your bonus, as you will be paid the bonus of your pupil instead. You will also receive the full designated fixed compensation advertised in the study. </p><br><br>'
+                  '<p align = "center" > </p><br><br>'
 
         //$('#Top').html('<div class="row justify-content-center">'+Title+'</div>');
         $('#Stage').html('<div class="row justify-content-center">'+EndText+'</div>');

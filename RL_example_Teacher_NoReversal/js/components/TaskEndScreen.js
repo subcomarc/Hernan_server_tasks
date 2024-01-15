@@ -24,7 +24,8 @@ function endTask(rew,addRew=1){
 
     // Write on the matrix end of the trial
      let EndText ='<div class="col"><h3 align = "center"> <br> This is the end of the task!</h3> ' +
- 	                '<p align = "center" ><br> Your score is <b>'+rew+'</b> points. <br></p></div>' ;
+ 	                // '<p align = "center" ><br> Your score is <b>'+rew+'</b> points. <br></p></div>' ;
+                   '<p align = "center" ><br> Your score is <b>'+rew+'</b> points. <br></p></div>' ;
 
     $('#Stage').html('<div class="row justify-content-center">'+EndText+'</div>');
     $('#Bottom').html(buttonBack + buttonNext);

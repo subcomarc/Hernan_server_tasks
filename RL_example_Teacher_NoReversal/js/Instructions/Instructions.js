@@ -130,7 +130,8 @@ var InstructionsPreference = new Instructions(
                          ["<h2>Good job! You finished the game and the teaching task! Now, before we end the experiment...</h2>",
                          "You will see the symbols you just played with one more time. Under each symbol you will see a set of buttons showing different rewards (above) and probabilities (below): "+
                          '<img src="images/instructions/MC_choice.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
-                         "Your goal is to estimate as best you can what was each symbol's outcome during the experiment." ,
+                         "You may remember that during the experiment options sometimes led to winning/losing points, but sometimes they led to a zero outcome (i.e. just the number 0)." ,
+                         "Your goal is to estimate as best you can what was each symbol's outcome (other than 0), and the probability of obtaining said outcome." ,
                          "For example, if you think the symbol being shown rewarded you with 1 point, 3 out of 4 times you clicked on it, you should select the 1p and 75% buttons. ",
                          "Or, if you estimate that symbol caused you to lose 10 points every time you chose it, you should select the -10p and 100% buttons. ",
                          "Please remember to always indicate both point and probability outcome! "+

@@ -2,7 +2,7 @@ import {expOrder} from "../order.js";
 import {exp} from "../TEACH_ExpSetting.js"
 
 var consentForm =  {
-  intro: "This is a study titled 'Learning and Decision-Making,' led by Professor Stefano PALMINTERI. "+
+  intro: "This is a study titled 'Knowledge transfer', led by Professor Stefano PALMINTERI. "+
          "The primary goal of this research is to understand the learning processes involved in decision-making, " +
          "focusing on the role of reinforcement learning in short-term and long-term cognition in groups of individuals."+
          "We want to emphasize that this study has no immediate application or clinical value, but it will contribute to deepen our understanding of human behavior.",
@@ -22,7 +22,7 @@ var consentForm =  {
                 "<a href='https://sites.google.com/site/stefanopalminteri/publications' target='_blank'>"+
                 "website.</a> ",
   contact: "For any questions or additional information, you can contact our research team via email at the following address: humanreinforcementlearning@gmail.com",
-  ethics: "This research has been approved by the Inserm Ethical Review Committee / IRB00003888 on November 13th, 2018",
+  ethics: "This research has been approved by the PSE Ethical Review Committee (IRB), call 2023-040, on October 11th, 2023",
   consentForm: "Your participation in this study confirms that you have read this information, and wish to take part on it freely. "+
                 "Please check all boxes to continue:",
   consentCheck: ["I am 18 years old or more",

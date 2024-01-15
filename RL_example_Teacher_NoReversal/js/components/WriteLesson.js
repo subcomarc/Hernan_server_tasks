@@ -12,7 +12,7 @@ function getWrittenLesson(exp){
 
 let Prompt = '<form><div class="form-group">'+
               '<label for="freeText">'+
-                    'Please write your lesson for your future pupil in the box below.' +
+                    'Please write your explanation for your future pupil in the box below.' +
               '</label>'+
               '<textarea class="form-control" id="freeText" rows="15" minlength="250" placeholder="At least 250 characters..."></textarea>'+
               '</div>'+
