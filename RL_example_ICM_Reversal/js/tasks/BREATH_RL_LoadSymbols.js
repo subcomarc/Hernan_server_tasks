@@ -34,7 +34,8 @@ var symbols = [
 ];
 
 
-addSymImage(symbols,0,"images/stim/",'.gif')
+// addSymImage(symbols,0,"images/stim/",'.gif')
+addSymImage(symbols,0,"images/stim/Exp1",'.gif')
 
 
 // SYMBOLS FOR TRAINING
