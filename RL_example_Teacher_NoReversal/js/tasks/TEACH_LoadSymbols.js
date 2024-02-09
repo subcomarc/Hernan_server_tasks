@@ -23,7 +23,8 @@ var symbols = [
 {id:7,reward:-10,prob:0.25,loss:0}
 ];
 
-addSymImage(symbols,0,"images/stim/",'.gif')
+// addSymImage(symbols,0,"images/stim/",'.gif')
+addSymImage(symbols,0,"images/stim/Exp1",'.gif')
 
 
 // SYMBOLS FOR TRAINING
