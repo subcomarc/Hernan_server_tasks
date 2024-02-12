@@ -42,7 +42,23 @@ function getID(exp) {
       '</div>'+
       '<form>';
 
-       	       $('#Stage').html(Prompt + Age + Info);
+      let Session =  '<form >'+
+      '<div class="form-group">'+
+      '<label for="formSession">EXPERIMENTATEUR: </label>'+
+      '<div align="left"><input type= "radio" id="SessionA" name= "answer" value= "A"> <label for="SessionA"> A </label><br>' +
+      '<div align="left"><input type= "radio" id="SessionB" name= "answer" value= "B"> <label for="SessionB"> B </label>'+
+      '<br><br><br><br>' +
+      '<br><br></div><div class="col-xs-1 col-md-1"></div></div>';
+
+      let Group =  '<form >'+
+      '<div class="form-group">'+
+      '<label for="formSession">EXPERIMENTATEUR: </label>'+
+      '<div align="left"><input type= "radio" id="Vent." name= "answer" value= "V"> <label for="Vent."> Vent. </label><br>' +
+      '<div align="left"><input type= "radio" id="Reg." name= "answer" value= "R"> <label for="SessionB"> Reg. </label>'+
+      '<br><br><br><br>' +
+      '<br><br></div><div class="col-xs-1 col-md-1"></div></div>';
+
+       	       $('#Stage').html(Prompt + Age + Info + Session + Group);
 
 
 	let params = new URLSearchParams(location.search);
