@@ -78,7 +78,7 @@ function getID(exp) {
 // ON CLICK CHECK THAT THE ENTRY WAS VALID:
 
        $('#bNext').click(function() {
-          if ($("input:radio:checked").length < 1) {
+          if ($("input:radio:checked").length < 3) {
 					  alert('S\'il vous plait cochez l\'une des cases.')}else{
                 if(document.getElementById('formPartID').value.length===10 & document.getElementById('formPartAge').value.length===2){;
                   exp.ID = document.getElementById('formPartID').value;
