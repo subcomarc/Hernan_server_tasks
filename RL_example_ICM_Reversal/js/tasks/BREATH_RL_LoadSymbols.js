@@ -1,6 +1,6 @@
 //uses underscore functions (called in Index.html)
 
-// import {getID} from "./getID.js";
+import {getID} from "./components/getID.js";
 
 
 // to do, export and import the picID array from expSettings -> for multiday studies
