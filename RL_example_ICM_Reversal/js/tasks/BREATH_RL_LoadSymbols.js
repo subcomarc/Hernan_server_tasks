@@ -1,5 +1,7 @@
-import {getID} from "./getID.js";
 //uses underscore functions (called in Index.html)
+
+import {getID} from "./getID.js";
+
 
 // to do, export and import the picID array from expSettings -> for multiday studies
 
@@ -35,13 +37,13 @@ var symbols = [
 ];
 
 
-// addSymImage(symbols,0,"images/stim/",'.gif')
+addSymImage(symbols,0,"images/stim/",'.gif')
 
-//CHANGE PATH TO IMAGES DEPENDING ON EXPERIMENT
-if (exp.expID === 'ICM_RL_Reversal'){
-  addSymImage(symbols,0,"images/stim/Exp1",'.gif')}else{
-    addSymImage(symbols,0,"images/stim/Exp2",'.gif')
-  }
+// //CHANGE PATH TO IMAGES DEPENDING ON EXPERIMENT
+// if (exp.expID === 'ICM_RL_Reversal'){
+//   addSymImage(symbols,0,"images/stim/Exp1",'.gif')}else{
+//     addSymImage(symbols,0,"images/stim/Exp2",'.gif')
+//   }
 
 // SYMBOLS FOR TRAINING
   var tSymbols = [
