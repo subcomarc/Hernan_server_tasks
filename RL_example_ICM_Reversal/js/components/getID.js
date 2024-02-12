@@ -82,7 +82,9 @@ function getID(exp) {
 					  alert('S\'il vous plait cochez l\'une des cases.')}else{
                 if(document.getElementById('formPartID').value.length===10 & document.getElementById('formPartAge').value.length===2){;
                   exp.ID = document.getElementById('formPartID').value;
-                  exp.partSex = $("input:radio:checked").val();
+                  exp.partSex = $("input[type='radio'][name='sex']:checked").val();
+                  exp.Session = $("input[type='radio'][name='session']:checked").val();
+                  exp.Group = $("input[type='radio'][name='group']:checked").val();
                   exp.age = document.getElementById('formPartAge').value;
                      $('#ContBox').empty();
                      exp.expTask++
@@ -91,7 +93,9 @@ function getID(exp) {
                       {partID: exp.ID,
                         partSex: exp.partSex,
                         partAge: exp.age,
-                        expID: exp.expID},
+                        expID: exp.expID,
+                        expGroup: exp.Group,
+                        expSession: exp.Session},
                     'php/InsertDB_IDstart.php'
                     );
                     }else{
