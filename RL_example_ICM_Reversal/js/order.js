@@ -5,12 +5,12 @@ import {exp} from "./BREATH_RL_ExpSetting.js"
 // tasks
 import {BREATH_RL_LearningTask} from "./tasks/BREATH_RL_LearningTask.js";
 import {BREATH_RL_LearningTraining} from "./tasks/BREATH_RL_LearningTraining.js";
-import {BREATH_RL_PreferenceTask} from "./tasks/BREATH_RL_PreferenceTask.js";
+// import {BREATH_RL_PreferenceTask} from "./tasks/BREATH_RL_PreferenceTask.js";
 // import {BR_VSlider} from "./tasks/BR_VSlider.js";
 
 // InstructionsLT
 // import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider,Welcome} from "./Instructions/Instructions.js"
-import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsStartDyspnoea,Welcome} from "./Instructions/Instructions.js"
+import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsStartDyspnoea,Welcome} from "./Instructions/Instructions.js"
 
 // other components
 import {getID} from "./components/getID.js";
