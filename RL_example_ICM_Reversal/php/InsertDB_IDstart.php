@@ -10,7 +10,7 @@ $EXPSESSION 		= stripslashes(htmlspecialchars($_POST['expSession']));
 $EXPGROUP 		= stripslashes(htmlspecialchars($_POST['expGroup']));
 
 
-$stmt = $db->prepare("INSERT INTO BREATH_RL_IDstart VALUE(?,?,?,?,?,? NOW())");
+$stmt = $db->prepare("INSERT INTO BREATH_RL_IDstart VALUE(?,?,?,?,?,?, NOW())");
 $stmt->bind_param("ssssss",
     $PARTID,$PARTSEX,$PARTAGE,$EXPID,$EXPSESSION,$EXPGROUP
     );
