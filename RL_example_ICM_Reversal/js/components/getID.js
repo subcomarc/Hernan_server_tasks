@@ -31,7 +31,7 @@ function getID(exp) {
       '<label for="formPartSex">S\'il vous plait selectionnez votre sexe biologique</label>'+
       '<div align="left"><input type= "radio" id="GenderFemale" name= "answer" value= "F"> <label for="GenderFemale"> Féminin </label><br>' +
       '<div align="left"><input type= "radio" id="GenderMale" name= "answer" value= "M"> <label for="GenderMale"> Masculin </label>'+
-      '<br><br><br><br>' +
+      // '<br><br><br><br>' +
       '<br><br></div><div class="col-xs-1 col-md-1"></div></div>';
 
       let Age =  '<form >'+
@@ -44,17 +44,17 @@ function getID(exp) {
 
       let Session =  '<form >'+
       '<div class="form-group">'+
-      '<label for="formSession">EXPERIMENTATEUR: </label>'+
+      '<label for="formSession">Session (experimentateur): </label>'+
       '<div align="left"><input type= "radio" id="SessionA" name= "answer" value= "A"> <label for="SessionA"> A </label><br>' +
       '<div align="left"><input type= "radio" id="SessionB" name= "answer" value= "B"> <label for="SessionB"> B </label>'+
-      '<br><br><br><br>' +
-      '<br><br></div><div class="col-xs-1 col-md-1"></div></div>';
+      // '<br><br><br><br>' +
+      '</div><div class="col-xs-1 col-md-1"></div></div>';
 
       let Group =  '<form >'+
       '<div class="form-group">'+
-      '<label for="formSession">EXPERIMENTATEUR: </label>'+
+      '<label for="formSession">Groupe (experimentateur) </label>'+
       '<div align="left"><input type= "radio" id="Vent." name= "answer" value= "V"> <label for="Vent."> Vent. </label><br>' +
-      '<div align="left"><input type= "radio" id="Reg." name= "answer" value= "R"> <label for="SessionB"> Reg. </label>'+
+      '<div align="left"><input type= "radio" id="Reg." name= "answer" value= "R"> <label for="Reg."> Reg. </label>'+
       '<br><br><br><br>' +
       '<br><br></div><div class="col-xs-1 col-md-1"></div></div>';
 
