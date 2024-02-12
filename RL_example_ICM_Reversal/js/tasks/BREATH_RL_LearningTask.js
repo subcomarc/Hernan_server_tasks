@@ -14,7 +14,7 @@ var BREATH_RL_LearningTask = {
       // maxTrials: 128,//112, // maximum trials in a task (keep it a multiple of 8 if you have 8 options i.e. 4 pairs of options)
       maxTrials: 120,//112, // for debugging
       // maxBlockTrials: 8, // maximum trials in a block, if blockTrials == 1 -> no blocks
-      maxBlockTrials: 1, // maximum trials in a block, if blockTrials == 1 -> no blocks
+      maxBlockTrials: 2, // maximum trials in a block, if blockTrials == 1 -> no blocks
       // reversal: 128 / 2, // number of trials per block after which the reward probabilities will be reversed
       reversal: 2, // for debugging
 
