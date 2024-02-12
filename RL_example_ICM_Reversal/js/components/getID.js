@@ -29,14 +29,14 @@ function getID(exp) {
       let Info  = '<form >'+
       '<div class="form-group">'+
       '<label for="formPartSex">S\'il vous plait selectionnez votre sexe biologique</label>'+
-      '<div align="left"><input type= "radio" id="GenderFemale" name= "answer" value= "F"> <label for="GenderFemale"> Féminin </label><br>' +
-      '<div align="left"><input type= "radio" id="GenderMale" name= "answer" value= "M"> <label for="GenderMale"> Masculin </label>'+
+      '<div align="left"><input type= "radio" id="GenderFemale" name= "sex" value= "F"> <label for="GenderFemale"> Féminin </label><br>' +
+      '<div align="left"><input type= "radio" id="GenderMale" name= "sex" value= "M"> <label for="GenderMale"> Masculin </label>'+
       // '<br><br><br><br>' +
       '<br><br></div><div class="col-xs-1 col-md-1"></div></div>';
 
       let Age =  '<form >'+
       '<div class="form-group">'+
-        '<label for="formPartAge">Renseignez votre numéro d\'identifiant anonyme</label>'+
+        '<label for="formPartAge">Renseignez votre age</label>'+
        '<input type="text" class="form-control" id="formPartAge" placeholder="00" maxlength="2" style="width: 8ch;">'+
         '<div class="invalid-feedback">Votre age doit être renseigné en format numérique (2 chiffres)</div>'+
       '</div>'+
@@ -45,16 +45,16 @@ function getID(exp) {
       let Session =  '<form >'+
       '<div class="form-group">'+
       '<label for="formSession">Session (experimentateur): </label>'+
-      '<div align="left"><input type= "radio" id="SessionA" name= "answer" value= "A"> <label for="SessionA"> A </label><br>' +
-      '<div align="left"><input type= "radio" id="SessionB" name= "answer" value= "B"> <label for="SessionB"> B </label>'+
+      '<div align="left"><input type= "radio" id="SessionA" name= "session" value= "A"> <label for="SessionA"> A </label><br>' +
+      '<div align="left"><input type= "radio" id="SessionB" name= "session" value= "B"> <label for="SessionB"> B </label>'+
       // '<br><br><br><br>' +
       '</div><div class="col-xs-1 col-md-1"></div></div>';
 
       let Group =  '<form >'+
       '<div class="form-group">'+
       '<label for="formSession">Groupe (experimentateur) </label>'+
-      '<div align="left"><input type= "radio" id="Vent." name= "answer" value= "V"> <label for="Vent."> Vent. </label><br>' +
-      '<div align="left"><input type= "radio" id="Reg." name= "answer" value= "R"> <label for="Reg."> Reg. </label>'+
+      '<div align="left"><input type= "radio" id="Vent." name= "group" value= "V"> <label for="Vent."> Vent. </label><br>' +
+      '<div align="left"><input type= "radio" id="Reg." name= "group" value= "R"> <label for="Reg."> Reg. </label>'+
       '<br><br><br><br>' +
       '<br><br></div><div class="col-xs-1 col-md-1"></div></div>';
 
