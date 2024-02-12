@@ -110,6 +110,18 @@ export {getID}
 
 // send participant data to the database
 
+//send to auxiliary exportable variable to be used in other functions
+var auxexp = {partID: exp.ID,
+  partSex: exp.partSex,
+  partAge: exp.age,
+  expID: exp.expID,
+  expGroup: exp.Group,
+  expSession: exp.Session}
+
+
+export{exp}
+export{auxexp}
+
 
 // SubGender = $("input:radio:checked").attr('value');
 
