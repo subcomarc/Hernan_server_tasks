@@ -55,10 +55,17 @@ function getID(exp) {
       '<label for="formSession">Groupe (experimentateur) </label>'+
       '<div align="left"><input type= "radio" id="Vent." name= "group" value= "V"> <label for="Vent."> Vent. </label><br>' +
       '<div align="left"><input type= "radio" id="Reg." name= "group" value= "R"> <label for="Reg."> Reg. </label>'+
+      '</div><div class="col-xs-1 col-md-1"></div></div>';
+
+      let TestTime =  '<form >'+
+      '<div class="form-group">'+
+      '<label for="formSession">Groupe (experimentateur) </label>'+
+      '<div align="left"><input type= "radio" id="1" name= "TestTime" value= "1"> <label for="1"> Première séance </label><br>' +
+      '<div align="left"><input type= "radio" id="2" name= "TestTime" value= "2"> <label for="2"> Deuxième séance </label>'+
       '<br><br><br><br>' +
       '<br><br></div><div class="col-xs-1 col-md-1"></div></div>';
 
-       	       $('#Stage').html(Prompt + Age + Info + Session + Group);
+       	       $('#Stage').html(Prompt + Age + Info + Session + Group + TestTime);
 
 
 	let params = new URLSearchParams(location.search);
@@ -78,13 +85,14 @@ function getID(exp) {
 // ON CLICK CHECK THAT THE ENTRY WAS VALID:
 
        $('#bNext').click(function() {
-          if ($("input:radio:checked").length < 3) {
+          if ($("input:radio:checked").length < 4) {
 					  alert('S\'il vous plait cochez l\'une des cases.')}else{
                 if(document.getElementById('formPartID').value.length===10 & document.getElementById('formPartAge').value.length===2){;
                   exp.ID = document.getElementById('formPartID').value;
                   exp.partSex = $("input[type='radio'][name='sex']:checked").val();
                   exp.Session = $("input[type='radio'][name='session']:checked").val();
                   exp.Group = $("input[type='radio'][name='group']:checked").val();
+                  exp.TestTime = $("input[type='radio'][name='TestTime']:checked").val();
                   exp.age = document.getElementById('formPartAge').value;
                   //send to auxiliary exportable variable to be used in other functions
                      $('#ContBox').empty();
@@ -96,7 +104,8 @@ function getID(exp) {
                         partAge: exp.age,
                         expID: exp.expID,
                         expGroup: exp.Group,
-                        expSession: exp.Session},
+                        expSession: exp.Session,
+                        expTestTime: exp.TestTime},
                     'php/InsertDB_IDstart.php'
                     );
                     }else{

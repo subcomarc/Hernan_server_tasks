@@ -8,10 +8,11 @@ $PARTAGE 		= stripslashes(htmlspecialchars($_POST['partAge']));
 $EXPID 		= stripslashes(htmlspecialchars($_POST['expID']));
 $EXPSESSION 		= stripslashes(htmlspecialchars($_POST['expSession']));
 $EXPGROUP 		= stripslashes(htmlspecialchars($_POST['expGroup']));
+$EXPTESTIME 		= stripslashes(htmlspecialchars($_POST['expTestTime']));
 
-$stmt = $db->prepare("INSERT INTO BREATH_RL_IDstart VALUE(?,?,?,?,?,?, NOW())");
+$stmt = $db->prepare("INSERT INTO BREATH_RL_IDstart VALUE(?,?,?,?,?,?,?, NOW())");
 $stmt->bind_param("ssssss",
-    $PARTID,$PARTSEX,$PARTAGE,$EXPID,$EXPSESSION,$EXPGROUP
+    $PARTID,$PARTSEX,$PARTAGE,$EXPID,$EXPSESSION,$EXPGROUP,$EXPTESTIME
     );
 $stmt->execute();
 $err = $stmt->errno ;
