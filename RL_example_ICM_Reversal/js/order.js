@@ -4,7 +4,7 @@ import {exp} from "./BREATH_RL_ExpSetting.js"
 
 // tasks
 // import {BREATH_RL_LearningTask} from "./tasks/BREATH_RL_LearningTask.js";
-import {BREATH_RL_LearningTraining} from "./tasks/BREATH_RL_LearningTraining.js";
+// import {BREATH_RL_LearningTraining} from "./tasks/BREATH_RL_LearningTraining.js";
 // import {BREATH_RL_PreferenceTask} from "./tasks/BREATH_RL_PreferenceTask.js";
 // import {BR_VSlider} from "./tasks/BR_VSlider.js";
 
@@ -47,6 +47,7 @@ async function expOrder (){
       InstructionsLT_Train.init();
       break;
     case 5:
+      const { BREATH_RL_LearningTraining } = await import('./tasks/BREATH_RL_LearningTraining.js');
       BREATH_RL_LearningTraining.init() ;
       exp.startTimeLTTrain = Date.now();
       break;
