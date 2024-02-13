@@ -3,7 +3,7 @@ import {exp} from "./BREATH_RL_ExpSetting.js"
 
 
 // tasks
-import {BREATH_RL_LearningTask} from "./tasks/BREATH_RL_LearningTask.js";
+// import {BREATH_RL_LearningTask} from "./tasks/BREATH_RL_LearningTask.js";
 import {BREATH_RL_LearningTraining} from "./tasks/BREATH_RL_LearningTraining.js";
 // import {BREATH_RL_PreferenceTask} from "./tasks/BREATH_RL_PreferenceTask.js";
 // import {BR_VSlider} from "./tasks/BR_VSlider.js";
@@ -23,10 +23,9 @@ import {consentForm} from "./components/dExperimentConsent.js";
 // other functions
 import {disableF5} from "./functions/usefulFunctions.js";
 
-function expOrder (){
+async function expOrder (){
   let check = exp.expTask;
   switch (check) {
-
     case 0:
       Welcome.init()
       //exp.expTask++
@@ -36,6 +35,7 @@ function expOrder (){
       //exp.expTask++
       break;
     case 2:
+     await import("./tasks/BREATH_RL_LearningTask.js");
       consentForm.init();
       break;
     case 3:
