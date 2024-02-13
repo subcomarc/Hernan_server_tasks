@@ -1,4 +1,5 @@
-import {tSymbols as symbols} from "./BREATH_RL_LoadPracticeSymbols.js";
+// import {tSymbols as symbols} from "./BREATH_RL_LoadPracticeSymbols.js";
+import {tSymbols as symbols} from "./BREATH_RL_LoadSymbols.js";
 import {expOrder} from "../order.js";
 import {addCanvas,schedule_all_range,drawStim,highlightOption} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
