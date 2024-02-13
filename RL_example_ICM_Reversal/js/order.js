@@ -46,6 +46,7 @@ async function expOrder (){
     //   break;
     case 4:
       InstructionsLT_Train.init();
+      const { BREATH_RL_LoadSymbols } = await import('./tasks/BREATH_RL_LoadSymbols.js');
       break;
     case 5:
       const { BREATH_RL_LearningTraining } = await import('./tasks/BREATH_RL_LearningTraining.js');
