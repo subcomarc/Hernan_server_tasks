@@ -63,7 +63,7 @@ async function expOrder (){
       InstructionsLT2.init();
       break;
     case 9:
-      await import("./tasks/BREATH_RL_LearningTask.js");
+      await import {BREATH_RL_LearningTask} from "./tasks/BREATH_RL_LearningTask.js";
       BREATH_RL_LearningTask.init() ;
       exp.startTimeLT = Date.now();
       break;
