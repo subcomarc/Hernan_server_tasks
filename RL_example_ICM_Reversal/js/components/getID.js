@@ -118,6 +118,9 @@ var auxexp = {partID: exp.ID,
   expGroup: exp.Group,
   expSession: exp.Session}
 
+//also save to local storage because export is tricky (maybe fix later on?)
+sessionStorage.setItem('Session', exp.Session);
+sessionStorage.setItem('Group', exp.Group);
 
 export{exp}
 export{auxexp}

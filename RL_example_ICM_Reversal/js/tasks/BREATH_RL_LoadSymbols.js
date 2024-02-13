@@ -40,10 +40,14 @@ var symbols = [
 // addSymImage(symbols,0,"images/stim/",'.gif')
 
  //CHANGE PATH TO IMAGES DEPENDING ON EXPERIMENT
- if (auxexp.expSession === 'A'){
+ const value = sessionStorage.getItem('Session');
+ if (console.log(value) === 'A'){
    addSymImage(symbols,0,"images/stim/Exp1/",'.gif')}else{
      addSymImage(symbols,0,"images/stim/Exp2/",'.gif')
    }
+
+   
+   
 
 // SYMBOLS FOR TRAINING
   var tSymbols = [
