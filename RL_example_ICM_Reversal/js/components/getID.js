@@ -55,11 +55,11 @@ function getID(exp) {
       '<label for="formSession">Groupe (experimentateur) </label>'+
       '<div align="left"><input type= "radio" id="Vent." name= "group" value= "V"> <label for="Vent."> Vent. </label><br>' +
       '<div align="left"><input type= "radio" id="Reg." name= "group" value= "R"> <label for="Reg."> Reg. </label>'+
-      '</div><div class="col-xs-1 col-md-1"></div></div>';
+      '<br><br></div><div class="col-xs-1 col-md-1"></div></div>';
 
       let TestTime =  '<form >'+
       '<div class="form-group">'+
-      '<label for="formSession">Groupe (experimentateur) </label>'+
+      '<label for="formSession">Celle-ci est la... </label>'+
       '<div align="left"><input type= "radio" id="1" name= "TestTime" value= "1"> <label for="1"> Première séance </label><br>' +
       '<div align="left"><input type= "radio" id="2" name= "TestTime" value= "2"> <label for="2"> Deuxième séance </label>'+
       '<br><br><br><br>' +
