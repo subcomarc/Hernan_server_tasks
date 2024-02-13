@@ -118,7 +118,7 @@ export {getID}
 // sessionStorage.setItem('Group', exp.Group);
 
 export{exp}
-export{auxexp}
+// export{auxexp}
 
 
 // SubGender = $("input:radio:checked").attr('value');
