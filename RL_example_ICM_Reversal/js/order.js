@@ -56,7 +56,7 @@ async function expOrder (){
         InstructionsStartDyspnoea.init();
         exp.startTimeInsPref = Date.now();
         break;
-      }else{exp.expTask=exp.expTask+2}
+      }else{exp.expTask=exp.expTask+2;break}
      case 7:
       if(exp.Group == 'V'){
         LaunchDyspnoea(exp)
