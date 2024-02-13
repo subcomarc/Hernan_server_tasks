@@ -52,13 +52,17 @@ async function expOrder (){
       exp.startTimeLTTrain = Date.now();
       break;
     case 6:
+      if(exp.Group == 'V'){
         InstructionsStartDyspnoea.init();
-         exp.startTimeInsPref = Date.now();
-         break;
+        exp.startTimeInsPref = Date.now();
+        break;
+      }else{break;}
      case 7:
+      if(exp.Group == 'V'){
         LaunchDyspnoea(exp)
         exp.startTimeLaunchDyspnoea = Date.now();
         break;
+      }else{break;}
     case 8:
       exp.startTimeInsLT = Date.now();
       InstructionsLT2.init();
