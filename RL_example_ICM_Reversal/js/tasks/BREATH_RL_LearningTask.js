@@ -4,6 +4,7 @@ import {addCanvas,schedule_all_range,drawStim,highlightOption} from "../function
 import {sendToDB} from "../functions/sendToDB.js";
 import {exp} from "../BREATH_RL_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
+import {auxexp} from "../components/getID.js";
 
 
 var BREATH_RL_LearningTask = {
