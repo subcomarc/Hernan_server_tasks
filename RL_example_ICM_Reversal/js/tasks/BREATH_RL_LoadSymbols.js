@@ -41,7 +41,7 @@ var symbols = [
 
  //CHANGE PATH TO IMAGES DEPENDING ON EXPERIMENT
  const value = sessionStorage.getItem('Session');
- if (console.log(value) === 'A'){
+ if (console.log(value) == 'A'){
    addSymImage(symbols,0,"images/stim/Exp1/",'.gif')}else{
      addSymImage(symbols,0,"images/stim/Exp2/",'.gif')
    }
