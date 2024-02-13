@@ -4,7 +4,7 @@ var exp = {
   // link: "https://app.prolific.co/submissions/complete?cc=CCLR3AVT",
   link: "https://institutducerveau-icm.org/fr/",
   order: 0,
-  rate: 0.012,
+  rate: 0.15,
   expTask: 0,
   startTime: Date.now(),
   totalReward:0
