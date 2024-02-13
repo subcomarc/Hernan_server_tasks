@@ -86,6 +86,7 @@ function getID(exp) {
                   exp.Session = $("input[type='radio'][name='session']:checked").val();
                   exp.Group = $("input[type='radio'][name='group']:checked").val();
                   exp.age = document.getElementById('formPartAge').value;
+                  //send to auxiliary exportable variable to be used in other functions
                      $('#ContBox').empty();
                      exp.expTask++
                      expOrder();
@@ -110,17 +111,11 @@ export {getID}
 
 // send participant data to the database
 
-//send to auxiliary exportable variable to be used in other functions
-var auxexp = {partID: exp.ID,
-  partSex: exp.partSex,
-  partAge: exp.age,
-  expID: exp.expID,
-  expGroup: exp.Group,
-  expSession: exp.Session}
 
-//also save to local storage because export is tricky (maybe fix later on?)
-sessionStorage.setItem('Session', exp.Session);
-sessionStorage.setItem('Group', exp.Group);
+
+// //also save to local storage because export is tricky (maybe fix later on?)
+// sessionStorage.setItem('Session', exp.Session);
+// sessionStorage.setItem('Group', exp.Group);
 
 export{exp}
 export{auxexp}

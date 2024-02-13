@@ -1,6 +1,6 @@
 //uses underscore functions (called in Index.html)
 
-import {auxexp} from "../components/getID.js";
+import {exp} from "../components/getID.js";
 
 
 // to do, export and import the picID array from expSettings -> for multiday studies
@@ -40,11 +40,16 @@ var symbols = [
 // addSymImage(symbols,0,"images/stim/",'.gif')
 
  //CHANGE PATH TO IMAGES DEPENDING ON EXPERIMENT
- const value = sessionStorage.getItem('Session');
- if (console.log(value) == 'A'){
-   addSymImage(symbols,0,"images/stim/Exp1/",'.gif')}else{
-     addSymImage(symbols,0,"images/stim/Exp2/",'.gif')
-   }
+//  const value = sessionStorage.getItem('Session');
+//  if (console.log(value) == 'A'){
+//    addSymImage(symbols,0,"images/stim/Exp1/",'.gif')}else{
+//      addSymImage(symbols,0,"images/stim/Exp2/",'.gif')
+//    }
+
+  if (exp.Session == 'A'){
+    addSymImage(symbols,0,"images/stim/Exp1/",'.gif')}else{
+      addSymImage(symbols,0,"images/stim/Exp2/",'.gif')
+    }
 
    
    
