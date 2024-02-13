@@ -35,7 +35,6 @@ async function expOrder (){
       //exp.expTask++
       break;
     case 2:
-     await import("./tasks/BREATH_RL_LearningTask.js");
       consentForm.init();
       break;
     case 3:
@@ -64,6 +63,7 @@ async function expOrder (){
       InstructionsLT2.init();
       break;
     case 9:
+      await import("./tasks/BREATH_RL_LearningTask.js");
       BREATH_RL_LearningTask.init() ;
       exp.startTimeLT = Date.now();
       break;
