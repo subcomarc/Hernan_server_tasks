@@ -7,7 +7,7 @@ import {exp} from "./BREATH_RL_ExpSetting.js"
 //  import {BREATH_RL_LearningTraining} from "./tasks/BREATH_RL_LearningTraining.js";
 // import {BREATH_RL_PreferenceTask} from "./tasks/BREATH_RL_PreferenceTask.js";
 // import {BR_VSlider} from "./tasks/BR_VSlider.js";
-import {addCanvas,schedule_all_range,drawStim,highlightOption} from "../functions/usefulFunctions.js";
+import {addCanvas,schedule_all_range,drawStim,highlightOption} from "./functions/usefulFunctions.js";
 
 // InstructionsLT
 // import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider,Welcome} from "./Instructions/Instructions.js"
