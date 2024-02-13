@@ -11,7 +11,7 @@ $EXPGROUP 		= stripslashes(htmlspecialchars($_POST['expGroup']));
 $EXPTESTIME 		= stripslashes(htmlspecialchars($_POST['expTestTime']));
 
 $stmt = $db->prepare("INSERT INTO BREATH_RL_IDstart VALUE(?,?,?,?,?,?,?, NOW())");
-$stmt->bind_param("ssssss",
+$stmt->bind_param("sssssss",
     $PARTID,$PARTSEX,$PARTAGE,$EXPID,$EXPSESSION,$EXPGROUP,$EXPTESTIME
     );
 $stmt->execute();
