@@ -5,6 +5,8 @@ import {sendToDB} from "../functions/sendToDB.js";
 import {exp} from "../BREATH_RL_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
 
+console.log('FOR REAL HEY I AM HERE');
+
 
 var BREATH_RL_LearningTask = {
     trialState: 0, // starting point for the task

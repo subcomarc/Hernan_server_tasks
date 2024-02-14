@@ -3,7 +3,6 @@ import {exp} from "../BREATH_RL_ExpSetting.js"
 import {sendToDB} from "../functions/sendToDB.js";
 
 
-
 function getID(exp) {
   // Define main containers needed
     let c_Stage =  "<div class = 'row justify-content-center mt-4' id = 'Stage'> </div>";
