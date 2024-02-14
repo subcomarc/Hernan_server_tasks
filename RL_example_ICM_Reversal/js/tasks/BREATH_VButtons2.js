@@ -93,7 +93,7 @@ var BREATH_VButtons2 = {
       addCanvas('#Stage',"IMG",symbols[0].image.width,symbols[0].image.height,"border rounded")
 
       //Add hidden warning message (in case outcome is not selected)
-      let WarnText ='<div class="col"><p align = "center" class="text-w">You must select both an outcome and a probability to continue!</p></div>' ;
+      let WarnText ='<div class="col"><p align = "center" class="text-w">Il faut choisir obligatoirement une recompense ET une probabilité!</p></div>' ;
       $('#Warning').html(WarnText)
 
       document.getElementById("ContBox").className = "col-12 mt-3 invisible";
@@ -165,7 +165,7 @@ function  showStimuli(){
   drawStim(track.symbol,"IMG");
 
   // Submit Button
-  let button_Sumbit = '<input align="center" type="button"  class="btn m-2 mt-4 myBtn" id="respButton" value="Submit" >'
+  let button_Sumbit = '<input align="center" type="button"  class="btn m-2 mt-4 myBtn" id="respButton" value="Continuer" >'
   $('#FinalButton').html(button_Sumbit);
 
   document.getElementById("respButton").onclick = function(){
