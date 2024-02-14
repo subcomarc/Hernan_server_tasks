@@ -2,7 +2,7 @@ import {symbols} from "./BREATH_RL_LoadSymbols.js";
 import {expOrder} from "../order.js";
 import {addCanvas,getLastValue,drawStim,schedule_all,recursiveSearch} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
-import {exp} from "../BREATH_ExpSetting.js"
+import {exp} from "../BREATH_RL_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
 
 var BREATH_VButtons2 = {
