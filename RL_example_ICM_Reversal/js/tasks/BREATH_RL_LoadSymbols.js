@@ -26,19 +26,19 @@ var symbols = [
 // {id:7,reward:-10,prob:0.25,loss:0}
 // ];
 
+ {id:0,reward:1, prob:-1, probS:0.75, probR:0.75,loss:0, counter:0, isreversed:0},
+ {id:1,reward:1,prob:-1,probS:0.25, probR:0.25,loss:0, counter:0, isreversed:0},
+ {id:2,reward:10,prob:-1,probS:0.75, probR:0.75,loss:0, counter:0, isreversed:0},
+ {id:3,reward:10,prob:-1,probS:0.25, probR:0.25,loss:0, counter:0, isreversed:0},
+ {id:4,reward:1,prob:-1,probS:0.75, probR:0.25,loss:0, counter:0, isreversed:0},
+ {id:5,reward:1,prob:-1,probS:0.25, probR:0.75,loss:0, counter:0, isreversed:0},
+ {id:6,reward:10,prob:-1,probS:0.75, probR:0.25,loss:0, counter:0, isreversed:0},
+ {id:7,reward:10,prob:-1,probS:0.25, probR:0.75,loss:0, counter:0, isreversed:0} //without lossess, two different sets with the same values
+
 // {id:0,reward:1, prob:-1, probS:0.75, probR:0.75,loss:0, counter:0, isreversed:0},
 // {id:1,reward:1,prob:-1,probS:0.25, probR:0.25,loss:0, counter:0, isreversed:0},
 // {id:2,reward:10,prob:-1,probS:0.75, probR:0.75,loss:0, counter:0, isreversed:0},
-// {id:3,reward:10,prob:-1,probS:0.25, probR:0.25,loss:0, counter:0, isreversed:0},
-// {id:4,reward:1,prob:-1,probS:0.75, probR:0.25,loss:0, counter:0, isreversed:0},
-// {id:5,reward:1,prob:-1,probS:0.25, probR:0.75,loss:0, counter:0, isreversed:0},
-// {id:6,reward:10,prob:-1,probS:0.75, probR:0.25,loss:0, counter:0, isreversed:0},
-// {id:7,reward:10,prob:-1,probS:0.25, probR:0.75,loss:0, counter:0, isreversed:0} //without lossess, two different sets with the same values
-
-{id:0,reward:1, prob:-1, probS:0.75, probR:0.75,loss:0, counter:0, isreversed:0},
-{id:1,reward:1,prob:-1,probS:0.25, probR:0.25,loss:0, counter:0, isreversed:0},
-{id:2,reward:10,prob:-1,probS:0.75, probR:0.75,loss:0, counter:0, isreversed:0},
-{id:3,reward:10,prob:-1,probS:0.25, probR:0.25,loss:0, counter:0, isreversed:0} //without lossess, one set per value (i.e. just 4 symbols)
+// {id:3,reward:10,prob:-1,probS:0.25, probR:0.25,loss:0, counter:0, isreversed:0} //without lossess, one set per value (i.e. just 4 symbols)
 ]; 
 
 
