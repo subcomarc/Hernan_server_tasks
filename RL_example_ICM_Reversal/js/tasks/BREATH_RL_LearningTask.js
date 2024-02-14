@@ -22,13 +22,13 @@ var BREATH_RL_LearningTask = {
       borderMS:300, // timing of the border around the chosen option - shown on its own (before the feedback appears)
       transitionMS: 200, // timing of the white screen inbetween trials
 
-      // schedule: _.shuffle([{pair:[0,1],fdb:"F"},
-      //                      {pair:[2,3],fdb:"F"}, //F us full feedback, P is partial feedback
-      //                      {pair:[4,5],fdb:"F"},
-      //                      {pair:[6,7],fdb:"F"}]) // schedule of pairs and feedback type for 4 pairs
+       schedule: _.shuffle([{pair:[0,1],fdb:"F"},
+                            {pair:[2,3],fdb:"F"}, //F us full feedback, P is partial feedback
+                            {pair:[4,5],fdb:"F"},
+                            {pair:[6,7],fdb:"F"}]) // schedule of pairs and feedback type for 4 pairs
 
-      schedule: _.shuffle([{pair:[0,1],fdb:"F"},
-                  {pair:[2,3],fdb:"F"} ]) // schedule of pairs and feedback type for 2 pairs
+      // schedule: _.shuffle([{pair:[0,1],fdb:"F"},
+      //             {pair:[2,3],fdb:"F"} ]) // schedule of pairs and feedback type for 2 pairs
     },
     trackers: {
       trial: 0, // number of trials
