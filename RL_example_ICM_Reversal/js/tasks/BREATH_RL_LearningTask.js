@@ -16,7 +16,7 @@ var BREATH_RL_LearningTask = {
       // maxBlockTrials: 8, // maximum trials in a block, if blockTrials == 1 -> no blocks
       maxBlockTrials: 1, // maximum trials in a block, if blockTrials == 1 -> no blocks
       // reversal: 128 / 2, // number of trials for a symbol after which the reward probabilities will be reversed
-      reversal: 15, // for debugging
+      reversal: 15,
 
       fdbMS:1000, // time in ms the feedback will be displayed
       borderMS:300, // timing of the border around the chosen option - shown on its own (before the feedback appears)
