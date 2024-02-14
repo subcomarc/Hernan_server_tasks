@@ -42,7 +42,7 @@ var InstructionsLTp1 = new Instructions(
                       "<b>Here's the catch!!! READ CAREFULLY </b>",
                       "Once you are done playing the game, we will ask you to <b>write down a set of instructions for the next player</b>. ",
                       "<b>Unlike you, they wont have access to any instructions from us. ALL INSTRUCTIONS WILL COME FROM YOU.</b>",
-                      '<img src="images/instructions/Teach_Up.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
+                      '<img src="images/instructions/Teacher_SingleStudent.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
                       "You should try to transmit to them any strategy you may have devised while you were doing the task. Your goal is to teach them how to gain as many points as possible. ",
                       "Keep in mind that the games they'll play will be exactly like yours, with the same choices, probabilities and rewards <b>but they will be represented by different symbols, so conveying the right strategy rather than talking about one symbol in particular here is key.</b>",
                       "<b>Think of yourself as the teacher! Try to help your future student as much as you can! </b> ",
