@@ -62,8 +62,8 @@ var consentForm =  {
                      consentCheck[0]+consentCheck[1]+consentCheck[2]+
                      '</div>')
    // Show buttons
-   var buttonBack = '<input align="center" type="button"  class="btn btn-default invisible rounded m-2 myBtn" id="bBack" value="Suivant">';
-   var buttonNext = '<input align="center" type="button"  class="btn btn-default rounded visible m-2 myBtn" id="bNext" value="Retour">';
+   var buttonBack = '<input align="center" type="button"  class="btn btn-default invisible rounded m-2 myBtn" id="bBack" value="Retour">';
+   var buttonNext = '<input align="center" type="button"  class="btn btn-default rounded visible m-2 myBtn" id="bNext" value="Suivant">';
    $('#respButtons').html(buttonBack + buttonNext);
 
    $('#bNext').click(function() {

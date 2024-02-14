@@ -74,14 +74,6 @@ async function expOrder (){
       BREATH_RL_LearningTask.init() ;
       exp.startTimeLT = Date.now();
       break;
-    // case 8:
-    //   InstructionsPreference.init();
-    //   exp.startTimeInsPref = Date.now();
-    //   break;
-    // case 9:
-    //   BREATH_RL_PreferenceTask.init() ;
-    //   exp.startTimePref = Date.now();
-    //   break;
     case 10:
       exp.startTimeInsLT = Date.now();
       InstructionsLT3.init();

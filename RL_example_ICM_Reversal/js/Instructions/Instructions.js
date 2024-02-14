@@ -75,7 +75,7 @@ var InstructionsLT = new Instructions(
 
     var InstructionsLT3 = new Instructions(
       {nextText: "Commencer",
-      texteInstructions :[//page 1
+      textInstructions :[//page 1
       ["<h2>Bon travail ! Vous avez terminé le jeu ! Maintenant, avant de terminer l'expérience...</h2>",
       "Vous verrez encore une fois les symboles avec lesquels vous venez de jouer. Sous chaque symbole, vous verrez un ensemble de boutons affichant différentes récompenses (ci-dessus) et probabilités (ci-dessous) : "+
       '<img src="images/instructions/MC_choice.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
