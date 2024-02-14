@@ -1,8 +1,6 @@
 //uses underscore functions (called in Index.html)
 
-import {exp} from "./BREATH_RL_ExpSetting.js"
-
-console.log('HEY I AM HERE');
+import {exp} from "../BREATH_RL_ExpSetting.js";
 
 
 // to do, export and import the picID array from expSettings -> for multiday studies
