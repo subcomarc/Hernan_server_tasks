@@ -1,4 +1,4 @@
-import {symbols} from "./BREATH_LoadSymbols.js";
+import {symbols} from "./BREATH_RL_LoadSymbols.js";
 import {expOrder} from "../order.js";
 import {addCanvas,getLastValue,drawStim,schedule_all,recursiveSearch} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
