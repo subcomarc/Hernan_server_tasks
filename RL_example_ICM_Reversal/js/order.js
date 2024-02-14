@@ -11,7 +11,7 @@ import {exp} from "./BREATH_RL_ExpSetting.js"
 
 // InstructionsLT
 // import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider,Welcome} from "./Instructions/Instructions.js"
-import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsStartDyspnoea,Welcome} from "./Instructions/Instructions.js"
+import {InstructionsLT,InstructionsLT2,InstructionsLT3,InstructionsLT_Train, InstructionsStartDyspnoea,Welcome} from "./Instructions/Instructions.js"
 
 // other components
 import {getID} from "./components/getID.js";
@@ -82,7 +82,16 @@ async function expOrder (){
     //   BREATH_RL_PreferenceTask.init() ;
     //   exp.startTimePref = Date.now();
     //   break;
-   case 10:
+    case 10:
+      exp.startTimeInsLT = Date.now();
+      InstructionsLT3.init();
+      break;
+    case 11:
+      const { BREATH_VButtons2 } = await import('./tasks/BREATH_VButtons2.js');
+      BREATH_VButtons2.init() ;
+      exp.startTimeLT3 = Date.now();
+      break;
+    case 12:
       end(exp);
       exp.startTimeFinal = Date.now();
       break;
