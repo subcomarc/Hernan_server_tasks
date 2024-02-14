@@ -29,7 +29,7 @@ let time = Date.now()-exp.startTime;
       var EndText ='<div class="col"><h3 align="center"> <br> C\'est la fin de l\'expérience !</h3>  ' +
       '<p align="center" ><br> Merci beaucoup d\'avoir participé. <br></p>' +
       '<p align="center" ><b> Vous avez gagné € ' + points2pounds(rew, exp.rate) + ' </b></p>' +
-      '<p align="center" > Ceci sera ajouté à la compensation fixe. </p><br><br>'
+      '<p align="center" > Ceci sera ajouté à la compensation fixe de €25. </p><br><br>'
       
 
         //$('#Top').html('<div class="row justify-content-center">'+Title+'</div>');

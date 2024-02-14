@@ -219,7 +219,8 @@ function  recordResponse(){
       // Was the reward correct?
       if(getLastValue(rs.symbolReward) == getLastValue(rs.respReward)){
         rs.respRewCorrect.push(1);
-        rs.rewPoints = 5 ;
+        // rs.rewPoints = 5 ;
+        rs.rewPoints = 1 ;
       }
       else{
         rs.respRewCorrect.push(0);

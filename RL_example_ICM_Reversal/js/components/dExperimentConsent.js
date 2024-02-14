@@ -4,13 +4,13 @@ import {exp} from "../BREATH_RL_ExpSetting.js"
 var consentForm =  {
   intro: "Il s'agit d'une étude intitulée \"Apprentissage et prise de décision\", dirigée par le professeur XXXXXXXX.  "+
          "L'objectif principal de cette recherche est de comprendre les processus d'apprentissage impliqués dans la prise de décision, " +
-         "en mettant l'accent sur le rôle de l'apprentissage par renforcement dans la cognition à court et à long terme au sein de groupes d'individus. "+
+         "en mettant l'accent sur le rôle de l'apprentissage par renforcement et la respiration au sein de groupes d'individus. "+
          "Nous tenons à souligner que cette étude n'a aucune application immédiate ou valeur clinique, mais elle contribuera à approfondir notre compréhension du comportement humain.",
 
  procedure: "Vous serez invité(e) à accomplir une tâche cognitives "+
             "ne nécessitant aucune compétence particulière ni connaissance. " +
-            "La durée estimée pour mener à bien l'étude est d'environ 10 minutes. " +
-            "En fonction de votre performance, vous pourriez gagner entre £2.5 et £5. ",
+            "La durée estimée pour mener à bien l'étude est d'environ 20 minutes. " +
+            "En fonction de votre performance, vous pourriez gagner entre 25 et 50 euros. ",
 
   participation: "Votre participation à cette recherche est volontaire. Vous pouvez arrêter et retirer votre participation à tout moment. "+
                  "En plus de vos réponses à l'étude, nous collecterons également vos données démographiques essentiels (age et sexe) " +
