@@ -2,10 +2,11 @@ import {expOrder} from "../order.js";
 import {exp} from "../BREATH_RL_ExpSetting.js"
 
 var consentForm =  {
-  intro: "Il s'agit d'une étude intitulée \"Apprentissage et prise de décision\", dirigée par le professeur XXXXXXXX.  "+
-         "L'objectif principal de cette recherche est de comprendre les processus d'apprentissage impliqués dans la prise de décision, " +
-         "en mettant l'accent sur le rôle de l'apprentissage par renforcement et la respiration au sein de groupes d'individus. "+
+  intro: "Nous vous proposons de participer à une recherche promue par l\’association ADOREPS, sous la responsabilité du Pr. Thomas Similowski, investigateur principal de cette recherche.  "+
+         "Il est important de lire attentivement cette note avant de prendre votre décision ; n\’hésitez pas à demander des explications complémentaires que vous souhaiteriez. " +
+         "Si vous décidez de participer à cette recherche, un consentement écrit vous sera demandé. "+
          "Nous tenons à souligner que cette étude n'a aucune application immédiate ou valeur clinique, mais elle contribuera à approfondir notre compréhension du comportement humain.",
+
 
  procedure: "Vous serez invité(e) à accomplir une tâche cognitives "+
             "ne nécessitant aucune compétence particulière ni connaissance. " +
@@ -16,11 +17,11 @@ var consentForm =  {
                  "En plus de vos réponses à l'étude, nous collecterons également vos données démographiques essentiels (age et sexe) " +
                  "Tout ensemble de données partagé ou publié ne contiendra pas votre nom ni votre identifiant.",
 
- publication: "YVous pourrez vérifier les publications résultant de cette étude sur le "+
-                "<a href='https://sites.google.com/site/stefanopalminteri/publications' target='_blank'>"+
+ publication: "Vous pourrez vérifier les publications résultant de cette étude sur le "+
+                "<a href='https://www.researchgate.net/lab/INSERM-1158-Thomas-Similowski' target='_blank'>"+
                 "site web</a> suivant. ",
-  contact: "Pour toute question ou information supplémentaire, vous pouvez contacter notre équipe de recherche par e-mail à l'adresse suivante : XXXXXXXXXX.",
-  ethics: "Cette recherche a été approuvée par le Comité d'éthique de l'Inserm, numéro XXXXXXXXXXXXXXXX",
+  contact: "Pour toute question ou information supplémentaire, vous pouvez contacter notre équipe de recherche par e-mail à l'adresse suivante : marie-cecile.nierat@orange.fr.",
+  ethics: "Cette recherche a été approuvée par le Comité d'éthique de l'Inserm en date du 10/02/2024.",
   consentForm: "Votre participation à cette étude confirme que vous avez lu ces informations et que vous souhaitez y participer volontairement. "+
                 "Veuillez cocher toutes les cases pour continuer : ",
   consentCheck: ["J'ai 18 ans ou plus.",
