@@ -176,9 +176,10 @@ function showStimuli(){
 
 
   // Show new stimuli
-  document.getElementById('ContBox').click();
-  document.getElementById('ContBox').click();
-  document.getElementById('ContBox').click();
+
+  document.getElementById("ContBox").click();
+  document.getElementById("ContBox").click();
+  document.getElementById("ContBox").click();
   drawStim(track.symbolA,"myResp"+track.iside[0]);
   drawStim(track.symbolB,"myResp"+track.iside[1]);
 
