@@ -86,6 +86,9 @@ function trialStateMachine(){
       trialChecks()
       break;
     case 1:
+      document.getElementById("ContBox").click();
+      document.getElementById("ContBox").click();
+      document.getElementById("ContBox").click();
       $("stimonset").click();
       $("stimonset").click();
       $("stimonset").click();
