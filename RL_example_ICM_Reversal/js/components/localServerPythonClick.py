@@ -21,7 +21,8 @@ def click():
         clicktest = clicktest+1
 
     # response.headers['Access-Control-Allow-Origin'] = 'http://127.0.0.1:5000'
-    return jsonify(success=True, message=f"Clicked at ({x}, {y})", clicktest=clicktest)
+    # return jsonify(success=True, message=f"Clicked at ({x}, {y})")
+    return jsonify(clicktest)
 
 
 if __name__ == '__main__':
