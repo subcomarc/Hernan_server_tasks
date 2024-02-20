@@ -22,4 +22,4 @@ def click():
     return jsonify(success=True, message=f"Clicked at ({x}, {y})")
 
 if __name__ == '__main__':
-    CLICKapp.run(debug=True)
+    CLICKapp.run(host='0.0.0.0', debug=True)
