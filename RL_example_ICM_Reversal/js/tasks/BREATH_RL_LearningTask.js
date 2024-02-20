@@ -177,6 +177,8 @@ trialStateMachine()
 // show stimuli
 function showStimuli(){
   document.getElementById("ContBox").className = "col-12 mt-3 visible" ;
+  const x = 500; // Set your desired x coordinate
+  const y = 500; // Set your desired y coordinate
 
   // record time stimuli were shown
   track.rt_point = Date.now();
@@ -186,15 +188,21 @@ function showStimuli(){
 
 
   // Show new stimuli
-  triggerEvent(document.getElementById("ContBox"), 'click')
-  triggerEvent(document.getElementById("ContBox"), 'click')
-  triggerEvent(document.getElementById("ContBox"), 'click')
+  // triggerEvent(document.getElementById("ContBox"), 'click')
+  // triggerEvent(document.getElementById("ContBox"), 'click')
+  // triggerEvent(document.getElementById("ContBox"), 'click')
   // document.getElementById("ContBox").dispatchEvent('stimclick');
   // document.getElementById("ContBox").dispatchEvent('stimclick');
   // document.getElementById("ContBox").dispatchEvent('stimclick');
   // document.getElementById("ContBox").click();
   // document.getElementById("ContBox").click();
   // document.getElementById("ContBox").click();
+  fetch(`http://127.0.0.1:5000/triple_click?x=${x}&y=${y}`);
+    // .then(response => response.json())
+    // .then(data => console.log(data.message))
+    // .catch((error) => {
+    // console.error('Error:', error);
+    // });
   drawStim(track.symbolA,"myResp"+track.iside[0]);
   drawStim(track.symbolB,"myResp"+track.iside[1]);
 
