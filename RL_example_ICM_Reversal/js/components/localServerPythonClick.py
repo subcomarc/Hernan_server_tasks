@@ -6,7 +6,7 @@ CLICKapp = Flask(__name__)
 CORS(CLICKapp)
 
 @CLICKapp.route('/click', methods=['GET'])
-@cross_origin()  # Allows CORS for all origins for this route
+
 def click():
     # Get x and y coordinates from request arguments
     x = request.args.get('x', default=100, type=int)
