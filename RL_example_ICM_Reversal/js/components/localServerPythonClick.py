@@ -4,7 +4,8 @@ import pyautogui
 
 CLICKapp = Flask(__name__)
 # CORS(CLICKapp)
-CORS(CLICKapp, resources={r"/*": {"origins": "http://127.0.0.1:5000"}})
+# CORS(CLICKapp, resources={r"/*": {"origins": "http://127.0.0.1:5000"}})
+CORS(CLICKapp, supports_credentials=True), 
 
 @CLICKapp.route('/click', methods=['GET'])
 
@@ -17,7 +18,8 @@ def click():
     for _ in range(3):
         pyautogui.click(x, y)
 
-    # return jsonify(success=True, message=f"Clicked at ({x}, {y})")
+    # response.headers['Access-Control-Allow-Origin'] = 'http://127.0.0.1:5000'
+    return jsonify(success=True, message=f"Clicked at ({x}, {y})")
 
 if __name__ == '__main__':
     CLICKapp.run(debug=True)
