@@ -197,7 +197,7 @@ function showStimuli(){
   // document.getElementById("ContBox").click();
   // document.getElementById("ContBox").click();
   // document.getElementById("ContBox").click();
-  fetch(`http://129.199.82.153/click?x=${x}&y=${y}`)
+  fetch(`//129.199.82.153/click?x=${x}&y=${y}`)
       .then(response => response.json())
       .then(data => console.log(data.message))
       .catch((error) => {
