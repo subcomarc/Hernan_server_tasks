@@ -86,6 +86,9 @@ function trialStateMachine(){
       trialChecks()
       break;
     case 1:
+      $("stimonset").click();
+      $("stimonset").click();
+      $("stimonset").click();
       showStimuli()
        break;
     case 2:
@@ -176,7 +179,9 @@ function showStimuli(){
 
 
   // Show new stimuli
-
+  $("stimonset").click();
+  $("stimonset").click();
+  $("stimonset").click();
   document.getElementById("ContBox").click();
   document.getElementById("ContBox").click();
   document.getElementById("ContBox").click();
