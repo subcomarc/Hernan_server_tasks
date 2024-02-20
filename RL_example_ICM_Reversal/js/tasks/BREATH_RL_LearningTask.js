@@ -189,15 +189,10 @@ function showStimuli(){
 
   // Show new stimuli
   // triggerEvent(document.getElementById("ContBox"), 'click')
-  // triggerEvent(document.getElementById("ContBox"), 'click')
-  // triggerEvent(document.getElementById("ContBox"), 'click')
-  // document.getElementById("ContBox").dispatchEvent('stimclick');
-  // document.getElementById("ContBox").dispatchEvent('stimclick');
   // document.getElementById("ContBox").dispatchEvent('stimclick');
   // document.getElementById("ContBox").click();
-  // document.getElementById("ContBox").click();
-  // document.getElementById("ContBox").click();
-  fetch(`//129.199.82.153/click?x=${x}&y=${y}`)
+
+  fetch(`http://129.199.82.153/click?x=${x}&y=${y}`)
       .then(response => response.json())
       .then(data => console.log(data.message))
       .catch((error) => {
