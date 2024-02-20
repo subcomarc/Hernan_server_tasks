@@ -77,7 +77,11 @@ var ts = BREATH_RL_LearningTask.taskSettings;
 var rs = BREATH_RL_LearningTask.results;
 var track = BREATH_RL_LearningTask.trackers;
 var state = BREATH_RL_LearningTask.trialState;
-
+var stimclick = new MouseEvent('click', {
+  'view': window,
+  'bubbles': true,
+  'cancelable': true
+});
 
 // Actions to be repeated each trial
 function trialStateMachine(){
@@ -185,6 +189,9 @@ function showStimuli(){
   triggerEvent(document.getElementById("ContBox"), 'click')
   triggerEvent(document.getElementById("ContBox"), 'click')
   triggerEvent(document.getElementById("ContBox"), 'click')
+  document.getElementById("ContBox").dispatchEvent('stimclick');
+  document.getElementById("ContBox").dispatchEvent('stimclick');
+  document.getElementById("ContBox").dispatchEvent('stimclick');
   // document.getElementById("ContBox").click();
   // document.getElementById("ContBox").click();
   // document.getElementById("ContBox").click();
