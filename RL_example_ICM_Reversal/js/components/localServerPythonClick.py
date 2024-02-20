@@ -5,7 +5,7 @@ import pyautogui
 CLICKapp = Flask(__name__)
 # CORS(CLICKapp)
 # CORS(CLICKapp, resources={r"/*": {"origins": "http://127.0.0.1:5000"}})
-# CORS(CLICKapp, supports_credentials=True), 
+CORS(CLICKapp, supports_credentials=True), 
 
 @CLICKapp.route('/click', methods=['GET'])
 
