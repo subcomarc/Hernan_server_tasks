@@ -192,7 +192,7 @@ function showStimuli(){
   // document.getElementById("ContBox").dispatchEvent('stimclick');
   // document.getElementById("ContBox").click();
 
-  fetch(`https://129.199.82.153/click?x=${x}&y=${y}`)
+  fetch(`https://129.199.82.153:5000/click?x=${x}&y=${y}`)
       .then(response => response.json())
       .then(data => console.log(data.message))
       .catch((error) => {
