@@ -3,7 +3,8 @@ from flask_cors import CORS
 import pyautogui
 
 CLICKapp = Flask(__name__)
-CORS(CLICKapp)
+# CORS(CLICKapp)
+CORS(CLICKapp, resources={r"/*": {"origins": "http://127.0.0.1:5000"}})
 
 @CLICKapp.route('/click', methods=['GET'])
 
