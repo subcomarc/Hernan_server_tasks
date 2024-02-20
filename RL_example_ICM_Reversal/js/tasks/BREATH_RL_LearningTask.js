@@ -86,12 +86,12 @@ function trialStateMachine(){
       trialChecks()
       break;
     case 1:
-      document.getElementById("ContBox").click();
-      document.getElementById("ContBox").click();
-      document.getElementById("ContBox").click();
-      $("stimonset").click();
-      $("stimonset").click();
-      $("stimonset").click();
+      // document.getElementById("ContBox").click();
+      // document.getElementById("ContBox").click();
+      // document.getElementById("ContBox").click();
+      // $("stimonset").click();
+      // $("stimonset").click();
+      // $("stimonset").click();
       showStimuli()
        break;
     case 2:
@@ -182,12 +182,12 @@ function showStimuli(){
 
 
   // Show new stimuli
-  $("stimonset").click();
-  $("stimonset").click();
-  $("stimonset").click();
-  document.getElementById("ContBox").click();
-  document.getElementById("ContBox").click();
-  document.getElementById("ContBox").click();
+  triggerEvent(document.getElementById("ContBox"), 'click')
+  triggerEvent(document.getElementById("ContBox"), 'click')
+  triggerEvent(document.getElementById("ContBox"), 'click')
+  // document.getElementById("ContBox").click();
+  // document.getElementById("ContBox").click();
+  // document.getElementById("ContBox").click();
   drawStim(track.symbolA,"myResp"+track.iside[0]);
   drawStim(track.symbolB,"myResp"+track.iside[1]);
 
@@ -331,3 +331,8 @@ function trialCounter(){
   state=0;
   trialStateMachine()
   }
+
+function triggerEvent(elem, event){
+var clickEvent = new Event(event); //create the event
+elem.dispatchEvent(clickEvent); //dispatch event
+}
