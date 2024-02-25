@@ -192,7 +192,8 @@ function showStimuli(){
   // document.getElementById("ContBox").dispatchEvent('stimclick');
   // document.getElementById("ContBox").click();
 
-  fetch(`https://129.199.82.153:5000/click?x=${x}&y=${y}`)
+  // fetch(`https://129.199.82.153:5000/click?x=${x}&y=${y}`)
+  fetch(`https://10.160.198.90:5000/click?x=${x}&y=${y}`) //the address of the lab0's computer
       .then(response => response.json())
       .then(data => console.log(data.message))
       .catch((error) => {
