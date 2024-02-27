@@ -76,9 +76,9 @@ var InstructionsLT = new Instructions(
     var InstructionsLT3 = new Instructions(
       {nextText: "Commencer",
       textInstructions :[//page 1
-      ["<h2>Bon travail ! Avant de continuer, si vous portez un dispositif respiratoire, informez le chercheur que vous avez terminé, afin qu'il puisse le retirer. </h2>",
+      ["<h2>Bon travail !</h2>",
       "Maintenant, pour finir, vous verrez encore une fois les symboles avec lesquels vous venez de jouer. Sous chaque symbole, vous verrez un ensemble de boutons affichant différentes récompenses (ci-dessus) et probabilités (ci-dessous) : "+
-      '<img src="images/instructions/MC_choice.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
+      '<img src="images/instructions/MC_choice_corrected.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
       "Vous vous souvenez peut-être que pendant l'expérience, les options conduisaient parfois à des points gagnants, mais parfois elles conduisaient à un résultat nul (c'est-à-dire juste le chiffre 0)." ,
       "Votre objectif est d'estimer au mieux quel a été le résultat de chaque symbole (autre que 0), et la probabilité d'obtenir ce résultat." ,
       "Par exemple, si vous pensez que le symbole affiché vous a récompensé avec 1 point, 3 fois sur 4 lorsque vous avez cliqué dessus, vous devez sélectionner les boutons 1p et 75%. ",

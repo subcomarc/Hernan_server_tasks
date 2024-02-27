@@ -3,7 +3,7 @@
 /*DESIGN FOR THE MAIN CONTAINTER  576px;*/
 body {
   background-color: #f1f1f1;
-  background-image: url("/HERNAN/Hernan_server_tasks/RL_example_ICM_Reversal/images/logo-icm-en.png");
+  /* background-image: url("/HERNAN/Hernan_server_tasks/RL_example_ICM_Reversal/images/logo-icm-en.png"); */
   background-position: top center;
   background-repeat: no-repeat;
   padding-top: 10px;
@@ -142,6 +142,6 @@ a.myBtn:hover{
   width: 300px;
   background-position: top center;
   background-repeat: no-repeat;
-  /*background-size: cover;*/
+  background-size: cover;
   position: relative;
-} */
+/*} 
