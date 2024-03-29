@@ -1,12 +1,12 @@
-import {symbols} from "./TEACH_LoadSymbols.js";
+import {symbols} from "./PUPIL_LoadSymbols.js";
 import {expOrder} from "../order.js";
 import {addCanvas,drawStim} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
-import {exp} from "../TEACH_ExpSetting.js"
+import {exp} from "../PUPIL_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
 
 
-var TEACH_VSlider = {
+var PUPIL_VSlider = {
   trialState: 0, // starting point for the task
   taskSettings:{
     taskName: 'Valuations_ProbSlider',
@@ -45,14 +45,14 @@ var TEACH_VSlider = {
   }
   };
 
-export {TEACH_VSlider}
+export {PUPIL_VSlider}
 
 
 // Set up shortcuts & helpers
-var ts = TEACH_VSlider.taskSettings;
-var rs = TEACH_VSlider.results;
-var track = TEACH_VSlider.trackers;
-var state = TEACH_VSlider.trialState;
+var ts = PUPIL_VSlider.taskSettings;
+var rs = PUPIL_VSlider.results;
+var track = PUPIL_VSlider.trackers;
+var state = PUPIL_VSlider.trialState;
 
 // Actions to be repeated each trial
 function trialStateMachine(){

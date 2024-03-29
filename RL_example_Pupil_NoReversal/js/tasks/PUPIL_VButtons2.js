@@ -1,14 +1,14 @@
-import {symbols} from "./TEACH_LoadSymbols.js";
+import {symbols} from "./PUPIL_LoadSymbols.js";
 import {expOrder} from "../order.js";
 import {addCanvas,getLastValue,drawStim,schedule_all,recursiveSearch} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
-import {exp} from "../TEACH_ExpSetting.js"
+import {exp} from "../PUPIL_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
 
-var TEACH_VButtons2 = {
+var PUPIL_VButtons2 = {
   trialState: 0, // starting point for the task
   taskSettings:{
-    taskName: 'TEACH_VButtons2',
+    taskName: 'PUPIL_VButtons2',
     maxTrials: 16,//3*16,
     maxBlockTrials: 1,
     borderMS:500,//10,
@@ -101,14 +101,14 @@ var TEACH_VButtons2 = {
       }
   };
 
-export {TEACH_VButtons2}
+export {PUPIL_VButtons2}
 
 
 // Set up shortcuts & helpers
-var ts = TEACH_VButtons2.taskSettings;
-var rs = TEACH_VButtons2.results;
-var track = TEACH_VButtons2.trackers;
-var state = TEACH_VButtons2.trialState;
+var ts = PUPIL_VButtons2.taskSettings;
+var rs = PUPIL_VButtons2.results;
+var track = PUPIL_VButtons2.trackers;
+var state = PUPIL_VButtons2.trialState;
 
 // Actions to be repeated each trial
 function trialStateMachine(){

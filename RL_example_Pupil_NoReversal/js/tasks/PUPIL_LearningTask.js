@@ -1,12 +1,12 @@
-import {symbols} from "./TEACH_LoadSymbols.js";
+import {symbols} from "./PUPIL_LoadSymbols.js";
 import {expOrder} from "../order.js";
 import {addCanvas,schedule_all_range,drawStim,highlightOption} from "../functions/usefulFunctions.js";
 import {sendToDB} from "../functions/sendToDB.js";
-import {exp} from "../TEACH_ExpSetting.js"
+import {exp} from "../PUPIL_ExpSetting.js"
 import {endTask} from "../components/TaskEndScreen.js";
 
 
-var TEACH_LearningTask = {
+var PUPIL_LearningTask = {
     trialState: 0, // starting point for the task
     taskSettings:{
       taskName: 'LearningTask',
@@ -62,13 +62,13 @@ var TEACH_LearningTask = {
 
   }
 };
-export{TEACH_LearningTask}
+export{PUPIL_LearningTask}
 
 // Set up shortcuts & helpers
-var ts = TEACH_LearningTask.taskSettings;
-var rs = TEACH_LearningTask.results;
-var track = TEACH_LearningTask.trackers;
-var state = TEACH_LearningTask.trialState;
+var ts = PUPIL_LearningTask.taskSettings;
+var rs = PUPIL_LearningTask.results;
+var track = PUPIL_LearningTask.trackers;
+var state = PUPIL_LearningTask.trialState;
 
 
 // Actions to be repeated each trial

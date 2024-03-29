@@ -1,5 +1,5 @@
 import {expOrder} from "../order.js";
-import {exp} from "../TEACH_ExpSetting.js"
+import {exp} from "../PUPIL_ExpSetting.js"
 
 function endTask(rew,addRew=1){
 
