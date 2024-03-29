@@ -3,10 +3,10 @@ import {exp} from "./PUPIL_ExpSetting.js"
 
 
 // tasks
-import {TEACH_LearningTask} from "./tasks/PUPIL_LearningTask.js";
+import {PUPIL_LearningTask} from "./tasks/PUPIL_LearningTask.js";
 // import {TEACH_LearningTraining} from "./tasks/TEACH_LearningTraining.js";
 // import {TEACH_PreferenceTask} from "./tasks/TEACH_PreferenceTask.js";
-import {TEACH_VButtons2} from "./tasks/PUPIL_VButtons2.js";
+import {PUPIL_VButtons2} from "./tasks/PUPIL_VButtons2.js";
 
 // InstructionsLT
 // import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider,Welcome} from "./Instructions/Instructions.js"
@@ -64,7 +64,7 @@ function expOrder (){
       InstructionsLT2.init();
       break;
     case 8:
-      TEACH_LearningTask.init() ;
+      PUPIL_LearningTask.init() ;
       exp.startTimeLT = Date.now();
       break;
     // case 7:
@@ -88,7 +88,7 @@ function expOrder (){
          exp.startTimeInsPref = Date.now();
          break;
       case 12:
-        TEACH_VButtons2.init() ;
+        PUPIL_VButtons2.init() ;
          exp.startTimePref = Date.now();
          break;
    case 13:
