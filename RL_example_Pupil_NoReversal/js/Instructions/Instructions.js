@@ -1,4 +1,6 @@
 import {Instructions} from "./dInstructions.js";
+import {exp} from "../PUPIL_ExpSetting.js";
+
 
 var Welcome = new Instructions(
     {nextText: "Next",
@@ -16,10 +18,8 @@ var InstructionsLTp1 = new Instructions(
     textInstructions:[//page 0
                       ["<h2>Instructions</h2>",
                       "This study consists of a point-and-click game, in which you will have to choose one out of two symbols displayed on screen. <br></br>",
-                      "Here, this is an example of what these symbols can look like:<br>", 
+                      "You will win points if you choose the correct symbol. Here is an example of what these symbols can look like:<br>", 
                       '<img src="images/stim2/17.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/18.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid"> <img src="images/stim2/19.png" style="padding: 1rem; text-align: center"; width= "155"; height= "155"; class = "img-fluid">', 
-                      "<center><b>Each symbol has a probability of producing an outcome when clicked. Outcomes can be positive (winning points) or negative (losing points).</b><center>",
-                      "<center><b>Not all symbols are alike! Some symbols will be overall better than others at winning you points. Likewise, some symbols might cause greater losses than others.</b><center>",
                     ],
 
  
@@ -28,7 +28,7 @@ var InstructionsLTp1 = new Instructions(
                       "Here is a slowed-down example of the kind of decisions you'll have to make: ",
                       //'<img src="images/instructions/LT_BR3.gif" style="padding: 1rem; text-align: center" class = "img-fluid">'],
                       '<img src="images/instructions/example_RL_2.gif" style="padding: 1rem; text-align: center" class = "img-fluid">',
-                      "This is someone choosing the option on the left, and not winning any points. If this person had chosen the option to the right they would have won 1 point."],
+                      ],
 
                     ]
   })
@@ -39,21 +39,17 @@ var InstructionsLTp1 = new Instructions(
     textInstructions:[//page 0
 
                       ["<h2>Instructions</h2>",
-                      "<b>Here's the catch!!! READ CAREFULLY </b>",
-                      "Once you are done playing the game, we will ask you to <b>write down a set of instructions for the next player</b>. ",
-                      "<b>Unlike you, they wont have access to any instructions from us. ALL INSTRUCTIONS WILL COME FROM YOU.</b>",
-                      '<img src="images/instructions/Teacher_SingleStudent.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
-                      "You should try to transmit to them any strategy you may have devised while you were doing the task. Your goal is to teach them how to gain as many points as possible. ",
-                      "Keep in mind that the games they'll play will be exactly like yours, with the same choices, probabilities and rewards <b>but they will be represented by different symbols, so conveying the right strategy rather than talking about one symbol in particular here is key.</b>",
-                      "<b>Think of yourself as the teacher! Try to help your future student as much as you can! </b> ",
-                      "For reference, research shows a good teaching text is at least a minimum of 250 characters long. "],
+                      "Here's the catch!!! <b>READ CAREFULLY </b>",
+                      "A <b>teacher with vast experience<b> in this task has writen down <b>a set of instructions specifically for you</b>. ",
+                      "Keep in mind that <b>the teacher knows the task, and wants you to win as many points as possible!!</b>",
+                      '<img src="images/instructions/Pupil_board.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
+                      "Read their instructions closely! They will help you win as many points as possible. "],
 
                       //page 1
                      ["<h2>Instructions</h2>",
                      "At the end of the study, we will convert all collected points into pounds and add them to the fixed bonus provided by Prolific. ",
                      "The conversion rate is 1 point = 1.2 pence. ",
-                     "<b>But since you will be a teacher, your bonus earnings will not depend on the points you earn, but rather on the points your pupil earns </b>",
-                     "It is therefore in your best interest that you explain the task in the best possible way. If your pupil is good, you could double your earnings! "],
+                     "If your performance is good, you could even double your earnings!"],
 
                     ]
   })
@@ -70,6 +66,11 @@ var InstructionsLTp1 = new Instructions(
                      "However, you will see your score at the end of the training. ",
                      "<br><br> Click the button below to start. "]
                     ]
+  })
+
+  var Instructions_FROMTEACHER = new Instructions(
+    {nextText: "Next",
+    textInstructions:[exp.instructionText]
   })
 
   var InstructionsLT2 = new Instructions(

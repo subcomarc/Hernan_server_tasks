@@ -8,6 +8,9 @@ import {PUPIL_LearningTask} from "./tasks/PUPIL_LearningTask.js";
 // import {TEACH_PreferenceTask} from "./tasks/TEACH_PreferenceTask.js";
 import {PUPIL_VButtons2} from "./tasks/PUPIL_VButtons2.js";
 
+//before we can continue exporting, we need to fecth the teacher's lessons
+require('./components/GetLessons.js');
+
 // InstructionsLT
 // import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider,Welcome} from "./Instructions/Instructions.js"
 // import {InstructionsLT, InstructionsLT2, InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson, Welcome} from "./Instructions/Instructions.js"
@@ -15,6 +18,7 @@ import {InstructionsLTp1, InstructionsLTp2, InstructionsLT2, InstructionsWriteLe
 
 
 // other components
+import {GetLessons} from "./tasks/GetLessons.js";
 import {getID} from "./components/getID.js";
 import {end} from "./components/FinalScreen.js";
 import {consentForm} from "./components/dExperimentConsent.js";
@@ -26,7 +30,7 @@ import {Quiz_RL} from "./components/Quiz_RL.js";
 // other functions
 import {disableF5} from "./functions/usefulFunctions.js";
 
-function expOrder (){
+async function expOrder (){
   let check = exp.expTask;
   switch (check) {
     case 0:

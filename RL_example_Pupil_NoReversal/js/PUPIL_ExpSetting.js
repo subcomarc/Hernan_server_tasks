@@ -10,5 +10,4 @@ var exp = {
   totalReward:0
 }
 
-
 export{exp}
