@@ -1,31 +1,34 @@
-import {exp} from "../PUPIL_ExpSetting.js"
-
 const fs = require('fs');
-const csvParser = require('csv-parser');
+const csv = require('csv-parser');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const marked = require('marked');
+const path = require('path');
 
-const PathToLesson = ".../Lessons/TEACH_WrittenLesson.csv"
+// Assuming exp is a shared object; adjust based on your actual implementation
+let storedLesson = {}; 
+
+const PathToLesson = path.join(__dirname, "../Lessons/TEACH_WrittenLesson.csv");
 const maxProcessCount = 1; // Define the max times a single lesson can be used
 
 async function GetLessons(filePath) {
     const results = await readCsvFile(filePath);
-    const rowInfo = selectAndFormatRow(results); // rowInfo now receives an object
+    const rowInfo = selectAndFormatRow(results);
     if (rowInfo) {
-        exp.instructionText = rowInfo.formattedInstruction;
-        exp.Teacher_ID = rowInfo.Teacher_ID; // Store selected teaching partID in exp for later use
-        console.log('Formatted and stored instruction text:', exp.instructionText);
-        console.log('Stored partID:', exp.partID); // Log or use partID as needed
+        storedLesson.instructionText = marked(rowInfo.formattedInstruction);
+        storedLesson.Teacher_ID = rowInfo.Teacher_ID;
+        console.log('Formatted and stored instruction text:', storedLesson.instructionText);
+        console.log('Stored Teacher_ID:', rowInfo.Teacher_ID);
         await writeDataBack(filePath, results);
     } else {
         console.log("No eligible rows found or no text to format.");
     }
 }
+
 function readCsvFile(filePath) {
     return new Promise((resolve, reject) => {
         const results = [];
         fs.createReadStream(filePath)
-            .pipe(csvParser())
+            .pipe(csv())
             .on('data', (data) => results.push(data))
             .on('end', () => resolve(results))
             .on('error', (error) => reject(error));
@@ -38,11 +41,10 @@ function selectAndFormatRow(data) {
         const randomRow = eligibleRows[Math.floor(Math.random() * eligibleRows.length)];
         randomRow.ProcessCount = (parseInt(randomRow.ProcessCount, 10) + 1).toString();
         
-               // Format the instruction text and return it along with partID
-               return {
-                formattedInstruction: marked(randomRow.InstructionText),
-                Teacher_ID: randomRow.partID
-            };
+        return {
+            formattedInstruction: randomRow.InstructionText,
+            Teacher_ID: randomRow.partID
+        };
     }
     return null;
 }
@@ -51,24 +53,26 @@ async function writeDataBack(filePath, data) {
     const csvWriter = createCsvWriter({
         path: filePath,
         header: [
-            {id: 'partID', title: 'partID'}, // Adjust based on your CSV structure
+            {id: 'partID', title: 'partID'},
             {id: 'prolificID', title: 'prolificID'},
             {id: 'ExpID', title: 'ExpID'},
             {id: 'WrittenLesson', title: 'WrittenLesson'},
             {id: 'DBTIME', title: 'DBTIME'},
             {id: 'ProcessCount', title: 'ProcessCount'}
-            // Add other columns as necessary
         ]
     });
 
-    await csvWriter.writeRecords(data);
+    await csvWriter.writeRecords(data.map(row => ({
+        ...row,
+        ProcessCount: row.ProcessCount.toString() // Ensure ProcessCount is a string if required by your CSV structure
+    })));
     console.log('The CSV file has been updated.');
 }
 
-// Execute the processing
+// Execute the processing directly
 GetLessons(PathToLesson).then(() => {
-    // Use exp.instructionText here or in any subsequent code
-    console.log(exp.instructionText);
+    console.log(storedLesson.instructionText); // This will log after processing is complete
 }).catch(console.error);
 
-export { GetLessons };
+// Exports, if you still need them for other parts of your application
+module.exports = { GetLessons, storedLesson };
