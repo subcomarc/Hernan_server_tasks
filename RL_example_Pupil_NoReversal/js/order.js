@@ -14,11 +14,10 @@ require('./components/GetLessons.js');
 // InstructionsLT
 // import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider,Welcome} from "./Instructions/Instructions.js"
 // import {InstructionsLT, InstructionsLT2, InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson, Welcome} from "./Instructions/Instructions.js"
-import {InstructionsLTp1, InstructionsLTp2, InstructionsLT2, InstructionsWriteLesson, InstructionsProbSlider, Welcome} from "./Instructions/Instructions.js"
+import {InstructionsLTp1, InstructionsLTp2, InstructionsLT2, InstructionsWriteLesson, InstructionsProbSlider, Welcome, Instructions_FROMTEACHER} from "./Instructions/Instructions.js"
 
 
 // other components
-import {GetLessons} from "./tasks/GetLessons.js";
 import {getID} from "./components/getID.js";
 import {end} from "./components/FinalScreen.js";
 import {consentForm} from "./components/dExperimentConsent.js";
@@ -61,7 +60,7 @@ async function expOrder (){
       InstructionsLTp2.init();
       break;
     case 6:
-       Quiz.init();;
+      Instructions_FROMTEACHER.init();;
        break;
     case 7:
       exp.startTimeInsLT = Date.now();
