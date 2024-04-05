@@ -13,7 +13,7 @@ async function GetLessons(filePath) {
     const rowInfo = selectAndFormatRow(results); // rowInfo now receives an object
     if (rowInfo) {
         exp.instructionText = rowInfo.formattedInstruction;
-        exp.partID = rowInfo.Teacher_ID; // Store selected teaching partID in exp for later use
+        exp.Teacher_ID = rowInfo.Teacher_ID; // Store selected teaching partID in exp for later use
         console.log('Formatted and stored instruction text:', exp.instructionText);
         console.log('Stored partID:', exp.partID); // Log or use partID as needed
         await writeDataBack(filePath, results);

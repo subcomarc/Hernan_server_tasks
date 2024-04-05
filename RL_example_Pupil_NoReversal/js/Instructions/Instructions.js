@@ -1,6 +1,6 @@
 import {Instructions} from "./dInstructions.js";
 import {exp} from "../PUPIL_ExpSetting.js";
-
+import {GetLessons} from './components/GetLessons.js';
 
 var Welcome = new Instructions(
     {nextText: "Next",
