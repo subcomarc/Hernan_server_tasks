@@ -1,5 +1,5 @@
 <?php
-$pathToLesson = "/home/subco/NEW_WORK/Hernan_server_tasks/RL_example_Pupil_NoReversal/Lessons/";
+$pathToLesson = "/home/subco/NEW_WORK/Hernan_server_tasks/RL_example_Pupil_NoReversal/Lessons/TEACH_WrittenLesson.csv";
 $maxProcessCount = 1;
 
 // Ensure the "Processed" column exists and select a row at random
