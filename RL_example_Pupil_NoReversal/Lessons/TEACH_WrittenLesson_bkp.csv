@@ -1,0 +1,47 @@
+"partID","prolificID","ExpID","WrittenLesson","DBTIME"
+"Fabiennnnnnnnnnnnnnnnnnn",,"TEACH_RL_TEACHER_NoReversal","oupsi i have click on &quot;skip&quot;, stupid I am 
+
+The goal is to make me earn a lot of money. To achieve this, symbols will appear on the screen, and some of them earn you more money than others. The symbols always appear in pairs, and you have to choose one of the symbols in the pair. The symbols have a probability of winning. If A has a 90% chance of earning you 1 point and B has a 50% chance, always choose A. But for that, test a bit and remember to estimate the probability of winning for each symbol. Be careful, some symbols make you lose points, avoid them! Good luck, and kisses.","14:56:16"
+"IsabhoxIsAGreatBeatBoxer",,"TEACH_RL_TEACHER_NoReversal","Your goal in this task is to get as many points as possible.
+In order to do so, you will have to click on the images that are displayed on the screen, after which you will receive the number of points displayed under the option that you picked. Be careful, sometimes you can get a penalty (that is, the number of points is negative!).
+At first, you don't know which image will give you more points (or which option makes you lose less points), so you will have to learn.
+Also, the number of points you get each time may change (and sometimes, the one you thought was the best option may give you the least amount of points), so be careful about that at the beginning, but once you feel confident about which option generally gives the most points, go with that every time!","15:22:43"
+"Romaneeeeeeeeeeeeeeeeeee",,"TEACH_RL_TEACHER_NoReversal","- You're presented with two symbols at a time, and must choose one to earn points.
+- Your aim is to win as many points as possible.
+- The possible points for the symbols are : -10, -1, 1 or 10 points.
+- During the course of the game, a specific symbol is always associated with the same number of points, but the probability of obtaining these points is not 100%. This means that at times, when you choose a symbol, you may also get 0 points.
+- Each pair of symbols has the same point value, but one of them is more likely to win you points (i.e., the probability of getting points for one symbol is higher than for the other).
+- So you need to find out, for each pair, which symbol has the highest probability of displaying points instead of 0.
+- Then, in the case where the symbols earn positive points, you must choose the one with the highest probability of earning points.
+- On the other hand, for the pair of negative symbols (-10 or -1), you'll need to choose the one with the highest probability of displaying a 0.
+- Once you've found the symbol that earns you the most points or doesn't lose you the most points, stick with it, even if it's not always the best one to try.","11:50:48"
+"000000000000000000000000",,"TEACH_RL_TEACHER_NoReversal","Hello young students!
+I am your boss, I am the chosen one, I am the one who decide your fate in this experiment! Please listen to me carefully or rot in hell of ignorance and poverty.
+
+The experiment is a decision making task where you will face plenty of trials where, at every trial, you will have to choose between 2 symbols (I think there are 4 pairs of symbols in total). Symbols are always presented in pairs and pairs stay the same across the whole experiment (as an example the blue symbol will always be presented with the pink symbol etc). Value of symbols can change from one trial to another but the general value is stable (i.e. a symbol can give you 10pts most of the time but sometimes it will give you 0pts, so the mean value should lie around 7pts). Some symbols make you win points and some other make you loose. Some pairs of symbols are highly discriminable (10pts vs 0pts) some other are harder (-1pts vs 0pts).
+
+So for every pair of symbols, it's important to identify the most rewarding symbol on average). Try to maximize your gain and minimize your loss and you'll get rich. 
+Peace out bro' and see you on the other side!","16:42:27"
+"314159265358979323846264",,"TEACH_RL_TEACHER_NoReversal","There are 4 pairs of symbols with different reward associated to them. You will be given a pair and you'll have to chose which of the 2 symbols gives the best number of points. 4*2=8 symbols might be difficult to track at first so you can use a little trick : give a name to each symbol. If it's shape makes you think about something you can give it its name (like butterfly, alien, ...) or just remember it by its color. Then even if you didn't chose the symbol you'll still have feedback about how much reward you would have got if you selected it. Therefore try to remember which symbol wins most of the time (rewards are quite random but one gives you reward more often) and select it everytime you see it. If you see a change and your symbol doesn't seem to win very often don't hesitate to switch your choice and update your thoughts about which one is the best. Good luck :p","18:51:18"
+"maeva_adore_les_citrons_",,"TEACH_RL_TEACHER_NoReversal","Your goal in this task is to earn as many points as possible. To do so, you'll have to interact with symbols by clicking on them. The symbol on which you'll click delivers you an outcome. Symbol are presented  by pairs. Each symbol of a given pair of can lead to two outcomes (0 &amp; -1, 0 &amp; 1; 0 &amp; 10; 0 &amp; -10). But one of the two will have more chances to give one outcome than the other (for example, symbol one of the first pair will give 0 point 70% of the times you clicked it, and -1 point 30% of the time).
+
+Here are my advises to earn a lot of points:
+- Try to get a sense of the chances each symbol has to lead you to a good outcome. To do so, gather as many information as possible. That is, try to keep in mind what outcome you observed from a same pair the all the previous times you encountered this pair. 
+
+- At the beginning, focus on learning the best options of pairs with outcomes 0&amp;10 and 0&amp;-10. These are the most &quot;costly&quot; pairs, so you'd better learn quickly which one is best/which one should be avoided
+
+- Once you've figured this out, focus on the less costly pairs. 
+
+-Once you have a clearer idea of which option is best, continue to look at the results when you click, and compare them with those of the option you didn't choose, to check that you haven't &quot;miscalculated&quot; which is best
+
+Good luck !! And don't forget to try earning as many points as possible because your final payement depends on it.","01:34:40"
+"rerrtdvbgfdazzzzzzzzzzzz",,"TEACH_RL_TEACHER_NoReversal","The task is difficult because you need to learn about many symbols at once. The symbols are always presented in pairs, and each symbol seemed to be (always?) paired with the same symbol (out of maybe 8-10 symbols in total). The task is also difficult because the same symbol does not always yield the same outcome. I was a bit sleepy because I did the task after lunch, and I didn't find a great strategy. Good luck...","13:33:06"
+"GeorgiaTurner11111111111",,"TEACH_RL_TEACHER_NoReversal","Each trial you will have to choose between two symbols. After you click on a symbol you will receive an amount of points, and you will also find out how many points you would have got from the other symbol you did not choose.
+
+Some symbols are more likely to give higher amounts of points and some are more likely to give lower or negative points. The points you can receive will always be either -10, -1, 0, 1 or 10. 
+
+To get as many points as possible you should try to learn which symbols have a higher probability of giving high rewards and always choose these, but also try to remember what the symbol you didn't choose gave as well. 
+
+I think symbols usually come in the same pairs every time so the strategy I used was to remember which I preferred out of a pair, and also to prioritise memorising the ones that are worth 10 rather than 1 point. ","19:06:22"
+"xxxxxxxxxxxxxxxxxxxxxxxx",,"TEACH_RL_TEACHER_NoReversal","99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999","11:14:20"
+"555555555555555555555555",,"TEACH_RL_TEACHER_NoReversal","9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999","14:51:51"
