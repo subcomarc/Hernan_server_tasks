@@ -1,7 +1,12 @@
 import {Instructions} from "./dInstructions.js";
 import {exp} from "../PUPIL_ExpSetting.js";
-import {GetLessons} from '../components/GetLessons.js';
+import { instructionText, teacherID } from '../components/GetLessons.js';
 
+//Store the instructions in exp
+exp.instructionText = instructionText; //it should be formatted already
+exp.teacherID = teacherID;
+
+//Start creating the instructions
 var Welcome = new Instructions(
     {nextText: "Next",
     textInstructions:[//page 0

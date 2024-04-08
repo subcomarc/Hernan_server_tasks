@@ -126,5 +126,6 @@ function drop_handler(ev) {
  ev.target.appendChild(document.getElementById(data));
 }
 
+
 export {shuffle, getLastValue,findCor,disableF5,points2pounds,dragstart_handler,dragover_handler,drop_handler,schedule_all,recursiveSearch,schedule_all_range,
   addCanvas,drawStim,drawEmpty,highlightOption}
