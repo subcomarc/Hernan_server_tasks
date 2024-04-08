@@ -1,13 +1,11 @@
 <?php
 header('Content-Type: application/json');
-$pathToLesson = "/home/subco/NEW_WORK/Hernan_server_tasks/RL_example_Pupil_NoReversal/Lessons/TEACH_WrittenLesson.csv";
-$maxProcessCount = 1;
-
+$pathToLesson = "Lessons/TEACH_WrittenLesson.csv";
+$maxProcessCount = 1; // Maximum number of times a row can be processed
 // Ensure the "Processed" column exists and select a row at random
 function processCSV($pathToLesson, $maxProcessCount) {
     $rows = $headers = [];
     $selectedRow = null;
-
     if (($handle = fopen($pathToLesson, "r+")) !== FALSE) {
         if (flock($handle, LOCK_EX)) {
             while ($row = fgetcsv($handle)) {
@@ -63,7 +61,8 @@ function processCSV($pathToLesson, $maxProcessCount) {
         'Teacher_ID' => $selectedRow['partID']
     ];
 }
-
 $response = processCSV($pathToLesson, $maxProcessCount);
 echo json_encode($response);
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 ?>
