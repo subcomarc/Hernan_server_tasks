@@ -5,9 +5,10 @@ let teacherID = ''; // Variable to store teacher ID
 function GetLessons(call = 0) {
     $.ajax({
         type: 'GET',
-        url: 'InsertDB_FetchLesson.php',
+        url: 'php/InsertDB_FetchLesson.php',
         success: function(response) {
             const Lesson = JSON.parse(response);
+            console.log(Lesson); // Add this to see the raw response
             if (!Lesson.error && Lesson.instructionText) {
                 console.log('Received instruction text:', Lesson.instructionText);
                 // Store the data for future use instead of displaying it immediately
