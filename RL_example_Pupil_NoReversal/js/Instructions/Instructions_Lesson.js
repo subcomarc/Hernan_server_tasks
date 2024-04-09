@@ -1,7 +1,7 @@
 // THIS WORKS BECAUSE GetLessons.js RETURNS A PROMISE THAT RESOLVES TO AN OBJECT WITH THE INSTRUCTION TEXT AND TEACHER ID
 import { GetLessons } from '../components/GetLessons.js';
 import { Instructions } from "./dInstructions.js";
-import {exp} from "./PUPIL_ExpSetting.js"
+import {exp} from "../PUPIL_ExpSetting.js"
 
 
 // Placeholder for the asynchronously initialized Instructions_FROMTEACHER object
