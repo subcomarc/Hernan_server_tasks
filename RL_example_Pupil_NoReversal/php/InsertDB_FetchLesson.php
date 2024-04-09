@@ -1,5 +1,6 @@
 <?php
-header('Content-Type: application/json', 'Access-Control-Allow-Origin: *');
+header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
 $pathToLesson = "/home/dec/www/dec_lnc2/stefanopalminteri/HernanAnllo/Hernan_server_tasks/RL_example_Pupil_NoReversal/Lessons/TEACH_WrittenLesson.csv";
 $maxProcessCount = 1; // Maximum number of times a row can be processed
 // Ensure the "Processed" column exists and select a row at random
@@ -7,46 +8,68 @@ function processCSV($pathToLesson, $maxProcessCount) {
     $rows = $headers = [];
     $selectedRow = null;
     if (($handle = fopen($pathToLesson, "r+")) !== FALSE) {
+        // Attempt to acquire an exclusive lock on the file
         if (flock($handle, LOCK_EX)) {
+            $rows = $headers = [];
+            $selectedRow = null;
+
+            // Read each row of the CSV into an array
             while ($row = fgetcsv($handle)) {
                 $rows[] = $row;
             }
-            fclose($handle);
 
-            $headers = array_shift($rows); // Remove and save header row
+            // Retrieve and remove the header row
+            $headers = array_shift($rows);
+
+            // Check if the "Processed" column exists, add it if not
             if (!in_array('Processed', $headers)) {
-                $headers[] = 'Processed'; // Add "Processed" column
+                $headers[] = 'Processed';
             }
 
+            // Pad each row with 'Processed' if necessary and combine with headers
             $data = array_map(function($row) use ($headers) {
-                return array_combine($headers, array_pad($row, count($headers), '0')); // Pad row with '0' for "Processed"
+                return array_combine($headers, array_pad($row, count($headers), '0'));
             }, $rows);
 
+            // Filter rows that have not reached the maximum process count
             $eligibleRows = array_filter($data, function($row) use ($maxProcessCount) {
                 return $row['Processed'] < $maxProcessCount;
             });
 
+            // If there are eligible rows, select one at random and update its 'Processed' value
             if (!empty($eligibleRows)) {
-                $randomKeys = array_rand($eligibleRows);
-                $selectedRow = $eligibleRows[$randomKeys];
+                $selectedKey = array_rand($eligibleRows);
+                $selectedRow = $eligibleRows[$selectedKey];
+
+                // Increment the 'Processed' count for the selected row
                 foreach ($data as &$row) {
                     if ($row['partID'] === $selectedRow['partID']) {
-                        $row['Processed'] = (string)($maxProcessCount); // Update "Processed"
+                        $row['Processed'] = (string)((int)$row['Processed'] + 1);
                         break;
                     }
                 }
+                unset($row); // Unset the reference to the last item
 
-                // Write back to the file
-                $handle = fopen($pathToLesson, "w");
+                // Truncate the file and write the updated data
+                ftruncate($handle, 0);
+                rewind($handle);
                 fputcsv($handle, $headers);
                 foreach ($data as $row) {
-                    fputcsv($handle, array_values($row));
+                    fputcsv($handle, $row);
                 }
-                flock($handle, LOCK_UN);
-                fclose($handle);
             } else {
-                return ['error' => 'No eligible rows found.'];
+                $selectedRow = ['instructionText' => 'No eligible rows found', 'Teacher_ID' => ''];
             }
+
+            // Release the lock and close the file handle
+            flock($handle, LOCK_UN);
+            fclose($handle);
+
+            // Return the selected row's data
+            return [
+                'instructionText' => $selectedRow['instructionText'],
+                'Teacher_ID' => $selectedRow['Teacher_ID']
+            ];
         } else {
             fclose($handle);
             return ['error' => 'Could not acquire file lock.'];
@@ -54,14 +77,8 @@ function processCSV($pathToLesson, $maxProcessCount) {
     } else {
         return ['error' => 'Failed to open CSV file.'];
     }
-
-    // Return formatted instruction and teacher ID
-    return [
-        // 'instructionText' => htmlspecialchars($selectedRow['WrittenLesson'], ENT_QUOTES, 'UTF-8'),
-        'instructionText' => $selectedRow['WrittenLesson'],
-        'Teacher_ID' => $selectedRow['partID']
-    ];
 }
+
 $response = processCSV($pathToLesson, $maxProcessCount);
 echo json_encode($response);
 // ini_set('display_errors', 1);
