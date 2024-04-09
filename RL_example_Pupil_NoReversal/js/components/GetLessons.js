@@ -8,7 +8,7 @@ function GetLessons(call = 0) {
         url: 'php/InsertDB_FetchLesson.php',
         dataType: 'json',
         success: function(response) {
-            console.log(response); // Add this to see the raw response, comment otherwise
+            // console.log(response); // Add this to see the raw response, comment otherwise
             const Lesson = JSON.parse(response);
             console.log(Lesson); // Add this to see the raw response
             if (!Lesson.error && Lesson.instructionText) {

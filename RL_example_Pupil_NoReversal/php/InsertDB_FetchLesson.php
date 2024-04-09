@@ -63,6 +63,6 @@ function processCSV($pathToLesson, $maxProcessCount) {
 }
 $response = processCSV($pathToLesson, $maxProcessCount);
 echo json_encode($response);
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// error_reporting(E_ALL);
 ?>
