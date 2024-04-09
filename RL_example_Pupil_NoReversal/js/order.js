@@ -12,6 +12,7 @@ import {InstructionsLTp1, InstructionsLTp2, InstructionsLT2, InstructionsProbSli
 import {getID} from "./components/getID.js";
 import {end} from "./components/FinalScreen.js";
 import {consentForm} from "./components/dExperimentConsent.js";
+import {Quiz} from './components/Quiz.js'; // This is where we bring the teacher's lesson (which is a promise)
 
 // other functions
 import {disableF5} from "./functions/usefulFunctions.js";
@@ -42,22 +43,25 @@ async function expOrder (){
       instructions_FROMTEACHER.init();
       break;
     case 6:
+        Quiz.init();
+        break;
+    case 7:
       exp.startTimeInsLT = Date.now();
       InstructionsLT2.init();
       break;
-    case 7:
+    case 8:
       PUPIL_LearningTask.init() ;
       exp.startTimeLT = Date.now();
       break;
-      case 8:
+      case 9:
         InstructionsProbSlider.init();
          exp.startTimeInsPref = Date.now();
          break;
-      case 9:
+      case 10:
         PUPIL_VButtons2.init() ;
          exp.startTimePref = Date.now();
          break;
-   case 10:
+   case 11:
       end(exp);
       exp.startTimeFinal = Date.now();
       break;

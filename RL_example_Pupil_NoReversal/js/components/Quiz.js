@@ -2,12 +2,10 @@ import {expOrder} from "../order.js";
 import {exp} from "../PUPIL_ExpSetting.js"
 
 var Quiz =  {
-  Title: "Please answer the following questions",
-  Intro: "(If you do not answer all questions correctly, you will be redirected back to the instructions.)",
+  Title: "Wait...",
+  Intro: "Did you read the teacher's explanation carefully? Are you ready to continue?",
   Questions: [
-    {id:"Q0",Text:"The final bonus payoff depends on your and your pupil's choices combined:", Responses:["True","False"], Correct:1},
-    {id:"Q1",Text:"You will have to write down a set of instructions and strategies to help your future pupil. A good lesson is at least a minimum of 250 characters:", Responses:["True","False"], Correct:0},
-    {id:"Q2",Text:"Your future pupil will see the same symbols as you, with the same values:", Responses:["True","False"], Correct:1},
+    {id:"Q0",Text:"I would like to read the explanation again", Responses:["Yes, take me back to the text","No, let us continue"], Correct:1},
   ],
 
  init: function(){
