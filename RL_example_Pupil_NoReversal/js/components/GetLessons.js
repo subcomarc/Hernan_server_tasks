@@ -9,8 +9,8 @@ function GetLessons(call = 0) {
         dataType: 'json',
         success: function(response) {
             console.log(response); // Add this to see the raw response, comment otherwise
-            const Lesson = JSON.parse(response);
-            console.log(Lesson); // Add this to see the raw response
+            const Lesson = response;
+            console.log(Lesson); // Add this to see the parsed response response
             if (!Lesson.error && Lesson.instructionText) {
                 console.log('Received instruction text:', Lesson.instructionText);
                 // Store the data for future use instead of displaying it immediately
