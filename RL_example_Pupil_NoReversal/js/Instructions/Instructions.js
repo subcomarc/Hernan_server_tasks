@@ -1,7 +1,7 @@
 import {Instructions} from "./dInstructions.js";
 import {exp} from "../PUPIL_ExpSetting.js";
 // import { instructionText, teacherID } from '../components/GetLessons.js';
-import { GetLessons } from './GetLessons.js';
+import { GetLessons } from '../components/GetLessons.js';
 
 //Store the instructions in exp
 //IMPORTANT: even if GetLessons is a module, it makes an AJAX call that is not instantaneous
