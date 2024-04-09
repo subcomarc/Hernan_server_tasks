@@ -40,12 +40,6 @@ async function expOrder (){
       // Use initializeInstructions() to get Instructions_FROMTEACHER, time to satisfy the promises AND THEN initialize the instructions
       const instructions_FROMTEACHER = await initializeInstructions();
       instructions_FROMTEACHER.init();
-      //I'll disable the Next button for a little while here to avoid the user clicking it before the instructions are displayed
-      const nextButton =  document.getElementById('bNext');
-      nextButton.forEach(button => button.disabled = true);
-      setTimeout(() => {
-        nextButton.forEach(button => button.disabled = false);
-        }, 5000);
       break;
     case 6:
       exp.startTimeInsLT = Date.now();
