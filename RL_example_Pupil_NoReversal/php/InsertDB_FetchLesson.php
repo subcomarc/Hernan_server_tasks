@@ -58,7 +58,7 @@ function processCSV($pathToLesson, $maxProcessCount) {
                     fputcsv($handle, $row);
                 }
             } else {
-                $selectedRow = ['instructionText' => 'No eligible rows found', 'Teacher_ID' => ''];
+                $selectedRow = ['WrittenLesson' => 'No eligible rows found', 'partID' => ''];
             }
 
             // Release the lock and close the file handle
@@ -67,8 +67,8 @@ function processCSV($pathToLesson, $maxProcessCount) {
 
             // Return the selected row's data
             return [
-                'instructionText' => $selectedRow['instructionText'],
-                'Teacher_ID' => $selectedRow['Teacher_ID']
+                'instructionText' => $selectedRow['WrittenLesson'],
+                'Teacher_ID' => $selectedRow['partID']
             ];
         } else {
             fclose($handle);
