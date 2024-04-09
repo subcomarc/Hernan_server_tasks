@@ -14,10 +14,11 @@ function initializeInstructions() {
           exp.instructionText = instructionText;
             const Instructions_FROMTEACHER = new Instructions({
                 nextText: "Next",
-                textInstructions: [
+                textInstructions: [//page0
                     ["<h2>Explanations from the teacher</h2>",
                      "You are about to read the explanations the teacher left just for you. ",
                      "Pay attention to the strategies and tips they share with you. Click whenever you are ready!"],
+                     //page 
                     [instructionText], // This is the fetched instruction text
                 ]
             });
