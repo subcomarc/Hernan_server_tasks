@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json');
-$pathToLesson = "Lessons/TEACH_WrittenLesson.csv";
+$pathToLesson = "/home/dec/www/dec_lnc2/stefanopalminteri/HernanAnllo/Hernan_server_tasks/RL_example_Pupil_NoReversal/Lessons/TEACH_WrittenLesson.csv";
 $maxProcessCount = 1; // Maximum number of times a row can be processed
 // Ensure the "Processed" column exists and select a row at random
 function processCSV($pathToLesson, $maxProcessCount) {
