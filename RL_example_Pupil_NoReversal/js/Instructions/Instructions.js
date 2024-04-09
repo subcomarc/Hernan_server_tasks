@@ -9,7 +9,7 @@ import { GetLessons } from './GetLessons.js';
 //instructions with the Instructions class
 //We will also save the instructions in the exp object, so that we can access them later
 
-fetchLessons().then(({ instructionText, teacherID }) => {
+GetLessons().then(({ instructionText, teacherID }) => {
   exp.instructionText = instructionText;
   exp.teacherID = teacherID;
 }).catch(error => {
@@ -36,7 +36,7 @@ fetchLessons().then(({ instructionText, teacherID }) => {
 //   // Now, it's safe to use Instructions_FROMTEACHER
 // }
 
-//Start creating the remainder of instructions, that are less conflictive
+//Start creating the instructions with Instructions class
 var Welcome = new Instructions(
     {nextText: "Next",
     textInstructions:[//page 0
