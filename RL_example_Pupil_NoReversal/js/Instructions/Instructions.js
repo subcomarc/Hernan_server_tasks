@@ -75,7 +75,15 @@ var InstructionsLTp1 = new Instructions(
 
   var Instructions_FROMTEACHER = new Instructions(
     {nextText: "Next",
-    textInstructions:[exp.instructionText]
+    textInstructions:[//page 0 
+      ["<h2>Explanations from the teacher</h2>",
+      "You are about to read the explanations the teacher left just for you. ",
+      "Pay attention to the strategies and tips they share with you. Click whenever you are ready!",],
+      
+      //page 1
+      exp.instructionText,
+    
+    ]
   })
 
   var InstructionsLT2 = new Instructions(
