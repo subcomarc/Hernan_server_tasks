@@ -1,12 +1,42 @@
 import {Instructions} from "./dInstructions.js";
 import {exp} from "../PUPIL_ExpSetting.js";
-import { instructionText, teacherID } from '../components/GetLessons.js';
+// import { instructionText, teacherID } from '../components/GetLessons.js';
+import { GetLessons } from './GetLessons.js';
 
 //Store the instructions in exp
-exp.instructionText = instructionText; //it should be formatted already
-exp.teacherID = teacherID;
+//IMPORTANT: even if GetLessons is a module, it makes an AJAX call that is not instantaneous
+//Therefore, we need to make sure that the instructions are fetched before we start creating
+//instructions with the Instructions class
+//We will also save the instructions in the exp object, so that we can access them later
 
-//Start creating the instructions
+fetchLessons().then(({ instructionText, teacherID }) => {
+  exp.instructionText = instructionText;
+  exp.teacherID = teacherID;
+}).catch(error => {
+  console.error(error);
+});
+
+// async function initializeLessonFetch() {
+//   const { instructionText, teacherID } = await GetLesson();
+//   exp.instructionText = instructionText;
+//   exp.teacherID = teacherID;
+//   var Instructions_FROMTEACHER = new Instructions({
+//       nextText: "Next",
+//       textInstructions: [
+//           // page 0
+//           ["<h2>Explanations from the teacher</h2>",
+//           "You are about to read the explanations the teacher left just for you.",
+//           "Pay attention to the strategies and tips they share with you. Click whenever you are ready!"],
+
+//           // page 1
+//           exp.instructionText,
+//       ]
+//   });
+
+//   // Now, it's safe to use Instructions_FROMTEACHER
+// }
+
+//Start creating the remainder of instructions, that are less conflictive
 var Welcome = new Instructions(
     {nextText: "Next",
     textInstructions:[//page 0
