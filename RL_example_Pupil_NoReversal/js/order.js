@@ -41,7 +41,7 @@ async function expOrder (){
       const instructions_FROMTEACHER = await initializeInstructions();
       instructions_FROMTEACHER.init();
       //I'll disable the Next button for a little while here to avoid the user clicking it before the instructions are displayed
-      const nextButton =  document.querySelectorAll('bNext');
+      const nextButton =  document.getElementById('bNext');
       nextButton.forEach(button => button.disabled = true);
       setTimeout(() => {
         nextButton.forEach(button => button.disabled = false);
