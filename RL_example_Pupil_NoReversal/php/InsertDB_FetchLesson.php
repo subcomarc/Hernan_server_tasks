@@ -57,7 +57,8 @@ function processCSV($pathToLesson, $maxProcessCount) {
 
     // Return formatted instruction and teacher ID
     return [
-        'instructionText' => htmlspecialchars($selectedRow['WrittenLesson'], ENT_QUOTES, 'UTF-8'),
+        // 'instructionText' => htmlspecialchars($selectedRow['WrittenLesson'], ENT_QUOTES, 'UTF-8'),
+        'instructionText' => $selectedRow['WrittenLesson'],
         'Teacher_ID' => $selectedRow['partID']
     ];
 }
