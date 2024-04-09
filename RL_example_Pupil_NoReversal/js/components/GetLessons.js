@@ -11,7 +11,7 @@ function GetLessons(call = 0) {
                 if (!Lesson.error && Lesson.instructionText) {
                     // Resolve the promise with the fetched data
                     resolve({
-                        instructionText: Lesson.instructionText,
+                        LessonText: Lesson.instructionText,
                         teacherID: Lesson.Teacher_ID
                     });
                 } else if (Lesson.error && (call + 1) < MAX_REQUESTS) {

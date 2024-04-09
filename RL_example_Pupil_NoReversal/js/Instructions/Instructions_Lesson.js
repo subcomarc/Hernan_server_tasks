@@ -9,9 +9,9 @@ let instructionsPromise = null;
 
 function initializeInstructions() {
     if (!instructionsPromise) {
-        instructionsPromise = GetLessons().then(({ instructionText, teacherID }) => {
+        instructionsPromise = GetLessons().then(({ LessonText, teacherID }) => {
           exp.teacherID = teacherID;
-          exp.instructionText = instructionText;
+          exp.LessonText = LessonText;
             const Instructions_FROMTEACHER = new Instructions({
                 nextText: "Next",
                 textInstructions: [//page0
@@ -19,7 +19,7 @@ function initializeInstructions() {
                      "You are about to read the explanations the teacher left just for you. ",
                      "Pay attention to the strategies and tips they share with you. Click whenever you are ready!"],
                      //page 
-                    [instructionText], // This is the fetched instruction text
+                    [LessonText], // This is the fetched instruction text
                 ]
             });
             return Instructions_FROMTEACHER; // Return the initialized Instructions object
