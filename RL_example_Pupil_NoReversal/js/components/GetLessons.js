@@ -5,7 +5,6 @@ function GetLessons(call = 0) {
         $.ajax({
             type: 'GET',
             url: 'php/InsertDB_FetchLesson.php',
-            dataType: 'json',
             success: function(response) {
                 const Lesson = response;
                 if (!Lesson.error && Lesson.instructionText) {
