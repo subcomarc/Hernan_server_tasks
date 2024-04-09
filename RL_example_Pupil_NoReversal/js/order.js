@@ -1,5 +1,6 @@
 // exp - shared data
 import {exp} from "./PUPIL_ExpSetting.js"
+import {initializeInstructions} from './Instructions/Instructions_Lesson.js'; // Assuming this is the correct path
 
 
 // tasks
@@ -13,7 +14,7 @@ import {PUPIL_VButtons2} from "./tasks/PUPIL_VButtons2.js";
 // InstructionsLT
 // import {InstructionsLT,InstructionsLT2,InstructionsLT_Train, InstructionsPreference, InstructionsProbSlider,Welcome} from "./Instructions/Instructions.js"
 // import {InstructionsLT, InstructionsLT2, InstructionsLT_Train, InstructionsPreference, InstructionsWriteLesson, Welcome} from "./Instructions/Instructions.js"
-import {InstructionsLTp1, InstructionsLTp2, InstructionsLT2, InstructionsProbSlider, Welcome, Instructions_FROMTEACHER} from "./Instructions/Instructions.js"
+import {InstructionsLTp1, InstructionsLTp2, InstructionsLT2, InstructionsProbSlider, Welcome} from "./Instructions/Instructions.js"
 
 
 // other components
@@ -55,8 +56,10 @@ async function expOrder (){
       InstructionsLTp2.init();
       break;
     case 5:
-      Instructions_FROMTEACHER.init();;
-       break;
+      // Use initializeInstructions() to get Instructions_FROMTEACHER
+      const instructions_FROMTEACHER = await initializeInstructions();
+      instructions_FROMTEACHER.init();
+      break;
     case 6:
       exp.startTimeInsLT = Date.now();
       InstructionsLT2.init();
