@@ -19,7 +19,9 @@ let time = Date.now()-exp.startTime;
             expID: exp.expID,
           	rewardPoints: rew,
             rewardPounds: points2pounds(rew,exp.rate),
-          	totalTime: time},
+          	totalTime: time,
+            teacherID: exp.teacherID,
+            seenLesson: exp.LessonText},
         'php/InsertDB_General.php'
     );
 

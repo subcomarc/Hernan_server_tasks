@@ -8,11 +8,13 @@ $EXPID 		= stripslashes(htmlspecialchars($_POST['expID']));
 $REWPOINT 		= stripslashes(htmlspecialchars($_POST['rewardPoints']));
 $REWPOUNDS 		= stripslashes(htmlspecialchars($_POST['rewardPounds']));
 $TOTALTIME		= stripslashes(htmlspecialchars($_POST['totalTime']));
+$TEACHERID		= stripslashes(htmlspecialchars($_POST['teacherID']));
+$SEENLESSON		= stripslashes(htmlspecialchars($_POST['seenLesson']));
 
 
-$stmt = $db->prepare("INSERT INTO PUPIL_General VALUE(?,?,?,?,?,?, NOW())");
-$stmt->bind_param("sssidd",
-    $PARTID,$PROLIFICID ,$EXPID,$REWPOINT,$REWPOUNDS ,$TOTALTIME
+$stmt = $db->prepare("INSERT INTO PUPIL_General VALUE(?,?,?,?,?,?,?,?, NOW())");
+$stmt->bind_param("sssiddss",
+    $PARTID,$PROLIFICID ,$EXPID,$REWPOINT,$REWPOUNDS ,$TOTALTIME, $TEACHERID, $SEENLESSON
     );
 $stmt->execute();
 $err = $stmt->errno ;
