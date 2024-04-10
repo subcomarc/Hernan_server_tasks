@@ -31,7 +31,8 @@ let time = Date.now()-exp.startTime;
                   //  '<p align = "center" > During the task, you won points equivalent to &pound ' + points2pounds(rew,exp.rate)  +' </p>' +
                   // // '<p align = "center" ><b> You won ' + rew +' points! </b></p>' +
                   // '<p align = "center" > <b> However, remember that this is not your bonus, as you will be paid the bonus of your pupil instead. You will also receive the full designated fixed compensation advertised in the study. </b></p><br><br>'
-                  '<p align = "center" > You will receive the full designated fixed compensation rate of XXX pounds. During the task, you also won several points. <b> However, remember that this points won\'t count towards your bonus, since you will be paid the bonus of your pupil instead.  </b> </p>' +
+                  '<p align = "center" > You will receive the full designated fixed compensation of 3 pounds/hour. During the task, you also won several points. <b> However, remember that this points won\'t count towards your bonus, since you will be paid the bonus of your pupil instead.  </b> </p>' +
+                  '<p align = "center" > This additional bonus will be paid within one to three weeks. </p>' +
                   // '<p align = "center" ><b> You won ' + rew +' points! </b></p>' +
                   '<p align = "center" > </p><br><br>'
 
