@@ -40,8 +40,8 @@ var InstructionsLTp1 = new Instructions(
 
                       ["<h2>Instructions</h2>",
                       "Here's the catch!!! <b>READ CAREFULLY </b>",
-                      "A <b>teacher with vast experience<b> in this task has writen down <b>a set of instructions specifically for you</b>. ",
-                      "Keep in mind that <b>the teacher knows the task, and wants you to win as many points as possible!!</b>",
+                      "A <b>someone with experience<b> in this task has writen down <b>a set of instructions specifically for you</b>. ",
+                      "Keep in mind that <b>this \"teacher\" knows the task, and wants you to win as many points as possible!!</b>",
                       '<img src="images/instructions/Pupil_board.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
                       "Read their instructions closely! They will help you win as many points as possible. "],
 
