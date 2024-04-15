@@ -124,7 +124,7 @@ var InstructionsPreference = new Instructions(
     var InstructionsProbSlider = new Instructions(
       {nextText: "Start",
       textInstructions:[//page 1
-                         ["<h2>Good job! You finished the game and the teaching task! Now, before we end the experiment...</h2>",
+                         ["<h2>Good job! You finished the game! Now, before we end the experiment...</h2>",
                          "You will see the symbols you just played with one more time. Under each symbol you will see a set of buttons showing different rewards (above) and probabilities (below): "+
                          '<img src="images/instructions/MC_choice.png" style="padding: 1rem; text-align: center" class = "img-fluid">',
                          "You may remember that during the experiment options sometimes led to winning/losing points, but sometimes they led to a zero outcome (i.e. just the number 0)." ,

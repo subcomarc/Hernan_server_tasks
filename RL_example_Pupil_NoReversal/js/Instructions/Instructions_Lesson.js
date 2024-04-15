@@ -16,7 +16,7 @@ function initializeInstructions() {
                 nextText: "Next",
                 textInstructions: [//page0
                     ["<h2>Explanations from the teacher</h2>",
-                     "You are about to read the explanations the teacher left just for you. ",
+                     "You are about to read the explanations the previous player left just for you. ",
                      "Pay attention to the strategies and tips they share with you. Click whenever you are ready!"],
                      //page 
                     [LessonText], // This is the fetched instruction text
