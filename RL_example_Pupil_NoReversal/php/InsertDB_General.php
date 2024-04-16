@@ -9,7 +9,7 @@ $REWPOINT 		= stripslashes(htmlspecialchars($_POST['rewardPoints']));
 $REWPOUNDS 		= stripslashes(htmlspecialchars($_POST['rewardPounds']));
 $TOTALTIME		= stripslashes(htmlspecialchars($_POST['totalTime']));
 $TEACHERID		= stripslashes(htmlspecialchars($_POST['teacherID']));
-$SEENLESSON		= stripslashes(htmlspecialchars($_POST['seenLesson']));
+$SEENLESSON		= stripslashes(htmlspecialchars($_POST['LessonText']));
 
 
 $stmt = $db->prepare("INSERT INTO PUPIL_General VALUE(?,?,?,?,?,?,?,?, NOW())");
