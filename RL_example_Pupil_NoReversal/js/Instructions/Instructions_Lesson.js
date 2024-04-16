@@ -9,7 +9,7 @@ let instructionsPromise = null;
 
 function initializeInstructions() {
     if (!instructionsPromise) {
-        instructionsPromise = GetLessons().then(({ LessonText, teacherID }) => {
+        instructionsPromise = GetLessons().then(({ teacherID, LessonText }) => {
           exp.teacherID = teacherID;
           exp.LessonText = LessonText;
             const Instructions_FROMTEACHER = new Instructions({
