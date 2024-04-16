@@ -67,8 +67,8 @@ function processCSV($pathToLesson, $maxProcessCount) {
 
             // Return the selected row's data
             return [
-                'Teacher_ID' => $selectedRow['partID']
-                'instructionText' => $selectedRow['WrittenLesson'],
+                'Teacher_ID' => $selectedRow['partID'],
+                'instructionText' => $selectedRow['WrittenLesson']
             ];
         } else {
             fclose($handle);
