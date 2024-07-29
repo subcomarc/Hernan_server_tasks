@@ -248,7 +248,7 @@ function showFeedback_FullorPart(){
   	if(ts.schedule[track.block].fdb == "F"){
 		fdb_un = '<div class="col"><H4 align = "center">'+rs[track.trial].outcomeUnchosen+'p</H4></div>';
 	}else if(ts.schedule[track.block].fdb == "P"){// for partial feedback exchange the feedback value for an empty text
-		fdb_un = '<div class="col"><H4 align = "center">'+'   '+'</H4></div>';
+		fdb_un = '<div class="col"><H4 align = "center">'+'  ?  '+'</H4></div>';
 	}else if(ts.schedule[track.block].fdb == "N"){
     fdb_ch = '<div class="col"><H4 align = "center" >'+'  ?  '+'</H4></div>';
     fdb_un = '<div class="col"><H4 align = "center" >'+'  ?  '+'</H4></div>';

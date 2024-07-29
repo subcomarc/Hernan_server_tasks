@@ -59,7 +59,7 @@ function schedule_all_range(arr_symID,fdb){
 
 
 
-// ARAYS - USEFUL FUNCTIONS
+// ARRAYS - USEFUL FUNCTIONS
 function shuffle(array) {
   let counter = array.length;
 
