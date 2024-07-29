@@ -1,5 +1,5 @@
 var exp = {
-  expID: 'TEACH_RL_TEACHER_NoReversal',
+  expID: 'TEACH_RL_TEACHER_NoReversal_Partial',
   // testMode: 'YES',
   testMode: 'NO',
   link: "https://app.prolific.com/submissions/complete?cc=CLM2O650",
