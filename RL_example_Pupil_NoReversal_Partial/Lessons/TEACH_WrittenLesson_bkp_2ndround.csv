@@ -1,0 +1,193 @@
+partID,prolificID,ExpID,WrittenLesson,DBTIME
+6168a5f9948e7f5bcbc608e2,6168a5f9948e7f5bcbc608e2,TEACH_RL_TEACHER_NoReversal,"To succeed, start by experimenting with different choices and observe the outcomes to identify patterns. Focus on the choices that yield the highest rewards and stick with them. Adapt if patterns change and keep detailed notes of your decisions and results. Patience and careful observation are key. Good luck!",14:30:04
+614ae8dbcd4d31f05be56645,614ae8dbcd4d31f05be56645,TEACH_RL_TEACHER_NoReversal,"The concept of the game is to get as many points as you can. these points will turn into a bonus, so you want to get as much as you can. The process is a simple one. You will be shown a pair of different pictures. You will need to decide which one you think will hold the most points. Once you have clicked, it will show you its worth. There are several pairs of pictures and they will keep coming round. Try to remember, which picture or side gives you the best result! Good luck!",14:34:24
+6651e404a7e3f9c26fe432b2,6651e404a7e3f9c26fe432b2,TEACH_RL_TEACHER_NoReversal,"The aim of the game is to select the winning pattern. There are no rules. It is completely random, or is it? Can you figure out the puzzle? Is there a way of winning? Select the correct pattern, you win, however select the wrong pattern, and it will cost you! ",14:35:00
+59a02221ec2f75000124edea,59a02221ec2f75000124edea,TEACH_RL_TEACHER_NoReversal,"The task requires you to make a selection between two shape options on a number of different slides. The shapes come in different colour tones and the layout of the shape also differs on each occasion. After each selection you will be able to see how each shape scored in points and this will be your guide to choosing future shapes. One shape has the potential to give you more points than the other shape so it is imperative that you pay attention to the colour and form of the shape to learn which ones are more profitable. On occasion, both shapes will earn you a negative score and there is nothing that you can do about this.
+
+In my experience, certain shapes were better at giving a consistently higher score such as the black shape and some gave a consistently negative score such as the mustard shape. In my game I made a correlation between shapes which had a gap running between them as they generally were better performers. However, you will soon learn the differences which are specific to your game and the quicker you make the links the better your overall score will be.",14:36:43
+5b6088371f52240001676b36,5b6088371f52240001676b36,TEACH_RL_TEACHER_NoReversal,"You will be shown two different symbols. Each symbol can have the same value or different values. You must select a symbol and the value of the symbol chosen and the unchosen symbol will be revealed. 
+The strategy I chose was to see if there was any pattern and I switched from left to right depending on which had the higher result. I would then continue selecting the symbol from that side until either my chosen symbol hit the highest value or became a minus that was less than the other side. ",14:37:46
+5fd76b7d246a3705a25c9a94,5fd76b7d246a3705a25c9a94,TEACH_RL_TEACHER_NoReversal,"This game gives you the choice of two random shapes to choose from.
+
+You must pick one shape and then you will be shown how much you have earned in points.
+
+Different shapes have different values and it's your job to try and earn as many points as possible.
+
+You will need to try and learn the different scores of the shapes to always pick the highest scoring ones.
+
+But sometimes the value might change depending on the combination of the shape.
+
+Keep trying different options and keep trying to remember! You might like to name them or describe them some way in your mind so you have a word to say when you see them.
+
+Remember to try and score as many points as possible - good luck!",14:38:03
+60f059aff7f931e2d83bacb5,60f059aff7f931e2d83bacb5,TEACH_RL_TEACHER_NoReversal,"In this task you will be presented with 2 different shapes each time. When you first start going through, you start to get a feel of what symbols will be of greater value than their counterpart. You have extensive opportunty to get a “feel” for the colours and shapes. I woud recommend the first few goes are to understand the game and do not take too much to heart when some don’t go your way. However I found that the more I progressed, the more I could see which shapes and colours would create more value. I didnt see a pattern until later on so I reccomend looking for the repetitive actions each time.",14:38:43
+5b266738007d870001c7c360,5b266738007d870001c7c360,TEACH_RL_TEACHER_NoReversal,"Not going to lie, I struggled to find a pattern here that could definitely help BUT this is what I theorized! The simple symbols seemed to be the better picks as well as the symbol that is the darkest colour between the two choices. This wasn't always the case but that's what I did for the most part.",14:39:27
+6346a9acc2a832b58c8e7229,6346a9acc2a832b58c8e7229,TEACH_RL_TEACHER_NoReversal,"When going through the task, try to focus on the symbols that have the most amount of impact on your final score (namely the plus of minus 10p symbols)
+
+The rest will have a minor effect on your final total, but focusing on remembering these symbols will give you the best chance of racking up a good score, and protecting it!",14:39:37
+63ced24e3ebc3a9a76f0b7b6,63ced24e3ebc3a9a76f0b7b6,TEACH_RL_TEACHER_NoReversal,"During this task, you will have the choice between two shapes to pick, which have different values attached to it (both positive and negative).
+The values range from -10p,-1p,0p,1p and 10p.
+
+Your job is to select the one shape which generates the highest value (e.g. 1p, 10p). Once you select a shape, the values for both shapes will be shown. The shapes will be repeated throughout, so over time you will be able to understand which values generate the highest values and those that don't.
+
+At the end of the task, you will be presented with the total bonus number of points, where 1 point is equivalent to 0.1p.
+
+Here are also some things to be mindful of:
+-the values of the shapes do change over time, so be mindful of the new value it generates
+-some trials may happen where the shapes generate the same value - you would still need to select a shape.
+",14:39:45
+6658b167e50ff33e0d8d7b7f,6658b167e50ff33e0d8d7b7f,TEACH_RL_TEACHER_NoReversal,"Instructions
+
+- Choose 1 image from a selection of 2 displayed images
+- The image you choose will have a score assosiated with it. e.g 0, -10, +10 points
+- The goal is to get as many points as possible.
+- the same images displayed may continue to be more favourable in terms of points than others. 
+
+",14:40:46
+663ba5be68b9831a7ee50cfc,663ba5be68b9831a7ee50cfc,TEACH_RL_TEACHER_NoReversal,"You are going to see a series of shapes that you will have to click on. These shapes will come in sets of two and you have to pick one out of the two to see a monetary amount revealed for both. The aim is to pick the same with the highest amount of money. There is not determinable pattern however you will find that more often that not one side will be higher, then both sides will be the same for either one or two turns before the other side reveals a higher amount. This is not concrete and sometimes a straight switch from either side does happen, however you will tend to find that it will go one side, both the same, other side more often than not. ",14:40:57
+5dcffb851228d90fbe7a2358,5dcffb851228d90fbe7a2358,TEACH_RL_TEACHER_NoReversal,"The game evaluates the probability based on your choices. There is no specific pattern to follow; simply select graphics in any order to collect points. Each choice contributes to your overall score, making it a test of both luck and strategy. Keep an eye on your progress, and aim to maximise your points with each selection.",14:41:58
+6394a8f1f510b07aeaf465e0,6394a8f1f510b07aeaf465e0,TEACH_RL_TEACHER_NoReversal,"You will be given a choice between two symbols each round and they will be put in a recurring rotation so you will see each symbol multiple times. Each symbol does have meaning and is not completely random. Each bonus point equal bonus money.
+The stratagy i suggest is trying to memorise which symbols give points and which give minus point. The symbol could give a different number as an exception however there should be an average of either positive or negative points.",14:42:18
+660dc1de10dfc100ea46a7bc,660dc1de10dfc100ea46a7bc,TEACH_RL_TEACHER_NoReversal,You will be presented with two symbols that will have two values so either +/- 10p or 1p. You will pick a symbol and then find out its value after so the goal is to always be adding to your points. My strategy at the beginning was to pick the colour I felt most drawn to and from there work out what to do next. Patterns do start to emerge so you need to pay close attention. Sometimes both values will be negatives or positive so they aren't as important in the pattern. Additionally the colours and the symbols often swap sides and start to have different values so stay alert. At the beginning I just used a trial and error process until patterns started to emerge so I would recommend that until you get a feel for what comes next. The symbols repeat A LOT so keep an eye out. I found it more helpful to remember the colours than the shapes as well as they stuck in my mind more so make a mental note of that. ,14:42:36
+63eb91ce65cc7b1190f50277,63eb91ce65cc7b1190f50277,TEACH_RL_TEACHER_NoReversal,"as this task begins, you will be presented with two symbols on the screen, side by side. your aim is to choose one of the symbols by clicking on it. once you choose your symbol, the monetary value will be displayed under bot symbols. some have no monetary value, some have a positive amount, and some a negative. try to configure a system to remember which symbols are positive, and which are negative. choose the positive symbols to win more.
+
+good luck!",14:42:58
+613b89f37101459d36a4768f,613b89f37101459d36a4768f,TEACH_RL_TEACHER_NoReversal,"Hello.  Your task is to choose symbols and try to accumulate as much points as possible.  Some symbols will give you 10p, others will give you 0p, while others will give you -10p.  Essentially, your task is to find as many 10p symbols as possible so as to collect the most points.  
+
+There is some element of luck involved in the task, but I found that certain symbols consistently correspond to certain points.  For example, in my task, the symbol that looked like a medieval castle consistently gave me 10p.  While others consistently gave me 0p or -10p.  There can be some variability, but generally, certain symbols consistently give you certain amounts of points.
+
+Try to find which symbols are essentially negative, neutral and positive using your memory.   Best of luck.  ",14:43:00
+5d790c98242bbf0017c128ee,5d790c98242bbf0017c128ee,TEACH_RL_TEACHER_NoReversal,"All pairs end up repeating themselves so use the first time each pair shows up as a test run (pick the left one for each new pair). Whichever has the higher score is the one you should keep clicking. If the score is the same, then keep clicking at random until you see one score higher than the other and then keep clicking that symbol.",14:43:16
+5e6bb5391c41e51747c182d2,5e6bb5391c41e51747c182d2,TEACH_RL_TEACHER_NoReversal,"The longest run of any outcome Right, Left, or Draw was 3
+1. Right Wins
+2. Right Wins
+3. Right Wins
+...the next 'win' should either be a draw or left
+There were slightly more Lefts than Rights but this was marginally so, but if in doubt go left.
+The symbols didn't appear to guarantee a win, as I favoured some that won at the start of the game but they didn't win the entire way through. I didn't have enough time to test colours so there may be something in that too.",14:43:43
+5d851c1ed8dd6f0015828d47,5d851c1ed8dd6f0015828d47,TEACH_RL_TEACHER_NoReversal,Hi you have to pick a symbol from 2 to try and get the most points and you can learn as you go along but not all the rules are hard and fast. i would choose the light green symbol every time and is usually 10pts though occassionally -10 and i would choose black most times unless light green is an option which is usually 1pt and sometimes 0 or -1pts. Generally would not choose dark green and dark brown and would choose light blue and light grey,14:43:46
+6097c0f1b17aabadc9369fc5,6097c0f1b17aabadc9369fc5,TEACH_RL_TEACHER_NoReversal,In this game you need to select the symbol that has the highest point value. I found that the best strategy was to try and memorise how many points were associated with which shape/colour and then select the one that had the higher value each time. It seemed like most of the time the values remained the same for each shape/colour and so this strategy was successful for me. It is important to try and remember certain elements of the shape so that you can recognise them later on.,14:44:07
+6659f61745db8e16a43bd54d,6659f61745db8e16a43bd54d,TEACH_RL_TEACHER_NoReversal,"During this game you will be shown two random shapes, you must click one of them. Each shape will have a monetary amount attached to it. You will be shown the amount for each shape after you have chosen. A tip to ensure maximum profit would be to alternate between the left and right shape each time. ",14:44:09
+5ca1cd9c44a54a00156d1a2c,5ca1cd9c44a54a00156d1a2c,TEACH_RL_TEACHER_NoReversal,"This game you have 2 images pop up and you have to try and guess which one is the higher value, in money. Some are minus pence from -10p to 10p.
+I found there is not a strategy.
+I tried left and right alternate times,
+I tried the colours, darker or lighter.
+I tried the shape and how many squares.
+I think this is just luck of the draw.
+So the images flash up and in different sequences, you pick which one you think is higher in value. Good luck! ",14:44:39
+63038e5456edb0d2cb421385,63038e5456edb0d2cb421385,TEACH_RL_TEACHER_NoReversal,"I found generally it was the colour which determined the bonus. The majority of the time the black symbols deducted -10p therefore I would not recommend clicking on those. Dark green, olive green, orange and light blue tended to give me the most points. ",14:46:50
+6346f314592ee4d8c3d84e57,6346f314592ee4d8c3d84e57,TEACH_RL_TEACHER_NoReversal,"You need to click on a shape to reveal what both are worth. You will see what both items are worth but will receive the amount of whichever shape you clicked on. Look out for the shape that is worth 10p as it will always be either 10p or 0. There is also another shape that will always be either -10p or 0 so try not to click on that one. Having said that, you will sometimes be unable to avoid clicking on -10p. All other shapes are worth 0, 1 or -1 and can change so just concentrate on clicking on the 10p shape",14:47:12
+5ff0d02c416cbafe9c914e50,5ff0d02c416cbafe9c914e50,TEACH_RL_TEACHER_NoReversal,"Hello, 
+
+You have a task to earn points. Points = potential money earnt. 
+
+You will be given two symbols to choose between. Each has a value. They may be the same. You could earn points or loss them. 
+
+After selecting the symbol you will find out the value of both. 
+
+Try and look for subtle similarities from previous choices. There are some which will repeatedly have a higher value than another. That said symbols aren't always worth the same throughout the game. 
+
+Trust your instincts and look to earn the greatest number of points you can.   ",14:47:37
+65369e3b162c88deae33056e,65369e3b162c88deae33056e,TEACH_RL_TEACHER_NoReversal,"All the symbols will give you +1p -1p 0P or + 10p -10p, the best strategy is to find the -10p this will always been the same, so once you have click it once never click that one again. the +10p is normally the same so always go for that one as it doesn't change as much, other symbols seem more random.",14:48:03
+6144711edbbb2ce35dcf6b11,6144711edbbb2ce35dcf6b11,TEACH_RL_TEACHER_NoReversal,"Your task is to choose from two different shapes - one on the left and one on the right. Each shape will have an assigned number of points which can be gained, or can be lost. For example, clicking on one shape may result in a gain of 1 point, but clicking on another might lose you 10 points. At first, it appears as though the point allocations are random, but after a short while you may start to notice patterns. One particular shape might always &quot;beat&quot; another - in other words clicking on that shape will always result in a better outcome, either more points gained or fewer points lost. Some pairs have neutral outcomes, and both shapes result in the same gain or loss. By carefully looking out for positive shapes in particular pairs, a large number of points can be gained!",14:49:31
+6659b44b9bd035649bef026c,6659b44b9bd035649bef026c,TEACH_RL_TEACHER_NoReversal,"Choose a shape out of the 2 choices to win points. To maximize winning points, avoid clicking the following shapes:
+
+- Dark purple
+- light purple
+- black
+- dark green
+
+The other colors appear to win the most points. 
+
+E.g. black shape v. pink shape; always choose the pink shape",14:51:24
+6659fa0eb4d2041c2fe81f61,6659fa0eb4d2041c2fe81f61,TEACH_RL_TEACHER_NoReversal,"Please select the following colours and you are more likely to have a positive score and thus win the game.
+ 
+Beige over Orange
+
+Black over Purple
+
+Green over Khaki
+
+and
+
+Lilac over Green.
+
+Good luck Students!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",14:51:53
+5ea305678366db250adbaf7d,5ea305678366db250adbaf7d,TEACH_RL_TEACHER_NoReversal,"Specific colours are always giving positive score outcomes.
+Specific combinations are always giving certain score outcomes.
+Specific sequences are always giving certain score outcomes.
+The black option is always giving positive or zero score.
+
+
+
+
+
+
+
+
+",14:52:06
+611aea14c2f5855174120bf4,611aea14c2f5855174120bf4,TEACH_RL_TEACHER_NoReversal,"You have to click one picture from the two given, and this will award you an amount of points, one of 10, 1, 0, -1 or -10. After clicking you will see the points for both pictures.
+Some pictures have a higher likelihood of awarding a certain amount, but it does change. The pair shown also has an impact on this probability.
+Try to learn which pictures (and combinations) give a higher chance of the 10 points, while also finding which are more likely to score -10, and avoid these. Maybe try to make a note of these ones as they occur.
+The pictures will be random, and there is no correlation between the elements of the picture and what bonus it will get. Sometimes you will get different outcomes from the exact same pairing.
+Good luck, and have fun!",14:54:42
+5a69fb84eeef45000138d276,5a69fb84eeef45000138d276,TEACH_RL_TEACHER_NoReversal,"I suggest you start clicking symbols and try to remember the positive symbol, they don't always pay the same but tend to win once you realise which are positive and which are negative.
+You will notice certain symbols mostly pay and others mostly don't. Good Luck.",14:54:43
+664dac66a1c244b742c49a96,664dac66a1c244b742c49a96,TEACH_RL_TEACHER_NoReversal,"The I trick I learnt in the previous task is, when you select a shop and both are zeros, your next click should be on the left side. When you select and you get a zero on the left but a 10 on the other side click on the same place again. When you also elect and the point was a 10 and a zero on the other side your next click should be where the zero was. just be vigilant and read the game carefully you'll get the concept  ",14:54:56
+6006524d0dbd669c1cc00757,6006524d0dbd669c1cc00757,TEACH_RL_TEACHER_NoReversal,The aim is to cover as many blank squares as possible. So pick the smaller squares that fit into the opposite box and cover the most squares in total. You get 0p if the square matches the pattern in the opposite box. By that I mean if they cover the same squares. Color does not make any difference to the game.,14:57:24
+665879ebcfb3a561e4218e62,665879ebcfb3a561e4218e62,TEACH_RL_TEACHER_NoReversal,"To begin with I went with the options which gave me the best hope in gaining points  , which in my case was the lighter coloured options and the smallest in size  . After picking these options for a while I began to notice a pattern to which options would reward me and which ones would not . After I discovered this pattern I would then test the pattern to see if it would happen again . After trialling it I would almost always get the more positive rewards , whether it be 0 points instead of negative points or just positive points . So I would advise you to play close attention and notice patterns and then use trial and error to examine these patterns like I did . Just make sure not to pick random options at first , try to pick the options with the same characteristics .",14:58:14
+5c1b7b36960792000195f33a,5c1b7b36960792000195f33a,TEACH_RL_TEACHER_NoReversal,"In this game you will see various repeating images of shapes. There are no set rules for the value of these shapes, but your task is to point at one out of two presented to you. Each one you point at and select has a value of either 10, 1, 0, -1, or -10 pts. Whilst there is not absolute rule you will soon learn that certain shapes have a repeating value. For example, you might see a shape that looks like a yellow fork, and each time you will notice it gives an award of -10 (this is only an example, it's not the case here). 
+
+The best strategy to get a good score is to note through memory in the early roundswhich shapes are repeatedly either giving 10 points or taking away points, and then aim to either avoid or select those shapes. This will soon accumulate a high score. The 1pts and -1 points are less important, although the same strategy could be applied. 
+
+The player should note that these scores are not guaranteed, so at some point you might be surprised by the outcome, this might relate to where on the page the shape is (i.e left side or right). ",14:59:49
+665a26c7fac2ece0ec2bcfd8,665a26c7fac2ece0ec2bcfd8,TEACH_RL_TEACHER_NoReversal,"You will be given a selection of pairs of shapes to click on. Over time, you will notice that certain pairs will repeat themselves, with one of the shapes highly likely to be the higher scoring shape. There is some variation in the points given each time, but one shape is likely to be better than the other.
+
+Take an example where you get a pair of shapes where one is red, and the other is blue. If the red gives 10 points and blue gives nothing, always click the red shape. Do the same for all other pairings you begin to memorize.",14:59:58
+64132cc612acd974252c0043,64132cc612acd974252c0043,TEACH_RL_TEACHER_NoReversal,"Hi, the link between the shapes and the score wasn't obvious. However, I tried a number of strategies, which I will relay below and hopefully it will help to know what doesn't correlate to the scores and will guide you in what else to look for.
+
+I tried to detect if the score for each shape was always the same. That wasn't the case as far as I could determine. I tried to see if the scores were determined by certain squares being filled, e.g. the centre square or the four corner squares, but couldn't find a link there either. I analysed the scores relative to the colours, also a negative link. I analysed the scores for the left shape and the right shape to see if it was the placing rather than the shape that determined the score, but also no correlation. I also tried to see if symmetry in the shapes was reflected in the scores, but couldn't find a link there either.
+
+The shapes seemed to repeat often and it did feel like the black shapes generally came out as a -10 score. But I'm afraid this is the only possible consistency I could find.
+
+Good luck!  ",15:00:30
+62d2bca2c9485e173382c839,62d2bca2c9485e173382c839,TEACH_RL_TEACHER_NoReversal,"In this game you will be presented with successive screens featuring a pair of symbols. Your task is to choose a symbol before advancing to the next screen, and in the process accumulate as many points as possible. After you choose a symbol, the value of both will be displayed enabling you to try and learn the symbols that score highest as the game progresses.
+
+In my attempt at this game I found no inherent formula to suggest the score of a symbol; colour, shape, number of elements to the symbol - all seemed irrelevant.
+
+What advice I can pass on is this: the symbols always seem to appear in distinct pairs. The value for a given symbol does change occasionally, but will soon change back. Thus if you can remember which symbols scored highly, most of the time you will be ahead by choosing those symbols.",15:04:05
+611e8bbe52b050f81208f7ea,611e8bbe52b050f81208f7ea,TEACH_RL_TEACHER_NoReversal,"For the task you need to select one picture per screen. One will add to your ballence. One will minus from your ballence, and one will keep it the same. I went through a great number of stratergies mostly unsucesfully. In the end I found the best way was to note down the pictures which added to your ballence as they stayed the same through out the task, and in the end it was a case of trial and error. Good luck",15:07:18
+5cb0d94aff629100171b05b1,5cb0d94aff629100171b05b1,TEACH_RL_TEACHER_NoReversal,"It is a game of chance (50/50) you can pick 5 left then 5 right.(which is what i did).
+
+The outcome is pure luck there is no right or wrong or pick a certain colour box just go with your heart/head or gut.
+
+I started with 5 right than 5 left. 
+You could also pick left and right for the full task or mix it up and do 2 of each and so on and so on.
+
+",15:09:11
+6654a6531293e785bf1c9d10,6654a6531293e785bf1c9d10,TEACH_RL_TEACHER_NoReversal,"Focus on the details regarding shapes, colours, frequency, and progression, ensuring accuracy and thoroughness in the description. If you have specific elements or patterns you need analyzed, please provide more context or examples. Thank you!
+
+
+
+
+
+
+",15:14:47
+60ac08be37cd5e98ab2d0037,60ac08be37cd5e98ab2d0037,TEACH_RL_TEACHER_NoReversal,"From what I can see there appears to be no rhyme or reason or any common themes for choosing the shapes.
+I found that if the shape combination was green and blue that the green will often have a positive number but not always, I would say 60%.  The other combination was black and mustard/green/yellow and the black option would have a positive number.  I tried doing only left options for 5 or 6 times and then right or alternating but it makes no difference.  I maybe wouldn't think about it and just go with your gut instinct or the one you fancy.  Good Luck!",15:17:04
+6488f7c173a63c779b0caf55,6488f7c173a63c779b0caf55,TEACH_RL_TEACHER_NoReversal,"My initial strategy was just to have a go then I noted certain colour combinations and shapes always equalled the same cash result, so take a careful note at the start which ones you gain money on/ lose as they will be the same throughout. Some combinations when side by side =zero or both minus, but these were harder to remember and aren't worth worrying about if you forget. Just keep noting which ones you KNOW are winners  and click on them consistently. Good Luck, partner ! Win us both loads of cash :)",15:18:14
+661a2ff693f82a94b6715e86,661a2ff693f82a94b6715e86,TEACH_RL_TEACHER_NoReversal,"Hi, I'm excited to guide you through this cognitive test effectively, In this text you would be given two shapes of which both carries their point and the points would be shown after successfully clicking on one.
+ I would advise not to seek after the points during the start of the game but rather watch out which shapes carry the points and use this as a great weapon in yourself in the long run. Basically, the things you should watch out for in other to not get confused is the color of the shapes that carry the most point whenever the answer is being revealed and store it in your brain as from here you would likely only have to input it in the upcoming guesses. For example, A certain shape has a yellow color and the points on it is 10, Anywhere that color or shape occurs, know it's repeated and go for it. 
+So, from the start of the game take your time to know which shape comes and their points. And as well the position of the shape matters for some, You can note down the position where a shape is powerful and where it isn't.
+This is just a quick guide of the test, Watch carefully from the start and gradually improve. Thank you.",15:25:06
+63468dd619d9b90d5b8b76c9,63468dd619d9b90d5b8b76c9,TEACH_RL_TEACHER_NoReversal,"The object of the game is to decided between two presented graphics. Once you have selected the graphics the amount both are worth will be shown.
+
+Eg: graphic on the left is worth -1p, graphic on the right is worth 10p.
+
+You will see different graphics from me, good luck",15:25:58
+636570d91a49a6d6cbcbc854,636570d91a49a6d6cbcbc854,TEACH_RL_TEACHER_NoReversal,"You will be shows pairs of symbols from which you must choose to get rewards. You will only see the reward attached to each symbol after choosing one of the pair and then you move on to the next pair. Each pair of symbols has different colors that will remain the same throughout, but the positions of the symbols might change during the experiment. 
+Of the four pairs that are repeated throughout the experiment, two of them present symbol pairs that give the same reward (or slightly bigger when you choose the one on the right).
+One of the four pairs also presents you with two symbols where one of them with a particular color is always the right option for the bigger reward.
+The last one of the four pairs alternates the symbol that has better reward so you will have to guess and switch as the experiment goes on. You will have to find out which of the four pairs matches this description and then apply this strategy. Best of luck buddy.",15:55:43
+65f046db72157db89e132e9f,65f046db72157db89e132e9f,TEACH_RL_TEACHER_NoReversal,"unfortunately, I was not able to come up with a good strategy. I went with my instinct for most of my choices. But I'll advise you pick more of the characters in the right box. If you do that I think you should be able to accumulate a good amount of points.",15:59:09
+60b932147633bf0dd446941e,60b932147633bf0dd446941e,TEACH_RL_TEACHER_NoReversal,To be honest the only strategy would be to pick the lighter colours as they seem to be the highest paying but as far as i can tell the whole thing is completly random because as soon as i make some points i lose them the next round as i dont think this games designed for you to make many points at the end.,16:09:55

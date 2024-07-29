@@ -18,10 +18,10 @@ var PUPIL_LearningTask = {
       borderMS:500, // timing of the border around the chosen option - shown on its own (before the feedback appears)
       transitionMS: 200, // timing of the white screen inbetween trials
 
-      schedule: _.shuffle([{pair:[0,1],fdb:"F"},
-                           {pair:[2,3],fdb:"F"}, //F is full feedback, P is partial feedback
-                           {pair:[4,5],fdb:"F"},
-                           {pair:[6,7],fdb:"F"}])
+      schedule: _.shuffle([{pair:[0,1],fdb:"P"},
+                           {pair:[2,3],fdb:"P"}, //F is full feedback, P is partial feedback
+                           {pair:[4,5],fdb:"P"},
+                           {pair:[6,7],fdb:"P"}])
     },
     trackers: {
       trial: 0, // number of trials
@@ -248,7 +248,7 @@ function showFeedback_FullorPart(){
   	if(ts.schedule[track.block].fdb == "F"){
 		fdb_un = '<div class="col"><H4 align = "center">'+rs[track.trial].outcomeUnchosen+'p</H4></div>';
 	}else if(ts.schedule[track.block].fdb == "P"){// for partial feedback exchange the feedback value for an empty text
-		fdb_un = '<div class="col"><H4 align = "center">'+'   '+'</H4></div>';
+		fdb_un = '<div class="col"><H4 align = "center">'+'  ?  '+'</H4></div>';
 	}else if(ts.schedule[track.block].fdb == "N"){
     fdb_ch = '<div class="col"><H4 align = "center" >'+'  ?  '+'</H4></div>';
     fdb_un = '<div class="col"><H4 align = "center" >'+'  ?  '+'</H4></div>';

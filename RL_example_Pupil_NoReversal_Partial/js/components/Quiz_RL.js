@@ -6,7 +6,7 @@ var Quiz_RL =  {
   Intro: "(If you do not answer all questions correctly, you will be redirected back to the instructions.)",
   Questions: [
     {id:"Q0",Text:"Some symbols are better (will give you better rewards) than others", Responses:["True","False"], Correct:0},
-    {id:"Q1",Text:"You will see the outcome of the symbol you clicked on, but NOT of the symbol you did not click on:", Responses:["True","False"], Correct:1},
+    {id:"Q1",Text:"You will see the outcome of the symbol you clicked on, but NOT of the symbol you did not click on:", Responses:["True","False"], Correct:0},
   ],
 
  init: function(){
