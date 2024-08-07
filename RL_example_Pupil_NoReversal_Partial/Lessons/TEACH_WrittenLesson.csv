@@ -1,0 +1,17 @@
+partID,prolificID,ExpID,WrittenLesson,DBTIME,Processed
+5b6b2c3156558d0001678ffc,5b6b2c3156558d0001678ffc,TEACH_RL_TEACHER_NoReversal_Pa,"You have to pick one of the pictures. You want the one with the highest points.
+
+At the start, just experiment but you'll quickly see a pattern emerge. It's pretty consistent so when you have figured it out it's easy. It's very important to get the +10s and avoid the -10s",16:12:48,1
+66966fc387e0787a61c4b6c5,66966fc387e0787a61c4b6c5,TEACH_RL_TEACHER_NoReversal_Pa,"The aim of the game is to remember the pattern on the previous screen and find the pattern on the following screen. When you choose the correct pattern you will then be rewarded with a payment, if you choose the wrong pattern you will then lose money.",16:15:22,0
+66a3aaf186d92005ba3d11b6,66a3aaf186d92005ba3d11b6,TEACH_RL_TEACHER_NoReversal_Pa,"The thing that looks like a fork facing down (3 lines down) is the best worth 10p and is always about 10p, so always click on this shape! For everything else, never click on anything that looks like a smile - there's 2 - one that looks like a unibrow with a nose and big smile, and one that looks like a unibrow and not so big smile. The other shapes are better and won't lose you any money. They may only be 0p but it's better than -1p or -10p! You will then also have 2 shapes with a spike upwards and another shape with a spike pointing downwards. Click on the spike facing downwards for the best outcome. Good Luck!",16:26:40,0
+5f4538b6ffe9f50c3cbe3ae1,5f4538b6ffe9f50c3cbe3ae1,TEACH_RL_TEACHER_NoReversal_Pa,"Honestly could not identify any patterns, alternating left and right does nothing, but the values of the patterns do remain consistent. It will most likely be better to do set amounts of left and right, so like 3 lefts and 2 rights, something like that",16:29:15,1
+60e8d3cf363fb4f52b9ba8ae,60e8d3cf363fb4f52b9ba8ae,TEACH_RL_TEACHER_NoReversal_Pa,"Welcome to this game. I know you will have no instructions. Only the notes I leave. Well, that is what I have been lead to believe. Is this true? Is it the way it will really happen? You are able to get a bonus for us.
+I really did not have any strategy at all. Click through the pattern. As you do so, see if you can recognise a pattern. I finished with -19.
+I did think the more space inside the shape, the higher the points. See how you get on.
+My advice would be click what you like. Have fun. Take the cash!
+Best of luck",16:39:58,1
+60f69c70227ff30c0cf55e07,60f69c70227ff30c0cf55e07,TEACH_RL_TEACHER_NoReversal_Pa,"Hello,
+
+Each symbol has a probability of producing an outcome when clicked. Outcomes are positive or negative.
+
+Not all symbols are alike, some will be overall better than others at winning point. some symbols bring great loss about 10p so be careful and focused. Some symbols repeat them selves so you can know what points they carry",16:42:34,0
